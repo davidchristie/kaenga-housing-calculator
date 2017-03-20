@@ -1,0 +1,14 @@
+exports[`test matches snapshot 1`] = `
+<div
+  className="App">
+  <Uncontrolled(Navbar)
+    bsStyle="default">
+    <NavbarHeader>
+      <NavbarBrand>
+        Kaenga Housing Calculator
+      </NavbarBrand>
+    </NavbarHeader>
+  </Uncontrolled(Navbar)>
+  <ReduxForm />
+</div>
+`;
