@@ -1,0 +1,10 @@
+exports[`test matches snapshot 1`] = `
+<Checkbox
+  bsClass="checkbox"
+  disabled={false}
+  inline={false}
+  onChange={undefined}
+  value={undefined}>
+  Guest rooms
+</Checkbox>
+`;

@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import App from './App'
+import SingleBedroomsField from './SingleBedroomsField'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(shallowRenderer.render(<App />)).toMatchSnapshot()
+  expect(shallowRenderer.render(<SingleBedroomsField />)).toMatchSnapshot()
 })

@@ -1,0 +1,16 @@
+exports[`test matches snapshot 1`] = `
+<Connect(Form(HomeForm))
+  destroyOnUnmount={true}
+  enableReinitialize={false}
+  forceUnregisterOnUnmount={false}
+  form="home"
+  getFormState={[Function]}
+  initialValues={undefined}
+  keepDirtyOnReinitialize={false}
+  persistentSubmitErrors={false}
+  pure={true}
+  shouldAsyncValidate={[Function]}
+  shouldValidate={[Function]}
+  touchOnBlur={true}
+  touchOnChange={false} />
+`;
