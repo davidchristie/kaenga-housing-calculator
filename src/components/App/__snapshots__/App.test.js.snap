@@ -9,6 +9,24 @@ exports[`test matches snapshot 1`] = `
       </NavbarBrand>
     </NavbarHeader>
   </Uncontrolled(Navbar)>
-  <ReduxForm />
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}>
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      defaultExpanded={false}
+      header="Location">
+      <ReduxForm />
+    </Panel>
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      defaultExpanded={false}
+      header="Home">
+      <ReduxForm />
+    </Panel>
+  </Grid>
 </div>
 `;

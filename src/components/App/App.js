@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Navbar } from 'react-bootstrap'
+import { Grid, Navbar, Panel } from 'react-bootstrap'
 
+import HomeForm from '../HomeForm'
 import LocationForm from '../LocationForm'
 
 class App extends Component {
@@ -12,7 +13,14 @@ class App extends Component {
             <Navbar.Brand>Kaenga Housing Calculator</Navbar.Brand>
           </Navbar.Header>
         </Navbar>
-        <LocationForm />
+        <Grid>
+          <Panel header='Location'>
+            <LocationForm />
+          </Panel>
+          <Panel header='Home'>
+            <HomeForm />
+          </Panel>
+        </Grid>
       </div>
     )
   }
