@@ -3,6 +3,7 @@ import { Grid, Navbar, Panel } from 'react-bootstrap'
 
 import HomeForm from '../HomeForm'
 import LocationForm from '../LocationForm'
+import SharingForm from '../SharingForm'
 
 class App extends Component {
   render () {
@@ -19,6 +20,9 @@ class App extends Component {
           </Panel>
           <Panel header='Home'>
             <HomeForm />
+          </Panel>
+          <Panel header='Sharing'>
+            <SharingForm />
           </Panel>
         </Grid>
       </div>

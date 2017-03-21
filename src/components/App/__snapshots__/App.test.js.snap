@@ -27,6 +27,13 @@ exports[`test matches snapshot 1`] = `
       header="Home">
       <ReduxForm />
     </Panel>
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      defaultExpanded={false}
+      header="Sharing">
+      <ReduxForm />
+    </Panel>
   </Grid>
 </div>
 `;
