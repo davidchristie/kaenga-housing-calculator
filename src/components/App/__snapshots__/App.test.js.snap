@@ -29,6 +29,7 @@ exports[`test matches snapshot 1`] = `
       header="Home">
       <ReduxForm />
     </Panel>
+    <Connect(HomeFloorspace) />
     <Panel
       bsClass="panel"
       bsStyle="default"

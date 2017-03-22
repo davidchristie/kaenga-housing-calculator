@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Grid, Navbar, Panel } from 'react-bootstrap'
 
 import CheapestSuburb from '../../containers/CheapestSuburb'
+import HomeFloorspace from '../../containers/HomeFloorspace'
 import HomeForm from '../HomeForm'
 import LocationForm from '../LocationForm'
 import SharingForm from '../SharingForm'
@@ -27,6 +28,7 @@ class App extends Component {
           <Panel header='Home'>
             <HomeForm />
           </Panel>
+          <HomeFloorspace />
           <Panel header='Sharing'>
             <SharingForm />
           </Panel>
