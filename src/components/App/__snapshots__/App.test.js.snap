@@ -21,6 +21,7 @@ exports[`test matches snapshot 1`] = `
       <ReduxForm
         suburbs={Array []} />
     </Panel>
+    <Connect(CheapestSuburb) />
     <Panel
       bsClass="panel"
       bsStyle="default"

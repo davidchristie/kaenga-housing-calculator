@@ -6,9 +6,9 @@ export const readSuburbsData = callback => {
     const suburbs = data.map(row => {
       return {
         area: row['Area'],
-        averageHousePrice: row['Average house price'],
         name: row['Name'],
-        referenceSuburb: row['Reference suburb']
+        price: Number(row['Average house price']),
+        reference: row['Reference suburb']
       }
     })
     callback(null, suburbs)

@@ -1,0 +1,23 @@
+exports[`test matches snapshot 1`] = `
+<Well
+  bsClass="well"
+  style={
+    Object {
+      "display": "none",
+    }
+  }>
+  <h1>
+    Cheapest suburb
+  </h1>
+  <p>
+    Name: 
+    <strong />
+  </p>
+  <p>
+    Average house price: 
+    <strong>
+      $
+    </strong>
+  </p>
+</Well>
+`;
