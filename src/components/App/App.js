@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { Grid, Navbar, Panel } from 'react-bootstrap'
 
 import HomeForm from '../HomeForm'
@@ -6,6 +6,10 @@ import LocationForm from '../LocationForm'
 import SharingForm from '../SharingForm'
 
 class App extends Component {
+  componentWillMount () {
+    this.props.loadSuburbs()
+  }
+
   render () {
     return (
       <div className='App'>
@@ -16,7 +20,7 @@ class App extends Component {
         </Navbar>
         <Grid>
           <Panel header='Location'>
-            <LocationForm />
+            <LocationForm suburbs={this.props.suburbs} />
           </Panel>
           <Panel header='Home'>
             <HomeForm />
@@ -28,6 +32,16 @@ class App extends Component {
       </div>
     )
   }
+}
+
+App.defaultProps = {
+  loadSuburbs: () => {},
+  suburbs: []
+}
+
+App.propTypes = {
+  loadSuburbs: PropTypes.func.isRequired,
+  suburbs: PropTypes.any.isRequired
 }
 
 export default App

@@ -1,6 +1,6 @@
 import { csv } from 'd3-request'
 
-export const getSuburbs = callback => {
+export const readSuburbsData = callback => {
   csv('/data/suburbs.csv', (error, data) => {
     if (error) callback(error)
     const suburbs = data.map(row => {

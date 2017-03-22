@@ -1,32 +1,14 @@
 import React, { Component, PropTypes } from 'react'
 import { Field, reduxForm } from 'redux-form'
 
-import { getSuburbs } from '../../models/suburbs'
 import SuburbsField from './SuburbsField'
 
 class LocationForm extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      suburbs: []
-    }
-  }
-
-  componentWillMount () {
-    getSuburbs((error, suburbs) => {
-      if (error) throw error
-      this.setState({
-        suburbs
-      })
-    })
-  }
-
   render () {
-    const { handleSubmit } = this.props
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={this.props.handleSubmit}>
         <Field component={SuburbsField} name='suburbs'>
-          {this.state.suburbs.map((suburb, index) => {
+          {this.props.suburbs.map((suburb, index) => {
             return (
               <option key={index} value={suburb.name}>
                 {suburb.name}
@@ -40,7 +22,12 @@ class LocationForm extends Component {
 }
 
 LocationForm.propTypes = {
-  handleSubmit: PropTypes.func
+  handleSubmit: PropTypes.func,
+  suburbs: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired
+    })
+  ).isRequired
 }
 
 export default reduxForm({
