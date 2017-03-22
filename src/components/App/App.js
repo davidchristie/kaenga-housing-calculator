@@ -3,6 +3,7 @@ import { Grid, Navbar, Panel } from 'react-bootstrap'
 
 import CheapestSuburb from '../../containers/CheapestSuburb'
 import HomeFloorspace from '../../containers/HomeFloorspace'
+import LivingSpace from '../../containers/LivingSpace'
 import HomeForm from '../HomeForm'
 import LocationForm from '../LocationForm'
 import SharingForm from '../SharingForm'
@@ -32,6 +33,7 @@ class App extends Component {
           <Panel header='Sharing'>
             <SharingForm />
           </Panel>
+          <LivingSpace />
         </Grid>
       </div>
     )
