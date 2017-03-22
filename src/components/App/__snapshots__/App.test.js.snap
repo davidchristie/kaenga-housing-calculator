@@ -18,7 +18,8 @@ exports[`test matches snapshot 1`] = `
       bsStyle="default"
       defaultExpanded={false}
       header="Location">
-      <ReduxForm />
+      <ReduxForm
+        suburbs={Array []} />
     </Panel>
     <Panel
       bsClass="panel"

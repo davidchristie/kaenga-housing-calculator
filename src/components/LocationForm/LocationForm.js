@@ -5,14 +5,16 @@ import SuburbsField from './SuburbsField'
 
 class LocationForm extends Component {
   render () {
-    const { handleSubmit } = this.props
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={this.props.handleSubmit}>
         <Field component={SuburbsField} name='suburbs'>
-          <option value='Manukau'>Manukau</option>
-          <option value='Mount Eden'>Mount Eden</option>
-          <option value='Onehunga'>Onehunga</option>
-          <option value='Takapuna'>Takapuna</option>
+          {this.props.suburbs.map((suburb, index) => {
+            return (
+              <option key={index} value={suburb.name}>
+                {suburb.name}
+              </option>
+            )
+          })}
         </Field>
       </form>
     )
@@ -20,7 +22,12 @@ class LocationForm extends Component {
 }
 
 LocationForm.propTypes = {
-  handleSubmit: PropTypes.func
+  handleSubmit: PropTypes.func,
+  suburbs: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired
+    })
+  ).isRequired
 }
 
 export default reduxForm({
