@@ -5,7 +5,6 @@ import { Field, reduxForm } from 'redux-form'
 import GuestRoomsField from './GuestRoomsField'
 import EntertainmentField from './EntertainmentField'
 import LaundriesField from './LaundriesField'
-import LivingSpaceField from './LivingSpaceField'
 
 class SharingForm extends Component {
   render () {
@@ -17,7 +16,6 @@ class SharingForm extends Component {
           <Field component={LaundriesField} name='laundries' />
           <Field component={GuestRoomsField} name='guestRooms' />
           <Field component={EntertainmentField} name='entertainment' />
-          <Field component={LivingSpaceField} name='livingSpace' />
         </FormGroup>
       </form>
     )
