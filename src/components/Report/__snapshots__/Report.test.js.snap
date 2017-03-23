@@ -5,6 +5,13 @@ exports[`test matches snapshot 1`] = `
     Report
   </h1>
   <p>
+    Build cost: 
+    <strong>
+      $
+      0
+    </strong>
+  </p>
+  <p>
     Total: 
     <strong>
       $
