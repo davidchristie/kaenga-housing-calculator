@@ -13,15 +13,25 @@ exports[`test matches snapshot 1`] = `
     bsClass="container"
     componentClass="div"
     fluid={false}>
-    <ReduxForm
-      suburbs={Array []} />
-    <Connect(CheapestSuburb) />
-    <ReduxForm />
-    <ReduxForm />
-    <Connect(HomeFloorspace) />
-    <ReduxForm />
-    <Connect(LivingSpace) />
-    <Connect(Report) />
+    <Col
+      bsClass="col"
+      componentClass="div"
+      md={6}>
+      <ReduxForm
+        suburbs={Array []} />
+      <ReduxForm />
+      <ReduxForm />
+      <ReduxForm />
+    </Col>
+    <Col
+      bsClass="col"
+      componentClass="div"
+      md={6}>
+      <Connect(CheapestSuburb) />
+      <Connect(HomeFloorspace) />
+      <Connect(LivingSpace) />
+      <Connect(Report) />
+    </Col>
   </Grid>
 </div>
 `;

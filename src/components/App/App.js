@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { Grid, Navbar } from 'react-bootstrap'
+import { Col, Grid, Navbar } from 'react-bootstrap'
 
 import CheapestSuburb from '../../containers/CheapestSuburb'
 import HomeFloorspace from '../../containers/HomeFloorspace'
@@ -24,14 +24,18 @@ class App extends Component {
           </Navbar.Header>
         </Navbar>
         <Grid>
-          <LocationForm suburbs={this.props.suburbs} />
-          <CheapestSuburb />
-          <OccupantsForm />
-          <HomeForm />
-          <HomeFloorspace />
-          <SharingForm />
-          <LivingSpace />
-          <Report />
+          <Col md={6}>
+            <LocationForm suburbs={this.props.suburbs} />
+            <OccupantsForm />
+            <HomeForm />
+            <SharingForm />
+          </Col>
+          <Col md={6}>
+            <CheapestSuburb />
+            <HomeFloorspace />
+            <LivingSpace />
+            <Report />
+          </Col>
         </Grid>
       </div>
     )

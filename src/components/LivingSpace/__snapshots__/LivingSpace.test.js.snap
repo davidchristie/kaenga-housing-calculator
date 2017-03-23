@@ -2,10 +2,12 @@ exports[`test matches snapshot 1`] = `
 <Well
   bsClass="well">
   <h1>
-    Living space (including kitchens)
+    Living space
   </h1>
   <p>
-    Total: 
+    <span>
+      Total (including kitchens): 
+    </span>
     <strong>
       <SquareMetres
         value={0} />

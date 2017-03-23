@@ -10,9 +10,10 @@ class LivingSpace extends Component {
     } = this.props
     return (
       <Well>
-        <h1>Living space (including kitchens)</h1>
+        <h1>Living space</h1>
         <p>
-          Total: <strong><SquareMetres value={total} /></strong>
+          <span>Total (including kitchens): </span>
+          <strong><SquareMetres value={total} /></strong>
         </p>
       </Well>
     )
