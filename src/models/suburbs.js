@@ -39,7 +39,8 @@ function withLandCostPerSqmFloorspace (suburbs) {
 }
 
 export function readSuburbsData (callback) {
-  csv('/data/suburbs.csv', (error, data) => {
+  const path = 'https://raw.githubusercontent.com/davidchristie/kaenga-housing-calculator/master/data/suburbs.csv'
+  csv(path, (error, data) => {
     if (error) callback(error)
     const suburbs = data.map(parseSuburbRow)
     callback(null, withLandCostPerSqmFloorspace(suburbs))
