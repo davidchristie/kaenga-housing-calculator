@@ -1,5 +1,7 @@
 import { csv } from 'd3-request'
 
+import data from './data/suburbs.csv'
+
 const coverage = 0.5
 const grossToNet = 0.9
 const floors = 3
@@ -39,10 +41,9 @@ function withLandCostPerSqmFloorspace (suburbs) {
 }
 
 export function readSuburbsData (callback) {
-  const path = 'https://raw.githubusercontent.com/davidchristie/kaenga-housing-calculator/master/data/suburbs.csv'
-  csv(path, (error, data) => {
+  csv(data, (error, rows) => {
     if (error) callback(error)
-    const suburbs = data.map(parseSuburbRow)
+    const suburbs = rows.map(parseSuburbRow)
     callback(null, withLandCostPerSqmFloorspace(suburbs))
   })
 }
