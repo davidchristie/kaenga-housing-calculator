@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Button, Panel } from 'react-bootstrap'
 import { FieldArray, reduxForm } from 'redux-form'
 
+import BathroomListField from './BathroomListField'
 import BedroomListField from './BedroomListField'
 
 class HomeForm extends Component {
@@ -15,13 +16,19 @@ class HomeForm extends Component {
               component={BedroomListField}
               name='bedrooms'
             />
-            <Button
-              disabled={pristine || submitting}
-              onClick={reset}
-            >
-              Clear Bedrooms
-            </Button>
           </Panel>
+          <Panel header='Bathrooms'>
+            <FieldArray
+              component={BathroomListField}
+              name='bathrooms'
+            />
+          </Panel>
+          <Button
+            disabled={pristine || submitting}
+            onClick={reset}
+            >
+            Clear
+          </Button>
         </Panel>
       </form>
     )
