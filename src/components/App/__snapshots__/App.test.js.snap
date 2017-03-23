@@ -23,6 +23,7 @@ exports[`test matches snapshot 1`] = `
       <ReduxForm />
       <ReduxForm />
       <ReduxForm />
+      <ReduxForm />
     </Col>
     <Col
       bsClass="col"
