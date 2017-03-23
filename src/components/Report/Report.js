@@ -1,5 +1,9 @@
+/* eslint-disable react/style-prop-object */
+
 import React, { Component, PropTypes } from 'react'
 import { Well } from 'react-bootstrap'
+
+import Currency from '../Currency'
 
 class Report extends Component {
   render () {
@@ -12,14 +16,14 @@ class Report extends Component {
       <Well>
         <h1>Report</h1>
         <p>
-          Build cost: <strong>${buildCost}</strong>
+          Build cost: <strong><Currency value={buildCost} /></strong>
         </p>
         <p>
-          Land cost: <strong>${landCost}</strong>
+          Land cost: <strong><Currency value={landCost} /></strong>
         </p>
         <br />
         <p>
-          Total: <strong>${total}</strong>
+          Total: <strong><Currency value={total} /></strong>
         </p>
       </Well>
     )

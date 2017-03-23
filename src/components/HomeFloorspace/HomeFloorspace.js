@@ -1,11 +1,13 @@
 import React, { Component, PropTypes } from 'react'
 import { Well } from 'react-bootstrap'
 
+import SquareMetres from '../SquareMetres'
+
 const floorspaceItem = (name, area) => {
   if (!area) return null
   return (
     <p>
-      {name}: <strong>{area}m<sup>2</sup></strong>
+      {name}: <strong><SquareMetres value={area} /></strong>
     </p>
   )
 }

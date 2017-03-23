@@ -4,15 +4,16 @@
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
+    "react-intl": "^2.2.3",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
     "redux-form": "^6.5.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "react-addons-test-utils": "^15.4.2",
-    "react-redux": "^5.0.3",
     "react-scripts": "0.9.5",
-    "redux": "^3.6.0",
     "standard": "^9.0.2"
   },
   "homepage": "https://davidchristie.github.io/kaenga-housing-calculator",

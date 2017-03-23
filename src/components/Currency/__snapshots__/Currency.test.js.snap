@@ -1,0 +1,6 @@
+exports[`test matches snapshot 1`] = `
+<FormattedNumber
+  currency="nzd"
+  style="currency"
+  value={0} />
+`;

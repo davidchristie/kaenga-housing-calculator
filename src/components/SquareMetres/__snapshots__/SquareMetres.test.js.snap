@@ -1,0 +1,11 @@
+exports[`test matches snapshot 1`] = `
+<span>
+  <FormattedNumber
+    maximumFractionDigits={1}
+    value={0} />
+  m
+  <sup>
+    2
+  </sup>
+</span>
+`;

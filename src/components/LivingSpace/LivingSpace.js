@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import { Well } from 'react-bootstrap'
 
+import SquareMetres from '../SquareMetres'
+
 class LivingSpace extends Component {
   render () {
     const {
@@ -10,7 +12,7 @@ class LivingSpace extends Component {
       <Well>
         <h1>Living space (including kitchens)</h1>
         <p>
-          Total: <strong>{total}m<sup>2</sup></strong>
+          Total: <strong><SquareMetres value={total} /></strong>
         </p>
       </Well>
     )
