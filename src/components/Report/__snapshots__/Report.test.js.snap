@@ -7,22 +7,26 @@ exports[`test matches snapshot 1`] = `
   <p>
     Build cost: 
     <strong>
-      $
-      0
+      <Currency
+        type="nzd"
+        value={0} />
     </strong>
   </p>
   <p>
     Land cost: 
     <strong>
-      $
+      <Currency
+        type="nzd"
+        value={0} />
     </strong>
   </p>
   <br />
   <p>
     Total: 
     <strong>
-      $
-      0
+      <Currency
+        type="nzd"
+        value={0} />
     </strong>
   </p>
 </Well>
