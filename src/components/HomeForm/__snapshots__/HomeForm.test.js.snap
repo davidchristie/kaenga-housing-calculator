@@ -3,15 +3,6 @@ exports[`test matches snapshot 1`] = `
   onSubmit={undefined}>
   <Field
     component={[Function]}
-    name="adults" />
-  <Field
-    component={[Function]}
-    name="teenagers" />
-  <Field
-    component={[Function]}
-    name="children" />
-  <Field
-    component={[Function]}
     name="doubleBedrooms" />
   <Field
     component={[Function]}

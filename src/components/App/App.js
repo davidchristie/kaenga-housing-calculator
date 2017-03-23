@@ -6,6 +6,7 @@ import HomeFloorspace from '../../containers/HomeFloorspace'
 import HomeForm from '../../containers/HomeForm'
 import LivingSpace from '../../containers/LivingSpace'
 import LocationForm from '../../containers/LocationForm'
+import OccupantsForm from '../../containers/OccupantsForm'
 import SharingForm from '../../containers/SharingForm'
 
 class App extends Component {
@@ -26,6 +27,9 @@ class App extends Component {
             <LocationForm suburbs={this.props.suburbs} />
           </Panel>
           <CheapestSuburb />
+          <Panel header='Occupants'>
+            <OccupantsForm />
+          </Panel>
           <Panel header='Home'>
             <HomeForm />
           </Panel>

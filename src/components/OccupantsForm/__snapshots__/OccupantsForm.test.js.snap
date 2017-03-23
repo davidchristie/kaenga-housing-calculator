@@ -1,0 +1,14 @@
+exports[`test matches snapshot 1`] = `
+<form
+  onSubmit={undefined}>
+  <Field
+    component={[Function]}
+    name="adults" />
+  <Field
+    component={[Function]}
+    name="teenagers" />
+  <Field
+    component={[Function]}
+    name="children" />
+</form>
+`;
