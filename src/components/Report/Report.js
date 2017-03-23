@@ -5,6 +5,7 @@ class Report extends Component {
   render () {
     const {
       buildCost,
+      landCost,
       total
     } = this.props
     return (
@@ -13,6 +14,10 @@ class Report extends Component {
         <p>
           Build cost: <strong>${buildCost}</strong>
         </p>
+        <p>
+          Land cost: <strong>${landCost}</strong>
+        </p>
+        <br />
         <p>
           Total: <strong>${total}</strong>
         </p>

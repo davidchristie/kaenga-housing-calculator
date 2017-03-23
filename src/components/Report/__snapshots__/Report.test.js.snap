@@ -12,6 +12,13 @@ exports[`test matches snapshot 1`] = `
     </strong>
   </p>
   <p>
+    Land cost: 
+    <strong>
+      $
+    </strong>
+  </p>
+  <br />
+  <p>
     Total: 
     <strong>
       $
