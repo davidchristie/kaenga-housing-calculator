@@ -3,10 +3,10 @@ import { Grid, Navbar, Panel } from 'react-bootstrap'
 
 import CheapestSuburb from '../../containers/CheapestSuburb'
 import HomeFloorspace from '../../containers/HomeFloorspace'
+import HomeForm from '../../containers/HomeForm'
 import LivingSpace from '../../containers/LivingSpace'
-import HomeForm from '../HomeForm'
-import LocationForm from '../LocationForm'
-import SharingForm from '../SharingForm'
+import LocationForm from '../../containers/LocationForm'
+import SharingForm from '../../containers/SharingForm'
 
 class App extends Component {
   componentWillMount () {

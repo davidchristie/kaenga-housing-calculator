@@ -26,6 +26,4 @@ SharingForm.propTypes = {
   handleSubmit: PropTypes.func
 }
 
-export default reduxForm({
-  form: 'sharing'
-})(SharingForm)
+export default SharingForm

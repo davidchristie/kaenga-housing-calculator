@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { Field, reduxForm } from 'redux-form'
+import { Field } from 'redux-form'
 
 import AdultsField from './AdultsField'
 import BathtubsField from './BathtubsField'
@@ -34,6 +34,4 @@ HomeForm.propTypes = {
   handleSubmit: PropTypes.func
 }
 
-export default reduxForm({
-  form: 'home'
-})(HomeForm)
+export default HomeForm

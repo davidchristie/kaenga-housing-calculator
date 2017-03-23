@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { Field, reduxForm } from 'redux-form'
+import { Field } from 'redux-form'
 
 import SuburbsField from './SuburbsField'
 
@@ -21,6 +21,10 @@ class LocationForm extends Component {
   }
 }
 
+LocationForm.defaultProps = {
+  suburbs: []
+}
+
 LocationForm.propTypes = {
   handleSubmit: PropTypes.func,
   suburbs: PropTypes.arrayOf(
@@ -30,6 +34,4 @@ LocationForm.propTypes = {
   ).isRequired
 }
 
-export default reduxForm({
-  form: 'location'
-})(LocationForm)
+export default LocationForm
