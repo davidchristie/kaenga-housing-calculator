@@ -45,6 +45,7 @@ exports[`test matches snapshot 1`] = `
       <ReduxForm />
     </Panel>
     <Connect(LivingSpace) />
+    <Connect(Report) />
   </Grid>
 </div>
 `;

@@ -1,0 +1,29 @@
+exports[`test matches snapshot 1`] = `
+<Well
+  bsClass="well">
+  <h1>
+    Report
+  </h1>
+  <p>
+    Build cost: 
+    <strong>
+      $
+      0
+    </strong>
+  </p>
+  <p>
+    Land cost: 
+    <strong>
+      $
+    </strong>
+  </p>
+  <br />
+  <p>
+    Total: 
+    <strong>
+      $
+      0
+    </strong>
+  </p>
+</Well>
+`;

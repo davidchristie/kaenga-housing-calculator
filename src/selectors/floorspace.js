@@ -6,6 +6,7 @@ import {
   getStudyFloorspace,
   getToiletFloorspace
 } from '../models/floorspace'
+import { getTotalLivingSpace } from './living-space'
 
 export function getHomeFloorspace (state) {
   const values = state.form.home.values || {}
@@ -17,4 +18,27 @@ export function getHomeFloorspace (state) {
     study: getStudyFloorspace(values.study || 0),
     toilets: getToiletFloorspace(values.toilets || 0)
   }
+}
+
+export function getTotalHomeFloorspace (state) {
+  const {
+    bathtubs,
+    doubleBedrooms,
+    singleBedrooms,
+    showers,
+    study,
+    toilets
+  } = getHomeFloorspace(state)
+  return bathtubs +
+    doubleBedrooms +
+    singleBedrooms +
+    showers +
+    study +
+    toilets
+}
+
+export function getTotalFloorspace (state) {
+  const floorspace = getTotalHomeFloorspace(state)
+  const livingSpace = getTotalLivingSpace(state)
+  return floorspace + livingSpace
 }

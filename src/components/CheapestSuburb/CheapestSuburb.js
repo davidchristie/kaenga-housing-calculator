@@ -10,9 +10,6 @@ class CheapestSuburb extends Component {
         <p>
           Name: <strong>{this.props.name}</strong>
         </p>
-        <p>
-          Average house price: <strong>${this.props.price}</strong>
-        </p>
       </Well>
     )
   }

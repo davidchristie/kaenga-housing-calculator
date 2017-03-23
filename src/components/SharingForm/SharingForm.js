@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import { ControlLabel, FormGroup } from 'react-bootstrap'
-import { Field, reduxForm } from 'redux-form'
+import { Field } from 'redux-form'
 
 import GuestRoomsField from './GuestRoomsField'
 import EntertainmentField from './EntertainmentField'

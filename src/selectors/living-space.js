@@ -1,7 +1,13 @@
 import { getOccupants } from './occupants'
 import { getSharing } from './sharing'
 
-function getTotalLivingSpace (state) {
+export function getLivingSpace (state) {
+  return {
+    total: getTotalLivingSpace(state)
+  }
+}
+
+export function getTotalLivingSpace (state) {
   const {
     adults,
     children,
@@ -26,11 +32,5 @@ function getTotalLivingSpace (state) {
       children * 5 -
       laundries * 3 +
       guestRooms * 2
-  }
-}
-
-export function getLivingSpace (state) {
-  return {
-    total: getTotalLivingSpace(state)
   }
 }

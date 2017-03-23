@@ -7,6 +7,7 @@ import HomeForm from '../../containers/HomeForm'
 import LivingSpace from '../../containers/LivingSpace'
 import LocationForm from '../../containers/LocationForm'
 import OccupantsForm from '../../containers/OccupantsForm'
+import Report from '../../containers/Report'
 import SharingForm from '../../containers/SharingForm'
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
             <SharingForm />
           </Panel>
           <LivingSpace />
+          <Report />
         </Grid>
       </div>
     )
