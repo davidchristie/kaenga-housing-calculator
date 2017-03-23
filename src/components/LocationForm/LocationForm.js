@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { Field, reduxForm } from 'redux-form'
+import { Field } from 'redux-form'
 
 import SuburbsField from './SuburbsField'
 
@@ -11,7 +11,7 @@ class LocationForm extends Component {
           {this.props.suburbs.map((suburb, index) => {
             return (
               <option key={index} value={suburb.name}>
-                {suburb.name}
+                {suburb.name} - ${suburb.price}
               </option>
             )
           })}
@@ -19,6 +19,10 @@ class LocationForm extends Component {
       </form>
     )
   }
+}
+
+LocationForm.defaultProps = {
+  suburbs: []
 }
 
 LocationForm.propTypes = {
@@ -30,6 +34,4 @@ LocationForm.propTypes = {
   ).isRequired
 }
 
-export default reduxForm({
-  form: 'location'
-})(LocationForm)
+export default LocationForm

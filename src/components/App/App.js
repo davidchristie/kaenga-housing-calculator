@@ -1,9 +1,13 @@
 import React, { Component, PropTypes } from 'react'
 import { Grid, Navbar, Panel } from 'react-bootstrap'
 
-import HomeForm from '../HomeForm'
-import LocationForm from '../LocationForm'
-import SharingForm from '../SharingForm'
+import CheapestSuburb from '../../containers/CheapestSuburb'
+import HomeFloorspace from '../../containers/HomeFloorspace'
+import HomeForm from '../../containers/HomeForm'
+import LivingSpace from '../../containers/LivingSpace'
+import LocationForm from '../../containers/LocationForm'
+import OccupantsForm from '../../containers/OccupantsForm'
+import SharingForm from '../../containers/SharingForm'
 
 class App extends Component {
   componentWillMount () {
@@ -22,12 +26,18 @@ class App extends Component {
           <Panel header='Location'>
             <LocationForm suburbs={this.props.suburbs} />
           </Panel>
+          <CheapestSuburb />
+          <Panel header='Occupants'>
+            <OccupantsForm />
+          </Panel>
           <Panel header='Home'>
             <HomeForm />
           </Panel>
+          <HomeFloorspace />
           <Panel header='Sharing'>
             <SharingForm />
           </Panel>
+          <LivingSpace />
         </Grid>
       </div>
     )

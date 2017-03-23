@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import LivingSpaceField from './LivingSpaceField'
+import HomeFloorspace from './HomeFloorspace'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(shallowRenderer.render(<LivingSpaceField />)).toMatchSnapshot()
+  expect(shallowRenderer.render(<HomeFloorspace />)).toMatchSnapshot()
 })

@@ -1,16 +1,23 @@
 exports[`test matches snapshot 1`] = `
-<Connect(Form(HomeForm))
-  destroyOnUnmount={true}
-  enableReinitialize={false}
-  forceUnregisterOnUnmount={false}
-  form="home"
-  getFormState={[Function]}
-  initialValues={undefined}
-  keepDirtyOnReinitialize={false}
-  persistentSubmitErrors={false}
-  pure={true}
-  shouldAsyncValidate={[Function]}
-  shouldValidate={[Function]}
-  touchOnBlur={true}
-  touchOnChange={false} />
+<form
+  onSubmit={undefined}>
+  <Field
+    component={[Function]}
+    name="doubleBedrooms" />
+  <Field
+    component={[Function]}
+    name="singleBedrooms" />
+  <Field
+    component={[Function]}
+    name="study" />
+  <Field
+    component={[Function]}
+    name="bathtubs" />
+  <Field
+    component={[Function]}
+    name="showers" />
+  <Field
+    component={[Function]}
+    name="toilets" />
+</form>
 `;

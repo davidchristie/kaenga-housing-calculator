@@ -21,6 +21,14 @@ exports[`test matches snapshot 1`] = `
       <ReduxForm
         suburbs={Array []} />
     </Panel>
+    <Connect(CheapestSuburb) />
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      defaultExpanded={false}
+      header="Occupants">
+      <ReduxForm />
+    </Panel>
     <Panel
       bsClass="panel"
       bsStyle="default"
@@ -28,6 +36,7 @@ exports[`test matches snapshot 1`] = `
       header="Home">
       <ReduxForm />
     </Panel>
+    <Connect(HomeFloorspace) />
     <Panel
       bsClass="panel"
       bsStyle="default"
@@ -35,6 +44,7 @@ exports[`test matches snapshot 1`] = `
       header="Sharing">
       <ReduxForm />
     </Panel>
+    <Connect(LivingSpace) />
   </Grid>
 </div>
 `;
