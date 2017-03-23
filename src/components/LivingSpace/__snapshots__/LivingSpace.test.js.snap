@@ -7,11 +7,8 @@ exports[`test matches snapshot 1`] = `
   <p>
     Total: 
     <strong>
-      0
-      m
-      <sup>
-        2
-      </sup>
+      <SquareMetres
+        value={0} />
     </strong>
   </p>
 </Well>
