@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import SuburbsField from './SuburbsField'
@@ -7,15 +8,17 @@ class LocationForm extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
-        <Field component={SuburbsField} name='suburbs'>
-          {this.props.suburbs.map((suburb, index) => {
-            return (
-              <option key={index} value={suburb.name}>
-                {suburb.name}
-              </option>
-            )
-          })}
-        </Field>
+        <Panel header='Location'>
+          <Field component={SuburbsField} name='suburbs'>
+            {this.props.suburbs.map((suburb, index) => {
+              return (
+                <option key={index} value={suburb.name}>
+                  {suburb.name}
+                </option>
+              )
+            })}
+          </Field>
+        </Panel>
       </form>
     )
   }

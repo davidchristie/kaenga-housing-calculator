@@ -1,23 +1,29 @@
 exports[`test matches snapshot 1`] = `
 <form
   onSubmit={undefined}>
-  <Field
-    component={[Function]}
-    name="doubleBedrooms" />
-  <Field
-    component={[Function]}
-    name="singleBedrooms" />
-  <Field
-    component={[Function]}
-    name="study" />
-  <Field
-    component={[Function]}
-    name="bathtubs" />
-  <Field
-    component={[Function]}
-    name="showers" />
-  <Field
-    component={[Function]}
-    name="toilets" />
+  <Panel
+    bsClass="panel"
+    bsStyle="default"
+    defaultExpanded={false}
+    header="Home">
+    <Field
+      component={[Function]}
+      name="doubleBedrooms" />
+    <Field
+      component={[Function]}
+      name="singleBedrooms" />
+    <Field
+      component={[Function]}
+      name="study" />
+    <Field
+      component={[Function]}
+      name="bathtubs" />
+    <Field
+      component={[Function]}
+      name="showers" />
+    <Field
+      component={[Function]}
+      name="toilets" />
+  </Panel>
 </form>
 `;

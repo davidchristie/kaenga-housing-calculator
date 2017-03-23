@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { ControlLabel, FormGroup } from 'react-bootstrap'
+import { ControlLabel, FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import GuestRoomsField from './GuestRoomsField'
@@ -11,12 +11,14 @@ class SharingForm extends Component {
     const { handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
-        <FormGroup>
-          <ControlLabel>Are you willing to share:</ControlLabel>
-          <Field component={LaundriesField} name='laundries' />
-          <Field component={GuestRoomsField} name='guestRooms' />
-          <Field component={EntertainmentField} name='entertainment' />
-        </FormGroup>
+        <Panel header='Sharing'>
+          <FormGroup>
+            <ControlLabel>Are you willing to share:</ControlLabel>
+            <Field component={LaundriesField} name='laundries' />
+            <Field component={GuestRoomsField} name='guestRooms' />
+            <Field component={EntertainmentField} name='entertainment' />
+          </FormGroup>
+        </Panel>
       </form>
     )
   }

@@ -1,22 +1,28 @@
 exports[`test matches snapshot 1`] = `
 <form
   onSubmit={undefined}>
-  <FormGroup
-    bsClass="form-group">
-    <ControlLabel
-      bsClass="control-label"
-      srOnly={false}>
-      Are you willing to share:
-    </ControlLabel>
-    <Field
-      component={[Function]}
-      name="laundries" />
-    <Field
-      component={[Function]}
-      name="guestRooms" />
-    <Field
-      component={[Function]}
-      name="entertainment" />
-  </FormGroup>
+  <Panel
+    bsClass="panel"
+    bsStyle="default"
+    defaultExpanded={false}
+    header="Sharing">
+    <FormGroup
+      bsClass="form-group">
+      <ControlLabel
+        bsClass="control-label"
+        srOnly={false}>
+        Are you willing to share:
+      </ControlLabel>
+      <Field
+        component={[Function]}
+        name="laundries" />
+      <Field
+        component={[Function]}
+        name="guestRooms" />
+      <Field
+        component={[Function]}
+        name="entertainment" />
+    </FormGroup>
+  </Panel>
 </form>
 `;
