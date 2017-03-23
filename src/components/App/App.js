@@ -9,6 +9,7 @@ import LocationForm from '../../containers/LocationForm'
 import OccupantsForm from '../../containers/OccupantsForm'
 import Report from '../../containers/Report'
 import SharingForm from '../../containers/SharingForm'
+import HomeFormVariant1 from '../HomeFormVariant1'
 import OccupantsFormVariant1 from '../OccupantsFormVariant1'
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
             <OccupantsForm />
             <OccupantsFormVariant1 />
             <HomeForm />
+            <HomeFormVariant1 />
             <SharingForm />
           </Col>
           <Col md={6}>

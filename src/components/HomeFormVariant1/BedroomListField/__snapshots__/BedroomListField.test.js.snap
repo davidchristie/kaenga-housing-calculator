@@ -7,7 +7,7 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default"
     disabled={false}
     onClick={[Function]}>
-    Add Occupant
+    Add Bedroom
   </Button>
   <ListGroup
     bsClass="list-group" />

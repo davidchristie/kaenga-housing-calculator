@@ -1,22 +1,22 @@
 import React, { Component, PropTypes } from 'react'
 import { Button, ListGroup } from 'react-bootstrap'
 
-import OccupantField from './OccupantField'
+import BathroomField from './BathroomField'
 
-class OccupantListField extends Component {
+class BathroomListField extends Component {
   render () {
     const { fields } = this.props
     return (
       <div>
         <Button onClick={() => fields.push({})}>
-          Add Occupant
+          Add Bathroom
         </Button>
         <ListGroup>
-          {fields.map((occupant, index) =>
-            <OccupantField
+          {fields.map((bathroom, index) =>
+            <BathroomField
+              bathroom={bathroom}
               index={index}
               key={index}
-              occupant={occupant}
               remove={() => fields.remove(index)}
             />
           )}
@@ -26,16 +26,16 @@ class OccupantListField extends Component {
   }
 }
 
-OccupantListField.defaultProps = {
+BathroomListField.defaultProps = {
   fields: {
     map: () => null
   }
 }
 
-OccupantListField.propTypes = {
+BathroomListField.propTypes = {
   fields: PropTypes.shape({
     map: PropTypes.func.isRequired
   }).isRequired
 }
 
-export default OccupantListField
+export default BathroomListField

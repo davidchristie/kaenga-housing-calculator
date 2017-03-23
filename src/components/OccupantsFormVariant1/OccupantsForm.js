@@ -14,14 +14,12 @@ class OccupantsForm extends Component {
             component={OccupantListField}
             name='occupants'
           />
-          <div>
-            <Button
-              disabled={pristine || submitting}
-              onClick={reset}
-            >
-              Clear Occupants
-            </Button>
-          </div>
+          <Button
+            disabled={pristine || submitting}
+            onClick={reset}
+          >
+            Clear Occupants
+          </Button>
         </Panel>
       </form>
     )
