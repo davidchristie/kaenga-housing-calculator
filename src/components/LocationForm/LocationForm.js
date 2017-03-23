@@ -11,7 +11,7 @@ class LocationForm extends Component {
           {this.props.suburbs.map((suburb, index) => {
             return (
               <option key={index} value={suburb.name}>
-                {suburb.name} - ${suburb.price}
+                {suburb.name}
               </option>
             )
           })}
