@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import BathtubsField from './BathtubsField'
@@ -13,12 +14,14 @@ class HomeForm extends Component {
     const { handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
-        <Field component={DoubleBedroomsField} name='doubleBedrooms' />
-        <Field component={SingleBedroomsField} name='singleBedrooms' />
-        <Field component={StudyField} name='study' />
-        <Field component={BathtubsField} name='bathtubs' />
-        <Field component={ShowersField} name='showers' />
-        <Field component={ToiletsField} name='toilets' />
+        <Panel header='Home'>
+          <Field component={DoubleBedroomsField} name='doubleBedrooms' />
+          <Field component={SingleBedroomsField} name='singleBedrooms' />
+          <Field component={StudyField} name='study' />
+          <Field component={BathtubsField} name='bathtubs' />
+          <Field component={ShowersField} name='showers' />
+          <Field component={ToiletsField} name='toilets' />
+        </Panel>
       </form>
     )
   }

@@ -1,10 +1,16 @@
 exports[`test matches snapshot 1`] = `
 <form
   onSubmit={undefined}>
-  <Field
-    component={[Function]}
-    name="suburbs">
-    
-  </Field>
+  <Panel
+    bsClass="panel"
+    bsStyle="default"
+    defaultExpanded={false}
+    header="Location">
+    <Field
+      component={[Function]}
+      name="suburbs">
+      
+    </Field>
+  </Panel>
 </form>
 `;
