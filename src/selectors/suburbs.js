@@ -1,11 +1,10 @@
 export function getCheapestSelectedSuburb (state) {
   const selected = getSelectedSuburbs(state)
-  const prices = selected.map(suburb => {
-    return suburb.price
-  })
-  const min = Math.min(...prices)
+  const min = Math.min(...selected.map(suburb => {
+    return suburb.landCostPerSqmFloorspace
+  }))
   return selected.find(suburb => {
-    return suburb.price === min
+    return suburb.landCostPerSqmFloorspace === min
   })
 }
 
