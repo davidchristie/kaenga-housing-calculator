@@ -1,0 +1,22 @@
+exports[`test matches snapshot 1`] = `
+<ListGroupItem
+  bsClass="list-group-item"
+  listItem={false}>
+  <h4>
+    Occupant #
+    1
+  </h4>
+  <Field
+    component={[Function]}
+    name=".age" />
+  <Button
+    active={false}
+    block={false}
+    bsClass="btn"
+    bsStyle="default"
+    disabled={false}
+    onClick={undefined}>
+    Remove Occupant
+  </Button>
+</ListGroupItem>
+`;

@@ -1,0 +1,17 @@
+exports[`test matches snapshot 1`] = `
+<div>
+  <Button
+    active={false}
+    block={false}
+    bsClass="btn"
+    bsStyle="default"
+    disabled={false}
+    onClick={[Function]}>
+    Add Occupant
+  </Button>
+  <ListGroup
+    bsClass="list-group">
+    
+  </ListGroup>
+</div>
+`;
