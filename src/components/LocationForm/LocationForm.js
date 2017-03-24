@@ -9,7 +9,12 @@ class LocationForm extends Component {
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Location'>
-          <Field component={SelectControl} name='suburbs'>
+          <Field
+            component={SelectControl}
+            label='Suburbs'
+            multiple
+            name='suburbs'
+          >
             {this.props.suburbs.map((suburb, index) => {
               return (
                 <option key={index} value={suburb.name}>

@@ -5,35 +5,40 @@ import {
   FormGroup
 } from 'react-bootstrap'
 
-class AgeField extends Component {
+class SelectControl extends Component {
   render () {
-    const { input: { onChange, value } } = this.props
+    const {
+      input: { onChange, value },
+      label,
+      multiple
+    } = this.props
     return (
       <FormGroup>
-        <ControlLabel>How old is the occupant?</ControlLabel>
+        <ControlLabel>{label}</ControlLabel>
         <FormControl
           componentClass='select'
+          multiple={multiple}
           onChange={onChange}
           value={value}
         >
-          <option value='adult'>Adult</option>
-          <option value='teenager'>Teenager</option>
-          <option value='child'>Child</option>
+          {this.props.children}
         </FormControl>
       </FormGroup>
     )
   }
 }
 
-AgeField.defaultProps = {
+SelectControl.defaultProps = {
   input: {}
 }
 
-AgeField.propTypes = {
+SelectControl.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
-    value: PropTypes.string
-  }).isRequired
+    value: PropTypes.any
+  }).isRequired,
+  label: PropTypes.string,
+  multiple: PropTypes.bool
 }
 
-export default AgeField
+export default SelectControl

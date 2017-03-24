@@ -3,12 +3,11 @@ exports[`test matches snapshot 1`] = `
   bsClass="list-group-item"
   listItem={false}>
   <h4>
-    Occupant #
+    #
     1
   </h4>
-  <Field
-    component={[Function]}
-    name=".age" />
+  <DefaultItemComponent
+    item="" />
   <Button
     active={false}
     block={false}
@@ -16,7 +15,7 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default"
     disabled={false}
     onClick={undefined}>
-    Remove Occupant
+    Remove
   </Button>
 </ListGroupItem>
 `;

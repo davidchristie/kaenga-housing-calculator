@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import SuburbsField from './SuburbsField'
+import SelectControl from './SelectControl'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(shallowRenderer.render(<SuburbsField />)).toMatchSnapshot()
+  expect(shallowRenderer.render(<SelectControl />)).toMatchSnapshot()
 })

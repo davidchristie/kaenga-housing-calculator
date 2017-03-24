@@ -1,1 +1,1 @@
-export { default } from './SuburbsField'
+export { default } from './SelectControl'

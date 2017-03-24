@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import OccupantListField from './OccupantListField'
+import ListItemControl from './ListItemControl'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
   expect(
-    shallowRenderer.render(<OccupantListField />)
+    shallowRenderer.render(<ListItemControl />)
   ).toMatchSnapshot()
 })

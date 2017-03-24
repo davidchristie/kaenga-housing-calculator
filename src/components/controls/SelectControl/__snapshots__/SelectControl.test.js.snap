@@ -3,14 +3,12 @@ exports[`test matches snapshot 1`] = `
   bsClass="form-group">
   <ControlLabel
     bsClass="control-label"
-    srOnly={false}>
-    Suburbs
-  </ControlLabel>
+    srOnly={false} />
   <FormControl
     bsClass="form-control"
     componentClass="select"
-    multiple={true}
+    multiple={undefined}
     onChange={undefined}
-    value={Array []} />
+    value={undefined} />
 </FormGroup>
 `;
