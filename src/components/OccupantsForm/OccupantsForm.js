@@ -2,9 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import AdultsField from './AdultsField'
-import ChildrenField from './ChildrenField'
-import TeenagersField from './TeenagersField'
+import NumberInputControl from '../controls/NumberInputControl'
 
 class OccupantsForm extends Component {
   render () {
@@ -12,9 +10,21 @@ class OccupantsForm extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <Panel header='Occupants'>
-          <Field component={AdultsField} name='adults' />
-          <Field component={TeenagersField} name='teenagers' />
-          <Field component={ChildrenField} name='children' />
+          <Field
+            component={NumberInputControl}
+            label='How many adults will live in your new home?'
+            name='adults'
+          />
+          <Field
+            component={NumberInputControl}
+            label='How many children will live in your new home?'
+            name='teenagers'
+          />
+          <Field
+            component={NumberInputControl}
+            label='How many teenagers will live in your new home?'
+            name='children'
+          />
         </Panel>
       </form>
     )

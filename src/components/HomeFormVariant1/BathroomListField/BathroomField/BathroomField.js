@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Button, ListGroupItem } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import CheckboxControl from './CheckboxControl'
+import CheckboxControl from '../../../controls/CheckboxControl'
 
 class BathroomField extends Component {
   render () {

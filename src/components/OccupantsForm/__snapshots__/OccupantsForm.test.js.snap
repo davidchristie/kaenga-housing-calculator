@@ -8,12 +8,15 @@ exports[`test matches snapshot 1`] = `
     header="Occupants">
     <Field
       component={[Function]}
+      label="How many adults will live in your new home?"
       name="adults" />
     <Field
       component={[Function]}
+      label="How many children will live in your new home?"
       name="teenagers" />
     <Field
       component={[Function]}
+      label="How many teenagers will live in your new home?"
       name="children" />
   </Panel>
 </form>

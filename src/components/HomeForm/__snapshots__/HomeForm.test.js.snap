@@ -8,21 +8,28 @@ exports[`test matches snapshot 1`] = `
     header="Home">
     <Field
       component={[Function]}
+      label="How many double bedrooms do you need?"
       name="doubleBedrooms" />
     <Field
       component={[Function]}
+      label="How many single bedrooms do you need?"
       name="singleBedrooms" />
     <Field
       component={[Function]}
-      name="study" />
+      name="study">
+      Do you need a study?
+    </Field>
     <Field
       component={[Function]}
+      label="How many bathrooms with a bathtub do you need?"
       name="bathtubs" />
     <Field
       component={[Function]}
+      label="How many bathrooms with a shower do you need?"
       name="showers" />
     <Field
       component={[Function]}
+      label="How many stand alone toilets do you need?"
       name="toilets" />
   </Panel>
 </form>

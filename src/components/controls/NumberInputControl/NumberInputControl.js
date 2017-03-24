@@ -1,13 +1,17 @@
 import React, { Component, PropTypes } from 'react'
-import { ControlLabel, FormControl, FormGroup } from 'react-bootstrap'
+import {
+  ControlLabel,
+  FormControl,
+  FormGroup
+} from 'react-bootstrap'
 
-class BathtubsField extends Component {
+class NumberInputControl extends Component {
   render () {
-    const { input: { onChange, value } } = this.props
+    const { input: { onChange, value }, label } = this.props
     return (
       <FormGroup>
         <ControlLabel>
-          How many bathrooms with a bathtub do you need?
+          {label}
         </ControlLabel>
         <FormControl
           componentClass='input'
@@ -21,15 +25,17 @@ class BathtubsField extends Component {
   }
 }
 
-BathtubsField.defaultProps = {
-  input: {}
+NumberInputControl.defaultProps = {
+  input: {},
+  label: ''
 }
 
-BathtubsField.propTypes = {
+NumberInputControl.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
     value: PropTypes.any
-  }).isRequired
+  }).isRequired,
+  label: PropTypes.string
 }
 
-export default BathtubsField
+export default NumberInputControl
