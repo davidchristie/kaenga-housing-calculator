@@ -1,12 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import ListItemControl from './ListItemControl'
+import Item from './Item'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(
-    shallowRenderer.render(<ListItemControl />)
-  ).toMatchSnapshot()
+  expect(shallowRenderer.render(<Item />)).toMatchSnapshot()
 })

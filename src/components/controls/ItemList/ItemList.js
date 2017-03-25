@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import { Button, ListGroup } from 'react-bootstrap'
 
-import ItemControl from './ItemControl'
+import Item from './Item'
 
-class ListItemControl extends Component {
+class ItemList extends Component {
   render () {
     const { defaultItemValues, fields, itemComponent } = this.props
     return (
@@ -13,7 +13,7 @@ class ListItemControl extends Component {
         </Button>
         <ListGroup>
           {fields.map((item, index) =>
-            <ItemControl
+            <Item
               index={index}
               item={item}
               itemComponent={itemComponent}
@@ -33,14 +33,14 @@ class ListItemControl extends Component {
   }
 }
 
-ListItemControl.defaultProps = {
+ItemList.defaultProps = {
   defaultItemValues: {},
   fields: {
     map: () => null
   }
 }
 
-ListItemControl.propTypes = {
+ItemList.propTypes = {
   defaultItemValues: PropTypes.object.isRequired,
   fields: PropTypes.shape({
     map: PropTypes.func.isRequired
@@ -48,4 +48,4 @@ ListItemControl.propTypes = {
   itemComponent: PropTypes.func
 }
 
-export default ListItemControl
+export default ItemList

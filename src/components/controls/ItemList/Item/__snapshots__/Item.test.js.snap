@@ -6,8 +6,6 @@ exports[`test matches snapshot 1`] = `
     #
     1
   </h4>
-  <DefaultItemComponent
-    item="" />
   <Button
     active={false}
     block={false}

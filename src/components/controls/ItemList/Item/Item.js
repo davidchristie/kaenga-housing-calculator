@@ -1,13 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Button, ListGroupItem } from 'react-bootstrap'
 
-class DefaultItemComponent extends Component {
-  render () {
-    return <div />
-  }
-}
-
-class ItemControl extends Component {
+class Item extends Component {
   render () {
     const {
       index,
@@ -18,24 +12,23 @@ class ItemControl extends Component {
     return (
       <ListGroupItem>
         <h4>#{index + 1}</h4>
-        <ItemComponent item={item} />
+        {ItemComponent ? <ItemComponent item={item} /> : null}
         <Button onClick={remove}>Remove</Button>
       </ListGroupItem>
     )
   }
 }
 
-ItemControl.defaultProps = {
+Item.defaultProps = {
   item: '',
-  itemComponent: DefaultItemComponent,
   index: 0
 }
 
-ItemControl.propTypes = {
+Item.propTypes = {
   item: PropTypes.string.isRequired,
-  itemComponent: PropTypes.func.isRequired,
+  itemComponent: PropTypes.func,
   index: PropTypes.number.isRequired,
   remove: PropTypes.func
 }
 
-export default ItemControl
+export default Item
