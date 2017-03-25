@@ -3,7 +3,7 @@ import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Checkbox from '../controls/Checkbox'
-import NumberInputControl from '../controls/NumberInputControl'
+import NumberInput from '../controls/NumberInput'
 
 class HomeForm extends Component {
   render () {
@@ -12,12 +12,12 @@ class HomeForm extends Component {
       <form onSubmit={handleSubmit}>
         <Panel header='Home'>
           <Field
-            component={NumberInputControl}
+            component={NumberInput}
             label='How many double bedrooms do you need?'
             name='doubleBedrooms'
           />
           <Field
-            component={NumberInputControl}
+            component={NumberInput}
             label='How many single bedrooms do you need?'
             name='singleBedrooms'
           />
@@ -27,17 +27,17 @@ class HomeForm extends Component {
             name='study'
           />
           <Field
-            component={NumberInputControl}
+            component={NumberInput}
             label='How many bathrooms with a bathtub do you need?'
             name='bathtubs'
           />
           <Field
-            component={NumberInputControl}
+            component={NumberInput}
             label='How many bathrooms with a shower do you need?'
             name='showers'
           />
           <Field
-            component={NumberInputControl}
+            component={NumberInput}
             label='How many stand alone toilets do you need?'
             name='toilets'
           />

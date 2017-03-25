@@ -5,7 +5,7 @@ import {
   FormGroup
 } from 'react-bootstrap'
 
-class NumberInputControl extends Component {
+class NumberInput extends Component {
   render () {
     const { input: { onChange, value }, label } = this.props
     return (
@@ -25,12 +25,12 @@ class NumberInputControl extends Component {
   }
 }
 
-NumberInputControl.defaultProps = {
+NumberInput.defaultProps = {
   input: {},
   label: ''
 }
 
-NumberInputControl.propTypes = {
+NumberInput.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
     value: PropTypes.any
@@ -38,4 +38,4 @@ NumberInputControl.propTypes = {
   label: PropTypes.string
 }
 
-export default NumberInputControl
+export default NumberInput
