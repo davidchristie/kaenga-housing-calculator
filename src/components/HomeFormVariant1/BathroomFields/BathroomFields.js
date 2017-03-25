@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Field } from 'redux-form'
 
-import CheckboxControl from '../../controls/CheckboxControl'
+import Checkbox from '../../controls/Checkbox'
 
 class BathroomFields extends Component {
   render () {
@@ -9,17 +9,17 @@ class BathroomFields extends Component {
     return (
       <div>
         <Field
-          component={CheckboxControl}
+          component={Checkbox}
           label='Shower'
           name={`${item}.shower`}
         />
         <Field
-          component={CheckboxControl}
+          component={Checkbox}
           label='Bath'
           name={`${item}.bath`}
         />
         <Field
-          component={CheckboxControl}
+          component={Checkbox}
           label='Toilet'
           name={`${item}.toilet`}
         />

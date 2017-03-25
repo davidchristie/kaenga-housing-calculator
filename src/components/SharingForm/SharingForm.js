@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { ControlLabel, FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import CheckboxControl from '../controls/CheckboxControl'
+import Checkbox from '../controls/Checkbox'
 
 class SharingForm extends Component {
   render () {
@@ -13,17 +13,17 @@ class SharingForm extends Component {
           <FormGroup>
             <ControlLabel>Are you willing to share:</ControlLabel>
             <Field
-              component={CheckboxControl}
+              component={Checkbox}
               label='Laundries and outdoor areas'
               name='laundries'
             />
             <Field
-              component={CheckboxControl}
+              component={Checkbox}
               label='Guest rooms'
               name='guestRooms'
             />
             <Field
-              component={CheckboxControl}
+              component={Checkbox}
               label='Entertainment spaces'
               name='entertainment'
             />

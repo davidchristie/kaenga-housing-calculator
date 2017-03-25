@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import CheckboxControl from './CheckboxControl'
+import Checkbox from './Checkbox'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(shallowRenderer.render(<CheckboxControl />)).toMatchSnapshot()
+  expect(shallowRenderer.render(<Checkbox />)).toMatchSnapshot()
 })

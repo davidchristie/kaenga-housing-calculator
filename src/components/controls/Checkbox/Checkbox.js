@@ -1,22 +1,22 @@
 import React, { Component, PropTypes } from 'react'
-import { Checkbox } from 'react-bootstrap'
+import { Checkbox as BootstrapCheckbox } from 'react-bootstrap'
 
-class CheckboxControl extends Component {
+class Checkbox extends Component {
   render () {
     const { input: { onChange, value }, label } = this.props
     return (
-      <Checkbox checked={value} onChange={onChange}>
+      <BootstrapCheckbox checked={value} onChange={onChange}>
         {label}
-      </Checkbox>
+      </BootstrapCheckbox>
     )
   }
 }
 
-CheckboxControl.defaultProps = {
+Checkbox.defaultProps = {
   input: {}
 }
 
-CheckboxControl.propTypes = {
+Checkbox.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
     value: PropTypes.any
@@ -24,4 +24,4 @@ CheckboxControl.propTypes = {
   label: PropTypes.string
 }
 
-export default CheckboxControl
+export default Checkbox

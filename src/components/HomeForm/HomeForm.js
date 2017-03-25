@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import CheckboxControl from '../controls/CheckboxControl'
+import Checkbox from '../controls/Checkbox'
 import NumberInputControl from '../controls/NumberInputControl'
 
 class HomeForm extends Component {
@@ -22,7 +22,7 @@ class HomeForm extends Component {
             name='singleBedrooms'
           />
           <Field
-            component={CheckboxControl}
+            component={Checkbox}
             label='Do you need a study?'
             name='study'
           />
