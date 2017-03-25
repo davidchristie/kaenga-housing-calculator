@@ -21,9 +21,11 @@ class HomeForm extends Component {
             label='How many single bedrooms do you need?'
             name='singleBedrooms'
           />
-          <Field component={CheckboxControl} name='study'>
-            Do you need a study?
-          </Field>
+          <Field
+            component={CheckboxControl}
+            label='Do you need a study?'
+            name='study'
+          />
           <Field
             component={NumberInputControl}
             label='How many bathrooms with a bathtub do you need?'

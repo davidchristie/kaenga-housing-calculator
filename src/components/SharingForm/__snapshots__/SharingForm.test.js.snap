@@ -15,19 +15,16 @@ exports[`test matches snapshot 1`] = `
       </ControlLabel>
       <Field
         component={[Function]}
-        name="laundries">
-        Laundries and outdoor areas
-      </Field>
+        label="Laundries and outdoor areas"
+        name="laundries" />
       <Field
         component={[Function]}
-        name="guestRooms">
-        Guest rooms
-      </Field>
+        label="Guest rooms"
+        name="guestRooms" />
       <Field
         component={[Function]}
-        name="entertainment">
-        Entertainment spaces
-      </Field>
+        label="Entertainment spaces"
+        name="entertainment" />
     </FormGroup>
   </Panel>
 </form>

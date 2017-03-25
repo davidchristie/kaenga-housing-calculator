@@ -10,22 +10,19 @@ class BathroomFields extends Component {
       <div>
         <Field
           component={CheckboxControl}
+          label='Shower'
           name={`${item}.shower`}
-        >
-          Shower
-        </Field>
+        />
         <Field
           component={CheckboxControl}
+          label='Bath'
           name={`${item}.bath`}
-        >
-          Bath
-        </Field>
+        />
         <Field
           component={CheckboxControl}
+          label='Toilet'
           name={`${item}.toilet`}
-        >
-          Toilet
-        </Field>
+        />
       </div>
     )
   }

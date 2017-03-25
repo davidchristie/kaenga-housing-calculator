@@ -12,15 +12,21 @@ class SharingForm extends Component {
         <Panel header='Sharing'>
           <FormGroup>
             <ControlLabel>Are you willing to share:</ControlLabel>
-            <Field component={CheckboxControl} name='laundries'>
-              Laundries and outdoor areas
-            </Field>
-            <Field component={CheckboxControl} name='guestRooms'>
-              Guest rooms
-            </Field>
-            <Field component={CheckboxControl} name='entertainment'>
-              Entertainment spaces
-            </Field>
+            <Field
+              component={CheckboxControl}
+              label='Laundries and outdoor areas'
+              name='laundries'
+            />
+            <Field
+              component={CheckboxControl}
+              label='Guest rooms'
+              name='guestRooms'
+            />
+            <Field
+              component={CheckboxControl}
+              label='Entertainment spaces'
+              name='entertainment'
+            />
           </FormGroup>
         </Panel>
       </form>

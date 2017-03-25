@@ -2,18 +2,15 @@ exports[`test matches snapshot 1`] = `
 <div>
   <Field
     component={[Function]}
-    name=".shower">
-    Shower
-  </Field>
+    label="Shower"
+    name=".shower" />
   <Field
     component={[Function]}
-    name=".bath">
-    Bath
-  </Field>
+    label="Bath"
+    name=".bath" />
   <Field
     component={[Function]}
-    name=".toilet">
-    Toilet
-  </Field>
+    label="Toilet"
+    name=".toilet" />
 </div>
 `;

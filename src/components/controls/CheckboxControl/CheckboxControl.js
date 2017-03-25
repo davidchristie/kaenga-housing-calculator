@@ -3,13 +3,10 @@ import { Checkbox } from 'react-bootstrap'
 
 class CheckboxControl extends Component {
   render () {
-    const { input: { onChange, value } } = this.props
+    const { input: { onChange, value }, label } = this.props
     return (
-      <Checkbox
-        checked={value}
-        onChange={onChange}
-      >
-        {this.props.children}
+      <Checkbox checked={value} onChange={onChange}>
+        {label}
       </Checkbox>
     )
   }
@@ -23,7 +20,8 @@ CheckboxControl.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
     value: PropTypes.any
-  }).isRequired
+  }).isRequired,
+  label: PropTypes.string
 }
 
 export default CheckboxControl
