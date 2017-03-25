@@ -5,7 +5,7 @@ import {
   FormGroup
 } from 'react-bootstrap'
 
-class SelectControl extends Component {
+class Select extends Component {
   render () {
     const {
       input: { onChange, value },
@@ -28,11 +28,11 @@ class SelectControl extends Component {
   }
 }
 
-SelectControl.defaultProps = {
+Select.defaultProps = {
   input: {}
 }
 
-SelectControl.propTypes = {
+Select.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
     value: PropTypes.any
@@ -41,4 +41,4 @@ SelectControl.propTypes = {
   multiple: PropTypes.bool
 }
 
-export default SelectControl
+export default Select

@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import SelectControl from '../controls/SelectControl'
+import Select from '../controls/Select'
 
 class LocationForm extends Component {
   render () {
@@ -10,7 +10,7 @@ class LocationForm extends Component {
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Location'>
           <Field
-            component={SelectControl}
+            component={Select}
             label='Suburbs'
             multiple
             name='suburbs'
