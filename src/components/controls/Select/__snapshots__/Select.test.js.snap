@@ -1,0 +1,14 @@
+exports[`test matches snapshot 1`] = `
+<FormGroup
+  bsClass="form-group">
+  <ControlLabel
+    bsClass="control-label"
+    srOnly={false} />
+  <FormControl
+    bsClass="form-control"
+    componentClass="select"
+    multiple={undefined}
+    onChange={undefined}
+    value={undefined} />
+</FormGroup>
+`;

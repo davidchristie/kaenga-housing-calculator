@@ -2,14 +2,19 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import SuburbsField from './SuburbsField'
+import Select from '../controls/Select'
 
 class LocationForm extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Location'>
-          <Field component={SuburbsField} name='suburbs'>
+          <Field
+            component={Select}
+            label='Suburbs'
+            multiple
+            name='suburbs'
+          >
             {this.props.suburbs.map((suburb, index) => {
               return (
                 <option key={index} value={suburb.name}>

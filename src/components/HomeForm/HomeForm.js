@@ -2,12 +2,8 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import BathtubsField from './BathtubsField'
-import DoubleBedroomsField from './DoubleBedroomsField'
-import SingleBedroomsField from './SingleBedroomsField'
-import ShowersField from './ShowersField'
-import StudyField from './StudyField'
-import ToiletsField from './ToiletsField'
+import Checkbox from '../controls/Checkbox'
+import NumberInput from '../controls/NumberInput'
 
 class HomeForm extends Component {
   render () {
@@ -15,12 +11,36 @@ class HomeForm extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <Panel header='Home'>
-          <Field component={DoubleBedroomsField} name='doubleBedrooms' />
-          <Field component={SingleBedroomsField} name='singleBedrooms' />
-          <Field component={StudyField} name='study' />
-          <Field component={BathtubsField} name='bathtubs' />
-          <Field component={ShowersField} name='showers' />
-          <Field component={ToiletsField} name='toilets' />
+          <Field
+            component={NumberInput}
+            label='How many double bedrooms do you need?'
+            name='doubleBedrooms'
+          />
+          <Field
+            component={NumberInput}
+            label='How many single bedrooms do you need?'
+            name='singleBedrooms'
+          />
+          <Field
+            component={Checkbox}
+            label='Do you need a study?'
+            name='study'
+          />
+          <Field
+            component={NumberInput}
+            label='How many bathrooms with a bathtub do you need?'
+            name='bathtubs'
+          />
+          <Field
+            component={NumberInput}
+            label='How many bathrooms with a shower do you need?'
+            name='showers'
+          />
+          <Field
+            component={NumberInput}
+            label='How many stand alone toilets do you need?'
+            name='toilets'
+          />
         </Panel>
       </form>
     )

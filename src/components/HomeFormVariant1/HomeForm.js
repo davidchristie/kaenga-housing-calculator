@@ -1,34 +1,39 @@
 import React, { Component, PropTypes } from 'react'
-import { Button, Panel } from 'react-bootstrap'
+import { Panel, Well } from 'react-bootstrap'
 import { FieldArray, reduxForm } from 'redux-form'
 
-import BathroomListField from './BathroomListField'
-import BedroomListField from './BedroomListField'
+import ItemList from '../controls/ItemList'
+import BathroomFields from './BathroomFields'
+import BedroomFields from './BedroomFields'
 
 class HomeForm extends Component {
   render () {
-    const { handleSubmit, pristine, reset, submitting } = this.props
+    const { handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
         <Panel bsStyle='warning' header='Home (Variant #1)'>
-          <Panel header='Bedrooms'>
+          <Well>
+            <h4>Bedrooms</h4>
             <FieldArray
-              component={BedroomListField}
+              component={ItemList}
+              defaultItemValues={{size: 'double'}}
+              itemComponent={BedroomFields}
               name='bedrooms'
             />
-          </Panel>
-          <Panel header='Bathrooms'>
+          </Well>
+          <Well>
+            <h4>Bathrooms</h4>
             <FieldArray
-              component={BathroomListField}
+              component={ItemList}
+              defaultItemValues={{
+                bath: false,
+                shower: false,
+                toilet: true
+              }}
+              itemComponent={BathroomFields}
               name='bathrooms'
             />
-          </Panel>
-          <Button
-            disabled={pristine || submitting}
-            onClick={reset}
-            >
-            Clear
-          </Button>
+          </Well>
         </Panel>
       </form>
     )

@@ -2,9 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { ControlLabel, FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import GuestRoomsField from './GuestRoomsField'
-import EntertainmentField from './EntertainmentField'
-import LaundriesField from './LaundriesField'
+import Checkbox from '../controls/Checkbox'
 
 class SharingForm extends Component {
   render () {
@@ -14,9 +12,21 @@ class SharingForm extends Component {
         <Panel header='Sharing'>
           <FormGroup>
             <ControlLabel>Are you willing to share:</ControlLabel>
-            <Field component={LaundriesField} name='laundries' />
-            <Field component={GuestRoomsField} name='guestRooms' />
-            <Field component={EntertainmentField} name='entertainment' />
+            <Field
+              component={Checkbox}
+              label='Laundries and outdoor areas'
+              name='laundries'
+            />
+            <Field
+              component={Checkbox}
+              label='Guest rooms'
+              name='guestRooms'
+            />
+            <Field
+              component={Checkbox}
+              label='Entertainment spaces'
+              name='entertainment'
+            />
           </FormGroup>
         </Panel>
       </form>

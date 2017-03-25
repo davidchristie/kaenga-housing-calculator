@@ -8,6 +8,8 @@ exports[`test matches snapshot 1`] = `
     header="Location">
     <Field
       component={[Function]}
+      label="Suburbs"
+      multiple={true}
       name="suburbs">
       
     </Field>
