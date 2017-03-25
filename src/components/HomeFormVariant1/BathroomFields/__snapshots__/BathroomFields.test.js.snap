@@ -1,0 +1,19 @@
+exports[`test matches snapshot 1`] = `
+<div>
+  <Field
+    component={[Function]}
+    name=".shower">
+    Shower
+  </Field>
+  <Field
+    component={[Function]}
+    name=".bath">
+    Bath
+  </Field>
+  <Field
+    component={[Function]}
+    name=".toilet">
+    Toilet
+  </Field>
+</div>
+`;

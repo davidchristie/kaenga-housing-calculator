@@ -6,8 +6,8 @@ class CheckboxControl extends Component {
     const { input: { onChange, value } } = this.props
     return (
       <Checkbox
+        checked={value}
         onChange={onChange}
-        value={value}
       >
         {this.props.children}
       </Checkbox>

@@ -1,8 +1,8 @@
 exports[`test matches snapshot 1`] = `
 <Checkbox
   bsClass="checkbox"
+  checked={undefined}
   disabled={false}
   inline={false}
-  onChange={undefined}
-  value={undefined} />
+  onChange={undefined} />
 `;

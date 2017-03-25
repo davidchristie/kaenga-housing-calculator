@@ -18,7 +18,10 @@ class ListItemControl extends Component {
               item={item}
               itemComponent={itemComponent}
               key={index}
-              remove={() => fields.remove(index)}
+              remove={() => {
+                console.log(index)
+                fields.remove(index)
+              }}
             />
           )}
         </ListGroup>

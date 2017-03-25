@@ -3,7 +3,7 @@ import { Panel, Well } from 'react-bootstrap'
 import { FieldArray, reduxForm } from 'redux-form'
 
 import ItemListControl from '../controls/ItemListControl'
-import BathroomListField from './BathroomListField'
+import BathroomFields from './BathroomFields'
 import BedroomFields from './BedroomFields'
 
 class HomeForm extends Component {
@@ -24,7 +24,13 @@ class HomeForm extends Component {
           <Well>
             <h4>Bathrooms</h4>
             <FieldArray
-              component={BathroomListField}
+              component={ItemListControl}
+              defaultItemValues={{
+                bath: false,
+                shower: false,
+                toilet: true
+              }}
+              itemComponent={BathroomFields}
               name='bathrooms'
             />
           </Well>
