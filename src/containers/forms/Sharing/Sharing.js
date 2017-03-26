@@ -1,7 +1,7 @@
 import { reduxForm } from 'redux-form'
 
-import SharingForm from '../../components/SharingForm'
+import Sharing from '../../../components/forms/Sharing'
 
 export default reduxForm({
   form: 'sharing'
-})(SharingForm)
+})(Sharing)

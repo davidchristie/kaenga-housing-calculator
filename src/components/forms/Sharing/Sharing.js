@@ -2,9 +2,9 @@ import React, { Component, PropTypes } from 'react'
 import { ControlLabel, FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import Checkbox from '../controls/Checkbox'
+import Checkbox from '../../controls/Checkbox'
 
-class SharingForm extends Component {
+class Sharing extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -34,8 +34,8 @@ class SharingForm extends Component {
   }
 }
 
-SharingForm.propTypes = {
+Sharing.propTypes = {
   handleSubmit: PropTypes.func
 }
 
-export default SharingForm
+export default Sharing
