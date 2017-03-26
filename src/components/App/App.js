@@ -22,7 +22,7 @@ class App extends Component {
       <div className='App'>
         <Navbar>
           <Navbar.Header>
-            <Navbar.Brand>Kaenga Housing Calculator</Navbar.Brand>
+            <Navbar.Brand>Kāenga Housing Calculator</Navbar.Brand>
           </Navbar.Header>
         </Navbar>
         <Grid>
