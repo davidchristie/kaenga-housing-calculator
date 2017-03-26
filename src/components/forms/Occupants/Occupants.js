@@ -2,9 +2,9 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import NumberInput from '../controls/NumberInput'
+import NumberInput from '../../controls/NumberInput'
 
-class OccupantsForm extends Component {
+class Occupants extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -31,8 +31,8 @@ class OccupantsForm extends Component {
   }
 }
 
-OccupantsForm.propTypes = {
+Occupants.propTypes = {
   handleSubmit: PropTypes.func
 }
 
-export default OccupantsForm
+export default Occupants

@@ -1,7 +1,7 @@
 import { reduxForm } from 'redux-form'
 
-import OccupantsForm from '../../components/OccupantsForm'
+import Occupants from '../../../components/forms/Occupants'
 
 export default reduxForm({
   form: 'occupants'
-})(OccupantsForm)
+})(Occupants)

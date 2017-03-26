@@ -2,10 +2,10 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { FieldArray, reduxForm } from 'redux-form'
 
-import ItemList from '../controls/ItemList'
+import ItemList from '../../controls/ItemList'
 import OccupantFields from './OccupantFields'
 
-class OccupantsForm extends Component {
+class Occupants extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -23,10 +23,10 @@ class OccupantsForm extends Component {
   }
 }
 
-OccupantsForm.propTypes = {
+Occupants.propTypes = {
   handleSubmit: PropTypes.func
 }
 
 export default reduxForm({
   form: 'occupantsVariant1'
-})(OccupantsForm)
+})(Occupants)
