@@ -2,10 +2,10 @@ import React, { Component, PropTypes } from 'react'
 import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import Checkbox from '../controls/Checkbox'
-import NumberInput from '../controls/NumberInput'
+import Checkbox from '../../controls/Checkbox'
+import NumberInput from '../../controls/NumberInput'
 
-class HomeForm extends Component {
+class Home extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -47,8 +47,8 @@ class HomeForm extends Component {
   }
 }
 
-HomeForm.propTypes = {
+Home.propTypes = {
   handleSubmit: PropTypes.func
 }
 
-export default HomeForm
+export default Home

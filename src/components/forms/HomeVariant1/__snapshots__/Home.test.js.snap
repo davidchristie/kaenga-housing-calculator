@@ -1,5 +1,5 @@
 exports[`test matches snapshot 1`] = `
-<Connect(Form(HomeForm))
+<Connect(Form(Home))
   destroyOnUnmount={true}
   enableReinitialize={false}
   forceUnregisterOnUnmount={false}

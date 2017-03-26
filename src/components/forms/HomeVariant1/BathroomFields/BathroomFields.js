@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Field } from 'redux-form'
 
-import Checkbox from '../../controls/Checkbox'
+import Checkbox from '../../../controls/Checkbox'
 
 class BathroomFields extends Component {
   render () {

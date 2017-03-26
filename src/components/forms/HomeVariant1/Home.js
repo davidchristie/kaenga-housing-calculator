@@ -2,11 +2,11 @@ import React, { Component, PropTypes } from 'react'
 import { Panel, Well } from 'react-bootstrap'
 import { FieldArray, reduxForm } from 'redux-form'
 
-import ItemList from '../controls/ItemList'
+import ItemList from '../../controls/ItemList'
 import BathroomFields from './BathroomFields'
 import BedroomFields from './BedroomFields'
 
-class HomeForm extends Component {
+class Home extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -40,10 +40,10 @@ class HomeForm extends Component {
   }
 }
 
-HomeForm.propTypes = {
+Home.propTypes = {
   handleSubmit: PropTypes.func
 }
 
 export default reduxForm({
   form: 'homeVariant1'
-})(HomeForm)
+})(Home)

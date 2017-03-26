@@ -2,14 +2,14 @@ import React, { Component, PropTypes } from 'react'
 import { Col, Grid, Navbar } from 'react-bootstrap'
 
 import CheapestSuburb from '../../containers/CheapestSuburb'
-import HomeFloorspace from '../../containers/HomeFloorspace'
-import HomeForm from '../../containers/HomeForm'
-import LivingSpace from '../../containers/LivingSpace'
+import HomeForm from '../../containers/forms/Home'
 import LocationForm from '../../containers/forms/Location'
+import HomeFloorspace from '../../containers/HomeFloorspace'
+import LivingSpace from '../../containers/LivingSpace'
 import OccupantsForm from '../../containers/OccupantsForm'
 import Report from '../../containers/Report'
 import SharingForm from '../../containers/SharingForm'
-import HomeFormVariant1 from '../HomeFormVariant1'
+import HomeVariant1 from '../forms/HomeVariant1'
 import OccupantsFormVariant1 from '../OccupantsFormVariant1'
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
             <OccupantsForm />
             <OccupantsFormVariant1 />
             <HomeForm />
-            <HomeFormVariant1 />
+            <HomeVariant1 />
             <SharingForm />
           </Col>
           <Col md={6}>

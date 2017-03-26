@@ -1,7 +1,7 @@
 import { reduxForm } from 'redux-form'
 
-import HomeForm from '../../components/HomeForm'
+import Home from '../../../components/forms/Home'
 
 export default reduxForm({
   form: 'home'
-})(HomeForm)
+})(Home)

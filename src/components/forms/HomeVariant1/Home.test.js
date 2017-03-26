@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import HomeForm from './HomeForm'
+import Home from './Home'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(shallowRenderer.render(<HomeForm />)).toMatchSnapshot()
+  expect(shallowRenderer.render(<Home />)).toMatchSnapshot()
 })

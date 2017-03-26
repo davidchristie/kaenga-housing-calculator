@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Field } from 'redux-form'
 
-import Select from '../../controls/Select'
+import Select from '../../../controls/Select'
 
 class BedroomFields extends Component {
   render () {
