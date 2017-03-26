@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Well } from 'react-bootstrap'
 
-import SquareMetres from '../SquareMetres'
+import Area from '../units/Area'
 
 class LivingSpace extends Component {
   render () {
@@ -13,7 +13,7 @@ class LivingSpace extends Component {
         <h1>Living space</h1>
         <p>
           <span>Total (including kitchens): </span>
-          <strong><SquareMetres value={total} /></strong>
+          <strong><Area value={total} /></strong>
         </p>
       </Well>
     )

@@ -3,7 +3,7 @@
 import React, { Component, PropTypes } from 'react'
 import { FormattedNumber } from 'react-intl'
 
-class SquareMetres extends Component {
+class Area extends Component {
   render () {
     const { value } = this.props
     return (
@@ -17,12 +17,12 @@ class SquareMetres extends Component {
   }
 }
 
-SquareMetres.defaultProps = {
+Area.defaultProps = {
   value: 0
 }
 
-SquareMetres.propTypes = {
+Area.propTypes = {
   value: PropTypes.number.isRequired
 }
 
-export default SquareMetres
+export default Area

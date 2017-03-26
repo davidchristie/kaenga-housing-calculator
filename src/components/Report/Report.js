@@ -3,7 +3,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Well } from 'react-bootstrap'
 
-import Currency from '../Currency'
+import Currency from '../units/Currency'
 
 class Report extends Component {
   render () {
