@@ -14,7 +14,7 @@ class Select extends Component {
     } = this.props
     return (
       <FormGroup>
-        <ControlLabel>{label}</ControlLabel>
+        {label ? <ControlLabel>{label}</ControlLabel> : null}
         <FormControl
           componentClass='select'
           multiple={multiple}

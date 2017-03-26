@@ -1,17 +1,21 @@
 import React, { Component, PropTypes } from 'react'
-import { Panel } from 'react-bootstrap'
+import { Button, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
-import Select from '../controls/Select'
+import Select from '../../controls/Select'
 
-class LocationForm extends Component {
+class Location extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Location'>
+          <h4>City</h4>
+          <Button active>Auckland</Button>
+          <Button disabled>Wellington</Button>
+          <Button disabled>Christchurch</Button>
+          <h4>Suburbs</h4>
           <Field
             component={Select}
-            label='Suburbs'
             multiple
             name='suburbs'
           >
@@ -29,11 +33,11 @@ class LocationForm extends Component {
   }
 }
 
-LocationForm.defaultProps = {
+Location.defaultProps = {
   suburbs: []
 }
 
-LocationForm.propTypes = {
+Location.propTypes = {
   handleSubmit: PropTypes.func,
   suburbs: PropTypes.arrayOf(
     PropTypes.shape({
@@ -42,4 +46,4 @@ LocationForm.propTypes = {
   ).isRequired
 }
 
-export default LocationForm
+export default Location

@@ -5,7 +5,7 @@ import CheapestSuburb from '../../containers/CheapestSuburb'
 import HomeFloorspace from '../../containers/HomeFloorspace'
 import HomeForm from '../../containers/HomeForm'
 import LivingSpace from '../../containers/LivingSpace'
-import LocationForm from '../../containers/LocationForm'
+import LocationForm from '../../containers/forms/Location'
 import OccupantsForm from '../../containers/OccupantsForm'
 import Report from '../../containers/Report'
 import SharingForm from '../../containers/SharingForm'
@@ -27,7 +27,7 @@ class App extends Component {
         </Navbar>
         <Grid>
           <Col md={6}>
-            <LocationForm suburbs={this.props.suburbs} />
+            <LocationForm />
             <OccupantsForm />
             <OccupantsFormVariant1 />
             <HomeForm />
@@ -47,13 +47,11 @@ class App extends Component {
 }
 
 App.defaultProps = {
-  loadSuburbs: () => {},
-  suburbs: []
+  loadSuburbs: () => {}
 }
 
 App.propTypes = {
-  loadSuburbs: PropTypes.func.isRequired,
-  suburbs: PropTypes.any.isRequired
+  loadSuburbs: PropTypes.func.isRequired
 }
 
 export default App

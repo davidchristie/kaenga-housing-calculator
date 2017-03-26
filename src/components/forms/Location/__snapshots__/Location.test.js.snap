@@ -1,0 +1,47 @@
+exports[`test matches snapshot 1`] = `
+<form
+  onSubmit={undefined}>
+  <Panel
+    bsClass="panel"
+    bsStyle="default"
+    defaultExpanded={false}
+    header="Location">
+    <h4>
+      City
+    </h4>
+    <Button
+      active={true}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={false}>
+      Auckland
+    </Button>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={true}>
+      Wellington
+    </Button>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={true}>
+      Christchurch
+    </Button>
+    <h4>
+      Suburbs
+    </h4>
+    <Field
+      component={[Function]}
+      multiple={true}
+      name="suburbs">
+      
+    </Field>
+  </Panel>
+</form>
+`;
