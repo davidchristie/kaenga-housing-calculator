@@ -1,8 +1,8 @@
 # kaenga-housing-calculator
 
-## Running Locally
+## Run Locally
 
-Make sure you have [Git](https://git-scm.com/) and [Node.js](http://nodejs.org/) installed.
+Make sure you have [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/) installed.
 
 ```sh
 git clone https://github.com/davidchristie/kaenga-housing-calculator.git
