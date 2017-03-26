@@ -5,7 +5,7 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default">
     <NavbarHeader>
       <NavbarBrand>
-        Kaenga Housing Calculator
+        Kāenga Housing Calculator
       </NavbarBrand>
     </NavbarHeader>
   </Uncontrolled(Navbar)>

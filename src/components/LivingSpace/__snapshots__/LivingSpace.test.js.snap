@@ -9,7 +9,7 @@ exports[`test matches snapshot 1`] = `
       Total (including kitchens): 
     </span>
     <strong>
-      <SquareMetres
+      <Area
         value={0} />
     </strong>
   </p>
