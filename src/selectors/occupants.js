@@ -1,5 +1,7 @@
 export function getOccupants (state) {
-  const values = state.form.occupants.values || {}
+  const form = state.form || {}
+  const occupants = form.occupants || {}
+  const values = occupants.values || {}
   return {
     adults: values.adults || 0,
     children: values.children || 0,

@@ -1,35 +1,27 @@
 import React, { Component } from 'react'
 import { Col, Grid } from 'react-bootstrap'
 
-import HomeForm from '../../../containers/forms/Home'
-import LocationForm from '../../../containers/forms/Location'
-import OccupantsForm from '../../../containers/forms/Occupants'
-import SharingForm from '../../../containers/forms/Sharing'
-import CheapestSuburb from '../../../containers/reports/CheapestSuburb'
-import HomeFloorspace from '../../../containers/reports/HomeFloorspace'
-import LivingSpace from '../../../containers/reports/LivingSpace'
-import TotalCost from '../../../containers/reports/TotalCost'
-import HomeFormVariant1 from '../../forms/HomeVariant1'
-import OccupantsFormVariant1 from '../../forms/OccupantsVariant1'
+import Home from '../../../containers/forms/Home'
+import Location from '../../../containers/forms/Location'
+import Occupants from '../../../containers/forms/Occupants'
+import Sharing from '../../../containers/forms/Sharing'
+import HomeVariant1 from '../../forms/HomeVariant1'
+import OccupantsVariant1 from '../../forms/OccupantsVariant1'
 
 class Main extends Component {
   render () {
     return (
       <Grid>
-        <Col md={6}>
-          <LocationForm />
-          <OccupantsForm />
-          <OccupantsFormVariant1 />
-          <HomeForm />
-          <HomeFormVariant1 />
-          <SharingForm />
+        <Col md={2} />
+        <Col md={8}>
+          <Location />
+          <Occupants />
+          <OccupantsVariant1 />
+          <Home />
+          <HomeVariant1 />
+          <Sharing />
         </Col>
-        <Col md={6}>
-          <CheapestSuburb />
-          <HomeFloorspace />
-          <LivingSpace />
-          <TotalCost />
-        </Col>
+        <Col md={2} />
       </Grid>
     )
   }

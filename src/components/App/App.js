@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import { Navbar } from 'react-bootstrap'
+import { Nav, Navbar, NavItem } from 'react-bootstrap'
+import { Link } from 'react-router'
+import { LinkContainer } from 'react-router-bootstrap'
 
 class App extends Component {
   componentWillMount () {
@@ -11,8 +13,15 @@ class App extends Component {
       <div className='App'>
         <Navbar>
           <Navbar.Header>
-            <Navbar.Brand>Kāenga Housing Calculator</Navbar.Brand>
+            <Link to='/'>
+              <Navbar.Brand>Kāenga Housing Calculator</Navbar.Brand>
+            </Link>
           </Navbar.Header>
+          <Nav pullRight>
+            <LinkContainer to='/report'>
+              <NavItem>Report</NavItem>
+            </LinkContainer>
+          </Nav>
         </Navbar>
         {this.props.children}
       </div>

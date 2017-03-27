@@ -9,7 +9,9 @@ import {
 import { getTotalLivingSpace } from './living-space'
 
 export function getHomeFloorspace (state) {
-  const values = state.form.home.values || {}
+  const form = state.form || {}
+  const home = form.home || {}
+  const values = home.values || {}
   return {
     bathtubs: getBathtubFloorspace(values.bathtubs || 0),
     doubleBedrooms: getDoubleBedroomFloorspace(values.doubleBedrooms || 0),
