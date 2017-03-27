@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Grid } from 'react-bootstrap'
+import { Col, Grid, Jumbotron } from 'react-bootstrap'
 
 import CheapestSuburb from '../../../containers/reports/CheapestSuburb'
 import HomeFloorspace from '../../../containers/reports/HomeFloorspace'
@@ -12,6 +12,9 @@ class Report extends Component {
       <Grid>
         <Col md={2} />
         <Col md={8}>
+          <Jumbotron>
+            <h1>Report</h1>
+          </Jumbotron>
           <CheapestSuburb />
           <HomeFloorspace />
           <LivingSpace />

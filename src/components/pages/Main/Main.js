@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Grid } from 'react-bootstrap'
+import { Button, Col, Grid, Jumbotron } from 'react-bootstrap'
 
 import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
@@ -14,6 +14,17 @@ class Main extends Component {
       <Grid>
         <Col md={2} />
         <Col md={8}>
+          <Jumbotron>
+            <h1>Housing Calculator</h1>
+            <p>
+              <Button
+                bsStyle='primary'
+                href='http://www.kaenga.com/'
+              >
+                Learn more
+              </Button>
+            </p>
+          </Jumbotron>
           <Location />
           <Occupants />
           <OccupantsVariant1 />

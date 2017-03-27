@@ -1,9 +1,10 @@
 import React, { Component, PropTypes } from 'react'
-import { Label, Nav, Navbar, NavItem } from 'react-bootstrap'
+import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap'
 
 import Currency from '../units/Currency'
+import './App.css'
 
 class App extends Component {
   componentWillMount () {

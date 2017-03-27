@@ -11,6 +11,13 @@ exports[`test matches snapshot 1`] = `
     bsClass="col"
     componentClass="div"
     md={8}>
+    <Jumbotron
+      bsClass="jumbotron"
+      componentClass="div">
+      <h1>
+        Report
+      </h1>
+    </Jumbotron>
     <Connect(CheapestSuburb) />
     <Connect(HomeFloorspace) />
     <Connect(LivingSpace) />
