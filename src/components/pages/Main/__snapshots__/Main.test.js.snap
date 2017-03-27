@@ -1,0 +1,27 @@
+exports[`test matches snapshot 1`] = `
+<Grid
+  bsClass="container"
+  componentClass="div"
+  fluid={false}>
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={6}>
+    <Connect(ReduxForm) />
+    <ReduxForm />
+    <ReduxForm />
+    <ReduxForm />
+    <ReduxForm />
+    <ReduxForm />
+  </Col>
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={6}>
+    <Connect(CheapestSuburb) />
+    <Connect(HomeFloorspace) />
+    <Connect(LivingSpace) />
+    <Connect(TotalCost) />
+  </Col>
+</Grid>
+`;

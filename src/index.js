@@ -2,14 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { IntlProvider } from 'react-intl'
 import { Provider } from 'react-redux'
+import { Router } from 'react-router'
 
-import App from './containers/App'
+import history from './history'
+import routes from './routes'
 import store from './store'
 
 ReactDOM.render(
   <Provider store={store}>
     <IntlProvider locale='en'>
-      <App />
+      <Router history={history} routes={routes} />
     </IntlProvider>
   </Provider>,
   document.getElementById('root')
