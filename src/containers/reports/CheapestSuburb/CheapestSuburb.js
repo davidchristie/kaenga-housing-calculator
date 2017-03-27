@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
-import CheapestSuburb from '../../components/CheapestSuburb'
-import { getCheapestSelectedSuburb } from '../../selectors/suburbs'
+import CheapestSuburb from '../../../components/reports/CheapestSuburb'
+import { getCheapestSelectedSuburb } from '../../../selectors/suburbs'
 
 export default connect(
   state => {

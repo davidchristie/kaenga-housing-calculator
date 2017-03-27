@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Well } from 'react-bootstrap'
 
-import Area from '../units/Area'
+import Area from '../../units/Area'
 
 const floorspaceItem = (name, area) => {
   if (!area) return null

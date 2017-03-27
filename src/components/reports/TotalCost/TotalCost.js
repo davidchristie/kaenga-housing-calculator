@@ -3,9 +3,9 @@
 import React, { Component, PropTypes } from 'react'
 import { Well } from 'react-bootstrap'
 
-import Currency from '../units/Currency'
+import Currency from '../../units/Currency'
 
-class Report extends Component {
+class TotalCost extends Component {
   render () {
     const {
       buildCost,
@@ -14,7 +14,7 @@ class Report extends Component {
     } = this.props
     return (
       <Well>
-        <h1>Report</h1>
+        <h1>Total Cost</h1>
         <p>
           Build cost: <strong><Currency value={buildCost} /></strong>
         </p>
@@ -30,14 +30,14 @@ class Report extends Component {
   }
 }
 
-Report.defaultProps = {
+TotalCost.defaultProps = {
   buildCost: 0,
   total: 0
 }
 
-Report.propTypes = {
+TotalCost.propTypes = {
   buildCost: PropTypes.number,
   total: PropTypes.number
 }
 
-export default Report
+export default TotalCost
