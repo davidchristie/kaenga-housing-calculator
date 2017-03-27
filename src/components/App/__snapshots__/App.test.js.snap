@@ -31,7 +31,7 @@ exports[`test matches snapshot 1`] = `
       <Connect(CheapestSuburb) />
       <Connect(HomeFloorspace) />
       <Connect(LivingSpace) />
-      <Connect(Report) />
+      <Connect(TotalCost) />
     </Col>
   </Grid>
 </div>

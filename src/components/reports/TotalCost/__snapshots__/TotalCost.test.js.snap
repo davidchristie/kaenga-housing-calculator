@@ -2,7 +2,7 @@ exports[`test matches snapshot 1`] = `
 <Well
   bsClass="well">
   <h1>
-    Report
+    Total Cost
   </h1>
   <p>
     Build cost: 

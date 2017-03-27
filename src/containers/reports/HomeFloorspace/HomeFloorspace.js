@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
-import HomeFloorspace from '../../components/HomeFloorspace'
-import { getHomeFloorspace } from '../../selectors/floorspace'
+import HomeFloorspace from '../../../components/reports/HomeFloorspace'
+import { getHomeFloorspace } from '../../../selectors/floorspace'
 
 export default connect(
   state => {

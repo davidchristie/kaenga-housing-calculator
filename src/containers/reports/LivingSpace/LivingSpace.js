@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
-import LivingSpace from '../../components/LivingSpace'
-import { getLivingSpace } from '../../selectors/living-space'
+import LivingSpace from '../../../components/reports/LivingSpace'
+import { getLivingSpace } from '../../../selectors/living-space'
 
 export default connect(
   state => {

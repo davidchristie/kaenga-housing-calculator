@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
-import Report from '../../components/Report'
-import { getReport } from '../../selectors/report'
+import Report from '../../../components/reports/TotalCost'
+import { getReport } from '../../../selectors/report'
 
 export default connect(
   state => {
