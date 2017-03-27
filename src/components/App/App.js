@@ -1,16 +1,10 @@
 import React, { Component, PropTypes } from 'react'
-import { Col, Grid, Navbar } from 'react-bootstrap'
+import { Nav, Navbar, NavItem } from 'react-bootstrap'
+import { Link } from 'react-router'
+import { LinkContainer } from 'react-router-bootstrap'
 
-import HomeForm from '../../containers/forms/Home'
-import LocationForm from '../../containers/forms/Location'
-import OccupantsForm from '../../containers/forms/Occupants'
-import SharingForm from '../../containers/forms/Sharing'
-import CheapestSuburb from '../../containers/reports/CheapestSuburb'
-import HomeFloorspace from '../../containers/reports/HomeFloorspace'
-import LivingSpace from '../../containers/reports/LivingSpace'
-import TotalCost from '../../containers/reports/TotalCost'
-import HomeFormVariant1 from '../forms/HomeVariant1'
-import OccupantsFormVariant1 from '../forms/OccupantsVariant1'
+import Currency from '../units/Currency'
+import './App.css'
 
 class App extends Component {
   componentWillMount () {
@@ -18,29 +12,30 @@ class App extends Component {
   }
 
   render () {
+    const { totalCost } = this.props
     return (
       <div className='App'>
-        <Navbar>
+        <Navbar fixedTop>
           <Navbar.Header>
-            <Navbar.Brand>Kāenga Housing Calculator</Navbar.Brand>
+            <Link to='/'>
+              <Navbar.Brand>Kāenga</Navbar.Brand>
+            </Link>
+            <Navbar.Toggle />
           </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav bsStyle='tabs' pullRight>
+              <LinkContainer to='/report'>
+                <NavItem>
+                  <span>Price: </span>
+                  <strong>
+                    <Currency value={totalCost} />
+                  </strong>
+                </NavItem>
+              </LinkContainer>
+            </Nav>
+          </Navbar.Collapse>
         </Navbar>
-        <Grid>
-          <Col md={6}>
-            <LocationForm />
-            <OccupantsForm />
-            <OccupantsFormVariant1 />
-            <HomeForm />
-            <HomeFormVariant1 />
-            <SharingForm />
-          </Col>
-          <Col md={6}>
-            <CheapestSuburb />
-            <HomeFloorspace />
-            <LivingSpace />
-            <TotalCost />
-          </Col>
-        </Grid>
+        {this.props.children}
       </div>
     )
   }

@@ -12,6 +12,7 @@ export default connect(
   }
 )(
   reduxForm({
+    destroyOnUnmount: false,
     form: 'location',
     initialValues: {
       suburbs: []

@@ -9,7 +9,9 @@ export function getCheapestSelectedSuburb (state) {
 }
 
 export function getSelectedSuburbs (state) {
-  const values = state.form.location.values || {}
+  const form = state.form || {}
+  const location = form.location || {}
+  const values = location.values || {}
   const selected = values.suburbs || []
   return getSuburbs(state).filter(suburb => selected.includes(suburb.name))
 }

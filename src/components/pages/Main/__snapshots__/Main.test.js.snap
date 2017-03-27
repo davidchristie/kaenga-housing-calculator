@@ -1,0 +1,44 @@
+exports[`test matches snapshot 1`] = `
+<Grid
+  bsClass="container"
+  componentClass="div"
+  fluid={false}>
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={2} />
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={8}>
+    <Jumbotron
+      bsClass="jumbotron"
+      componentClass="div">
+      <h1>
+        Housing Calculator
+      </h1>
+      <p>
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsStyle="primary"
+          disabled={false}
+          href="http://www.kaenga.com/">
+          Learn more
+        </Button>
+      </p>
+    </Jumbotron>
+    <Connect(ReduxForm) />
+    <ReduxForm />
+    <ReduxForm />
+    <ReduxForm />
+    <ReduxForm />
+    <ReduxForm />
+  </Col>
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={2} />
+</Grid>
+`;

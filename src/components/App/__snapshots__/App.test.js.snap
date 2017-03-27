@@ -2,37 +2,46 @@ exports[`test matches snapshot 1`] = `
 <div
   className="App">
   <Uncontrolled(Navbar)
-    bsStyle="default">
+    bsStyle="default"
+    fixedTop={true}>
     <NavbarHeader>
-      <NavbarBrand>
-        Kāenga Housing Calculator
-      </NavbarBrand>
+      <Link
+        onlyActiveOnIndex={false}
+        style={Object {}}
+        to="/">
+        <NavbarBrand>
+          Kāenga
+        </NavbarBrand>
+      </Link>
+      <NavbarToggle />
     </NavbarHeader>
+    <NavbarCollapse>
+      <Nav
+        bsClass="nav"
+        bsStyle="tabs"
+        justified={false}
+        pullLeft={false}
+        pullRight={true}
+        stacked={false}>
+        <LinkContainer
+          action="push"
+          onlyActiveOnIndex={false}
+          to="/report">
+          <NavItem
+            active={false}
+            disabled={false}>
+            <span>
+              Price: 
+            </span>
+            <strong>
+              <Currency
+                type="nzd"
+                value={0} />
+            </strong>
+          </NavItem>
+        </LinkContainer>
+      </Nav>
+    </NavbarCollapse>
   </Uncontrolled(Navbar)>
-  <Grid
-    bsClass="container"
-    componentClass="div"
-    fluid={false}>
-    <Col
-      bsClass="col"
-      componentClass="div"
-      md={6}>
-      <Connect(ReduxForm) />
-      <ReduxForm />
-      <ReduxForm />
-      <ReduxForm />
-      <ReduxForm />
-      <ReduxForm />
-    </Col>
-    <Col
-      bsClass="col"
-      componentClass="div"
-      md={6}>
-      <Connect(CheapestSuburb) />
-      <Connect(HomeFloorspace) />
-      <Connect(LivingSpace) />
-      <Connect(TotalCost) />
-    </Col>
-  </Grid>
 </div>
 `;

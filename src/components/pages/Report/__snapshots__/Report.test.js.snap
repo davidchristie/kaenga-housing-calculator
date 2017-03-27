@@ -1,0 +1,31 @@
+exports[`test matches snapshot 1`] = `
+<Grid
+  bsClass="container"
+  componentClass="div"
+  fluid={false}>
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={2} />
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={8}>
+    <Jumbotron
+      bsClass="jumbotron"
+      componentClass="div">
+      <h1>
+        Report
+      </h1>
+    </Jumbotron>
+    <Connect(CheapestSuburb) />
+    <Connect(HomeFloorspace) />
+    <Connect(LivingSpace) />
+    <Connect(TotalCost) />
+  </Col>
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={2} />
+</Grid>
+`;
