@@ -6,7 +6,11 @@ exports[`test matches snapshot 1`] = `
   <Col
     bsClass="col"
     componentClass="div"
-    md={6}>
+    md={2} />
+  <Col
+    bsClass="col"
+    componentClass="div"
+    md={8}>
     <Connect(ReduxForm) />
     <ReduxForm />
     <ReduxForm />
@@ -17,11 +21,6 @@ exports[`test matches snapshot 1`] = `
   <Col
     bsClass="col"
     componentClass="div"
-    md={6}>
-    <Connect(CheapestSuburb) />
-    <Connect(HomeFloorspace) />
-    <Connect(LivingSpace) />
-    <Connect(TotalCost) />
-  </Col>
+    md={2} />
 </Grid>
 `;
