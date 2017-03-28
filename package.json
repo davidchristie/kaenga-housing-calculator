@@ -14,19 +14,15 @@
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0",
     "react-addons-test-utils": "^15.4.2",
     "react-scripts": "0.9.5",
     "standard": "^9.0.2"
   },
-  "homepage": "https://davidchristie.github.io/kaenga-housing-calculator",
   "name": "kaenga-housing-calculator",
   "private": true,
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
   },
