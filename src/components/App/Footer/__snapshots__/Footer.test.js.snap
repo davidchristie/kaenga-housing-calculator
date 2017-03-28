@@ -1,7 +1,6 @@
 exports[`test matches snapshot 1`] = `
 <Grid
   bsClass="container"
-  className="Report"
   componentClass="div"
   fluid={false}>
   <Col
@@ -12,18 +11,21 @@ exports[`test matches snapshot 1`] = `
     bsClass="col"
     componentClass="div"
     md={8}>
-    <Jumbotron
-      bsClass="jumbotron"
-      className="Report-header"
-      componentClass="div">
-      <h1>
-        Report
-      </h1>
-    </Jumbotron>
-    <Connect(CheapestSuburb) />
-    <Connect(HomeFloorspace) />
-    <Connect(LivingSpace) />
-    <Connect(TotalCost) />
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      defaultExpanded={false}
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }>
+      <p>
+        <strong>
+          Images © Noah Fagan
+        </strong>
+      </p>
+    </Panel>
   </Col>
   <Col
     bsClass="col"

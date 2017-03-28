@@ -43,5 +43,6 @@ exports[`test matches snapshot 1`] = `
       </Nav>
     </NavbarCollapse>
   </Uncontrolled(Navbar)>
+  <Footer />
 </div>
 `;
