@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { Button, Col, Grid, Jumbotron, Panel } from 'react-bootstrap'
 
 import Home from '../../../containers/forms/Home'
@@ -11,6 +11,7 @@ import './Main.css'
 
 class Main extends Component {
   render () {
+    const { showRegisterForm } = this.props
     return (
       <Grid className='Main'>
         <Col md={2} />
@@ -36,6 +37,7 @@ class Main extends Component {
             <Button
               bsStyle='success'
               bsSize='large'
+              onClick={showRegisterForm}
             >
               Register
             </Button>
@@ -45,6 +47,16 @@ class Main extends Component {
       </Grid>
     )
   }
+}
+
+Main.defaultProps = {
+  registerFormOpen: false,
+  showRegisterForm: () => {}
+}
+
+Main.propTypes = {
+  registerFormOpen: PropTypes.bool.isRequired,
+  showRegisterForm: PropTypes.func.isRequired
 }
 
 export default Main

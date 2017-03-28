@@ -48,7 +48,8 @@ exports[`test matches snapshot 1`] = `
         bsClass="btn"
         bsSize="large"
         bsStyle="success"
-        disabled={false}>
+        disabled={false}
+        onClick={[Function]}>
         Register
       </Button>
     </Panel>
