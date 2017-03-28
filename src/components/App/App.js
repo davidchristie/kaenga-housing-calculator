@@ -6,6 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 import Currency from '../units/Currency'
 import './App.css'
 import Footer from './Footer'
+import logo from './logo.png'
 
 class App extends Component {
   componentWillMount () {
@@ -19,7 +20,9 @@ class App extends Component {
         <Navbar fixedTop>
           <Navbar.Header>
             <Link to='/'>
-              <Navbar.Brand>Kāenga</Navbar.Brand>
+              <Navbar.Brand>
+                <img src={logo} />
+              </Navbar.Brand>
             </Link>
             <Navbar.Toggle />
           </Navbar.Header>

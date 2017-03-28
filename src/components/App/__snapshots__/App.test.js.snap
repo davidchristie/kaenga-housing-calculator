@@ -10,7 +10,8 @@ exports[`test matches snapshot 1`] = `
         style={Object {}}
         to="/">
         <NavbarBrand>
-          Kāenga
+          <img
+            src="logo.png" />
         </NavbarBrand>
       </Link>
       <NavbarToggle />
