@@ -37,6 +37,21 @@ exports[`test matches snapshot 1`] = `
     <ReduxForm />
     <ReduxForm />
     <ReduxForm />
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      className="Main-register"
+      defaultExpanded={false}>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsSize="large"
+        bsStyle="success"
+        disabled={false}>
+        Register
+      </Button>
+    </Panel>
   </Col>
   <Col
     bsClass="col"

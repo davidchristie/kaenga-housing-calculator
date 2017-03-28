@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Col, Grid, Jumbotron } from 'react-bootstrap'
+import { Button, Col, Grid, Jumbotron, Panel } from 'react-bootstrap'
 
 import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
@@ -32,6 +32,14 @@ class Main extends Component {
           <Home />
           <HomeVariant1 />
           <Sharing />
+          <Panel className='Main-register'>
+            <Button
+              bsStyle='success'
+              bsSize='large'
+            >
+              Register
+            </Button>
+          </Panel>
         </Col>
         <Col md={2} />
       </Grid>
