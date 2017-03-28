@@ -5,6 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 import Currency from '../units/Currency'
 import './App.css'
+import Footer from './Footer'
 
 class App extends Component {
   componentWillMount () {
@@ -36,6 +37,7 @@ class App extends Component {
           </Navbar.Collapse>
         </Navbar>
         {this.props.children}
+        <Footer />
       </div>
     )
   }

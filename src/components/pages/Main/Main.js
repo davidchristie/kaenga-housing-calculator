@@ -7,14 +7,15 @@ import Occupants from '../../../containers/forms/Occupants'
 import Sharing from '../../../containers/forms/Sharing'
 import HomeVariant1 from '../../forms/HomeVariant1'
 import OccupantsVariant1 from '../../forms/OccupantsVariant1'
+import './Main.css'
 
 class Main extends Component {
   render () {
     return (
-      <Grid>
+      <Grid className='Main'>
         <Col md={2} />
         <Col md={8}>
-          <Jumbotron>
+          <Jumbotron className='Main-header'>
             <h1>Housing Calculator</h1>
             <p>
               <Button

@@ -5,14 +5,15 @@ import CheapestSuburb from '../../../containers/reports/CheapestSuburb'
 import HomeFloorspace from '../../../containers/reports/HomeFloorspace'
 import LivingSpace from '../../../containers/reports/LivingSpace'
 import TotalCost from '../../../containers/reports/TotalCost'
+import './Report.css'
 
 class Report extends Component {
   render () {
     return (
-      <Grid>
+      <Grid className='Report'>
         <Col md={2} />
         <Col md={8}>
-          <Jumbotron>
+          <Jumbotron className='Report-header'>
             <h1>Report</h1>
           </Jumbotron>
           <CheapestSuburb />
