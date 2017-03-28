@@ -1,5 +1,12 @@
 import React, { Component, PropTypes } from 'react'
-import { Button, Col, Grid, Jumbotron, Panel } from 'react-bootstrap'
+import {
+  Button,
+  Col,
+  Grid,
+  Jumbotron,
+  Modal,
+  Panel
+} from 'react-bootstrap'
 
 import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
@@ -11,7 +18,11 @@ import './Main.css'
 
 class Main extends Component {
   render () {
-    const { showRegisterForm } = this.props
+    const {
+      hideRegisterForm,
+      registerFormOpen,
+      showRegisterForm
+    } = this.props
     return (
       <Grid className='Main'>
         <Col md={2} />
@@ -33,7 +44,7 @@ class Main extends Component {
           <Home />
           <HomeVariant1 />
           <Sharing />
-          <Panel className='Main-register'>
+          <Panel className='Main-register-panel'>
             <Button
               bsStyle='success'
               bsSize='large'
@@ -41,6 +52,18 @@ class Main extends Component {
             >
               Register
             </Button>
+            <Modal
+              className='Main-register-modal'
+              onHide={hideRegisterForm}
+              show={registerFormOpen}
+            >
+              <Modal.Header closeButton>
+                <Modal.Title>Register</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                Form
+              </Modal.Body>
+            </Modal>
           </Panel>
         </Col>
         <Col md={2} />
@@ -50,11 +73,13 @@ class Main extends Component {
 }
 
 Main.defaultProps = {
+  hideRegisterForm: () => {},
   registerFormOpen: false,
   showRegisterForm: () => {}
 }
 
 Main.propTypes = {
+  hideRegisterForm: PropTypes.func.isRequired,
   registerFormOpen: PropTypes.bool.isRequired,
   showRegisterForm: PropTypes.func.isRequired
 }

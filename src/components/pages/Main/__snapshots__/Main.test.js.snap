@@ -40,7 +40,7 @@ exports[`test matches snapshot 1`] = `
     <Panel
       bsClass="panel"
       bsStyle="default"
-      className="Main-register"
+      className="Main-register-panel"
       defaultExpanded={false}>
       <Button
         active={false}
@@ -52,6 +52,44 @@ exports[`test matches snapshot 1`] = `
         onClick={[Function]}>
         Register
       </Button>
+      <Modal
+        animation={true}
+        autoFocus={true}
+        backdrop={true}
+        bsClass="modal"
+        className="Main-register-modal"
+        dialogComponentClass={[Function]}
+        enforceFocus={true}
+        keyboard={true}
+        manager={
+          ModalManager {
+            "containers": Array [],
+            "data": Array [],
+            "handleContainerOverflow": true,
+            "hideSiblingNodes": true,
+            "modals": Array [],
+          }
+        }
+        onHide={[Function]}
+        renderBackdrop={[Function]}
+        restoreFocus={true}
+        show={false}>
+        <ModalHeader
+          aria-label="Close"
+          bsClass="modal-header"
+          closeButton={true}>
+          <ModalTitle
+            bsClass="modal-title"
+            componentClass="h4">
+            Register
+          </ModalTitle>
+        </ModalHeader>
+        <ModalBody
+          bsClass="modal-body"
+          componentClass="div">
+          Form
+        </ModalBody>
+      </Modal>
     </Panel>
   </Col>
   <Col
