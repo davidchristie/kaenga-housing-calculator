@@ -21,7 +21,7 @@ class App extends Component {
           <Navbar.Header>
             <Link to='/'>
               <Navbar.Brand>
-                <img src={logo} />
+                <img alt='Kāenga logo' src={logo} />
               </Navbar.Brand>
             </Link>
             <Navbar.Toggle />

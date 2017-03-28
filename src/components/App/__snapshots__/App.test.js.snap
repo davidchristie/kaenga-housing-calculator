@@ -11,6 +11,7 @@ exports[`test matches snapshot 1`] = `
         to="/">
         <NavbarBrand>
           <img
+            alt="Kāenga logo"
             src="logo.png" />
         </NavbarBrand>
       </Link>
