@@ -11,6 +11,7 @@ import {
 import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
+import Register from '../../../containers/forms/Register'
 import Sharing from '../../../containers/forms/Sharing'
 import HomeVariant1 from '../../forms/HomeVariant1'
 import OccupantsVariant1 from '../../forms/OccupantsVariant1'
@@ -44,7 +45,7 @@ class Main extends Component {
           <Home />
           <HomeVariant1 />
           <Sharing />
-          <Panel className='Main-register-panel'>
+          <Panel className='Main-register'>
             <Button
               bsStyle='success'
               bsSize='large'
@@ -52,16 +53,12 @@ class Main extends Component {
             >
               Register
             </Button>
-            <Modal
-              className='Main-register-modal'
-              onHide={hideRegisterForm}
-              show={registerFormOpen}
-            >
+            <Modal onHide={hideRegisterForm} show={registerFormOpen}>
               <Modal.Header closeButton>
                 <Modal.Title>Register</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                Form
+                <Register />
               </Modal.Body>
             </Modal>
           </Panel>

@@ -40,7 +40,7 @@ exports[`test matches snapshot 1`] = `
     <Panel
       bsClass="panel"
       bsStyle="default"
-      className="Main-register-panel"
+      className="Main-register"
       defaultExpanded={false}>
       <Button
         active={false}
@@ -57,7 +57,6 @@ exports[`test matches snapshot 1`] = `
         autoFocus={true}
         backdrop={true}
         bsClass="modal"
-        className="Main-register-modal"
         dialogComponentClass={[Function]}
         enforceFocus={true}
         keyboard={true}
@@ -87,7 +86,7 @@ exports[`test matches snapshot 1`] = `
         <ModalBody
           bsClass="modal-body"
           componentClass="div">
-          Form
+          <Connect(ReduxForm) />
         </ModalBody>
       </Modal>
     </Panel>

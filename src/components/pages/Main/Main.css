@@ -1,10 +1,4 @@
-.Main-register-modal {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
-.Main-register-panel {
+.Main-register {
   padding: 100px;
   text-align: center;
 }
