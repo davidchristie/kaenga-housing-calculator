@@ -37,6 +37,59 @@ exports[`test matches snapshot 1`] = `
     <ReduxForm />
     <ReduxForm />
     <ReduxForm />
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      className="Main-register"
+      defaultExpanded={false}>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsSize="large"
+        bsStyle="success"
+        disabled={false}
+        onClick={[Function]}>
+        Register
+      </Button>
+      <Modal
+        animation={true}
+        autoFocus={true}
+        backdrop={true}
+        bsClass="modal"
+        dialogComponentClass={[Function]}
+        enforceFocus={true}
+        keyboard={true}
+        manager={
+          ModalManager {
+            "containers": Array [],
+            "data": Array [],
+            "handleContainerOverflow": true,
+            "hideSiblingNodes": true,
+            "modals": Array [],
+          }
+        }
+        onHide={[Function]}
+        renderBackdrop={[Function]}
+        restoreFocus={true}
+        show={false}>
+        <ModalHeader
+          aria-label="Close"
+          bsClass="modal-header"
+          closeButton={true}>
+          <ModalTitle
+            bsClass="modal-title"
+            componentClass="h4">
+            Register
+          </ModalTitle>
+        </ModalHeader>
+        <ModalBody
+          bsClass="modal-body"
+          componentClass="div">
+          <Connect(ReduxForm) />
+        </ModalBody>
+      </Modal>
+    </Panel>
   </Col>
   <Col
     bsClass="col"
