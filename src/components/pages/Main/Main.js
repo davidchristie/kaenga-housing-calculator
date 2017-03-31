@@ -4,7 +4,6 @@ import {
   Col,
   Grid,
   Jumbotron,
-  Modal,
   Panel
 } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
@@ -12,11 +11,11 @@ import { LinkContainer } from 'react-router-bootstrap'
 import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
-import Register from '../../../containers/forms/Register'
 import Sharing from '../../../containers/forms/Sharing'
 import HomeVariant1 from '../../forms/HomeVariant1'
 import OccupantsVariant1 from '../../forms/OccupantsVariant1'
 import './Main.css'
+import RegisterModal from './RegisterModal'
 
 class Main extends Component {
   render () {
@@ -53,17 +52,13 @@ class Main extends Component {
             >
               Register
             </Button>
-            <Modal onHide={hideRegisterForm} show={registerFormOpen}>
-              <Modal.Header closeButton>
-                <Modal.Title>Register</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <Register />
-              </Modal.Body>
-            </Modal>
           </Panel>
         </Col>
         <Col md={2} />
+        <RegisterModal
+          hideRegisterForm={hideRegisterForm}
+          registerFormOpen={registerFormOpen}
+        />
       </Grid>
     )
   }
