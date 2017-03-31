@@ -23,7 +23,7 @@ class About extends Component {
               If you fill in this form, we’ll tell you more about your ideal home and provide suggestions for reducing your costs.
             </p>
             <p>
-              You’ll get the most out of this form if you approach it with a firm budget in mind. That way you can adjust your home’s design to fit your budget. You can use <a href='https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/'>ANZ’s calculator</a> to determine how much you might be able to borrow.
+              You’ll get the most out of this form if you approach it with a firm budget in mind. That way you can adjust your home’s design to fit your budget. You can use <a href='https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/' target='_blank'>ANZ’s calculator</a> to determine how much you might be able to borrow.
             </p>
           </Jumbotron>
         </Col>
