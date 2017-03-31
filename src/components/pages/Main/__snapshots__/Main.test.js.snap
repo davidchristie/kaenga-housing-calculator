@@ -20,15 +20,19 @@ exports[`test matches snapshot 1`] = `
         Housing Calculator
       </h1>
       <p>
-        <Button
-          active={false}
-          block={false}
-          bsClass="btn"
-          bsStyle="primary"
-          disabled={false}
-          href="http://www.kaenga.com/">
-          Learn more
-        </Button>
+        <LinkContainer
+          action="push"
+          onlyActiveOnIndex={false}
+          to="about">
+          <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="primary"
+            disabled={false}>
+            Learn more
+          </Button>
+        </LinkContainer>
       </p>
     </Jumbotron>
     <Connect(ReduxForm) />

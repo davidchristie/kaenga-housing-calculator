@@ -31,7 +31,8 @@ exports[`test matches snapshot 1`] = `
       <p>
         You’ll get the most out of this form if you approach it with a firm budget in mind. That way you can adjust your home’s design to fit your budget. You can use 
         <a
-          href="https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/">
+          href="https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/"
+          target="_blank">
           ANZ’s calculator
         </a>
          to determine how much you might be able to borrow.
