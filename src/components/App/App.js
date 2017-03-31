@@ -27,6 +27,11 @@ class App extends Component {
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
+            <Nav bsStyle='tabs'>
+              <LinkContainer to='/about'>
+                <NavItem>About</NavItem>
+              </LinkContainer>
+            </Nav>
             <Nav bsStyle='tabs' pullRight>
               <LinkContainer to='/report'>
                 <NavItem>

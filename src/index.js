@@ -11,7 +11,11 @@ import store from './store'
 render(
   <Provider store={store}>
     <IntlProvider locale='en'>
-      <Router history={history} routes={routes} />
+      <Router
+        history={history}
+        onUpdate={() => window.scrollTo(0, 0)}
+        routes={routes}
+      />
     </IntlProvider>
   </Provider>,
   document.getElementById('root')

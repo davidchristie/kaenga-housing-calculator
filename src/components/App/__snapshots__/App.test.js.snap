@@ -23,6 +23,24 @@ exports[`test matches snapshot 1`] = `
         bsStyle="tabs"
         justified={false}
         pullLeft={false}
+        pullRight={false}
+        stacked={false}>
+        <LinkContainer
+          action="push"
+          onlyActiveOnIndex={false}
+          to="/about">
+          <NavItem
+            active={false}
+            disabled={false}>
+            About
+          </NavItem>
+        </LinkContainer>
+      </Nav>
+      <Nav
+        bsClass="nav"
+        bsStyle="tabs"
+        justified={false}
+        pullLeft={false}
         pullRight={true}
         stacked={false}>
         <LinkContainer

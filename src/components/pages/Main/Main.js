@@ -7,6 +7,7 @@ import {
   Modal,
   Panel
 } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
@@ -31,12 +32,11 @@ class Main extends Component {
           <Jumbotron className='Main-header'>
             <h1>Housing Calculator</h1>
             <p>
-              <Button
-                bsStyle='primary'
-                href='http://www.kaenga.com/'
-              >
-                Learn more
-              </Button>
+              <LinkContainer to='about'>
+                <Button bsStyle='primary'>
+                  Learn more
+                </Button>
+              </LinkContainer>
             </p>
           </Jumbotron>
           <Location />
