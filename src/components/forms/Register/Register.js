@@ -25,7 +25,19 @@ class Register extends Component {
           name='email'
           type='email'
         />
-        <Button disabled={invalid} type='submit'>Submit</Button>
+        <p>
+          Click submit to find out more about your ideal home. We’ll also show you what it might look like.
+        </p>
+        <p>
+          Even better, we’ll take into account your preferences when designing future projects and give you the opportunity to buy before releasing the project to the public.
+        </p>
+        <Button
+          bsStyle='success'
+          disabled={invalid}
+          type='submit'
+        >
+          Submit
+        </Button>
       </form>
     )
   }
