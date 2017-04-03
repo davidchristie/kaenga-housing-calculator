@@ -5,23 +5,27 @@ exports[`test matches snapshot 1`] = `
     bsClass="panel"
     bsStyle="default"
     defaultExpanded={false}
-    header="Sustainability">
+    header="Housing Type">
     <FormGroup
       bsClass="form-group">
       <Field
         component={[Function]}
-        name="level">
+        name="type">
         <option
-          value="low">
-          I’m happy to invest a little bit upfront
+          value="house">
+          Standalone house
         </option>
         <option
-          value="medium">
-          I want to invest a lot upfront to save money in the long run
+          value="terraced">
+          Terraced house (3-10 homes)
         </option>
         <option
-          value="high">
-          I want my home to have all the latest sustainability technology
+          value="lowRise">
+          Low rise apartments (12-25 homes)
+        </option>
+        <option
+          value="highRise">
+          High rise apartments (30+ homes)
         </option>
       </Field>
     </FormGroup>
