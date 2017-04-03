@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { ControlLabel, FormGroup, Panel } from 'react-bootstrap'
+import { FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
@@ -12,13 +12,13 @@ class Sustainability extends Component {
         <Panel header='Sustainability'>
           <FormGroup>
             <Field component={Select} name='level'>
-              <option value='1'>
+              <option value='low'>
                 I’m happy to invest a little bit upfront
               </option>
-              <option value='2'>
+              <option value='medium'>
                 I want to invest a lot upfront to save money in the long run
               </option>
-              <option value='3'>
+              <option value='high'>
                 I want my home to have all the latest sustainability technology
               </option>
             </Field>

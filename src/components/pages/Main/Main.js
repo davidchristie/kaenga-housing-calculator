@@ -10,6 +10,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 import Hobbies from '../../../containers/forms/Hobbies'
 import Home from '../../../containers/forms/Home'
+import HousingType from '../../../containers/forms/HousingType'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
 import Sharing from '../../../containers/forms/Sharing'
@@ -39,6 +40,7 @@ class Main extends Component {
             </p>
           </Jumbotron>
           <Location />
+          <HousingType />
           <Occupants />
           <Home />
           <Sustainability />

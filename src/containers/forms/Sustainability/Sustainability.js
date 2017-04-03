@@ -4,5 +4,8 @@ import Sharing from '../../../components/forms/Sustainability'
 
 export default reduxForm({
   destroyOnUnmount: false,
-  form: 'sustainability'
+  form: 'sustainability',
+  initialValues: {
+    level: 'low'
+  }
 })(Sharing)
