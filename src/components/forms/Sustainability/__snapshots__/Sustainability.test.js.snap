@@ -1,0 +1,30 @@
+exports[`test matches snapshot 1`] = `
+<form
+  onSubmit={undefined}>
+  <Panel
+    bsClass="panel"
+    bsStyle="default"
+    defaultExpanded={false}
+    header="Sustainability">
+    <FormGroup
+      bsClass="form-group">
+      <Field
+        component={[Function]}
+        name="level">
+        <option
+          value="1">
+          I’m happy to invest a little bit upfront
+        </option>
+        <option
+          value="2">
+          I want to invest a lot upfront to save money in the long run
+        </option>
+        <option
+          value="3">
+          I want my home to have all the latest sustainability technology
+        </option>
+      </Field>
+    </FormGroup>
+  </Panel>
+</form>
+`;

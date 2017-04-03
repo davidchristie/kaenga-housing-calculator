@@ -40,6 +40,7 @@ exports[`test matches snapshot 1`] = `
     <ReduxForm />
     <ReduxForm />
     <ReduxForm />
+    <ReduxForm />
     <Panel
       bsClass="panel"
       bsStyle="default"
