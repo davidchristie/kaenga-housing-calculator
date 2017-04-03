@@ -8,6 +8,7 @@ import {
 } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
+import Hobbies from '../../../containers/forms/Hobbies'
 import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
@@ -40,6 +41,7 @@ class Main extends Component {
           <Occupants />
           <Home />
           <Sharing />
+          <Hobbies />
           <Panel className='Main-register'>
             <Button
               bsStyle='success'
