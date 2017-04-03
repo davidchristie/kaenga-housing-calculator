@@ -4,15 +4,6 @@ import { Field } from 'redux-form'
 
 import Checkbox from '../../controls/Checkbox'
 
-// Outdoor sports and activities
-// Exercising and keeping fit
-// Gardening
-// Working with tools, building things
-// Reading
-// Playing board/computer games
-// Art/music
-// Socializing/meeting new people
-
 class Hobbies extends Component {
   render () {
     const { handleSubmit } = this.props
