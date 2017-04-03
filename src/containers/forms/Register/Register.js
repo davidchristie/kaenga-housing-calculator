@@ -16,6 +16,9 @@ const validate = values => {
   } else if (values.lastName.length > 15) {
     errors.lastName = 'Must be 15 characters or less'
   }
+  if (!values.phone) {
+    errors.phone = 'Required'
+  }
   if (!values.email) {
     errors.email = 'Required'
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
@@ -43,7 +46,8 @@ export default connect(
     initialValues: {
       email: '',
       firstName: '',
-      lastName: ''
+      lastName: '',
+      phone: ''
     },
     validate
   })(Register)

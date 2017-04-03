@@ -21,6 +21,12 @@ class Register extends Component {
         />
         <Field
           component={TextInput}
+          label='Phone number'
+          name='phone'
+          type='tel'
+        />
+        <Field
+          component={TextInput}
           label='Email'
           name='email'
           type='email'

@@ -11,6 +11,11 @@ exports[`test matches snapshot 1`] = `
     name="lastName" />
   <Field
     component={[Function]}
+    label="Phone number"
+    name="phone"
+    type="tel" />
+  <Field
+    component={[Function]}
     label="Email"
     name="email"
     type="email" />
