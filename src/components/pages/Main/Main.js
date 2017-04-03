@@ -12,8 +12,6 @@ import Home from '../../../containers/forms/Home'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
 import Sharing from '../../../containers/forms/Sharing'
-import HomeVariant1 from '../../forms/HomeVariant1'
-import OccupantsVariant1 from '../../forms/OccupantsVariant1'
 import './Main.css'
 import RegisterModal from './RegisterModal'
 
@@ -40,9 +38,7 @@ class Main extends Component {
           </Jumbotron>
           <Location />
           <Occupants />
-          <OccupantsVariant1 />
           <Home />
-          <HomeVariant1 />
           <Sharing />
           <Panel className='Main-register'>
             <Button
