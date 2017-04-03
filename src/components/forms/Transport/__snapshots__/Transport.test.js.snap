@@ -9,7 +9,6 @@ exports[`test matches snapshot 1`] = `
     <Field
       component={[Function]}
       label="Work and school"
-      multiple={true}
       name="commute">
       <option
         value="publicTransport">
@@ -27,7 +26,6 @@ exports[`test matches snapshot 1`] = `
     <Field
       component={[Function]}
       label="Other times"
-      multiple={true}
       name="needCar">
       <option
         value="mostDays">

@@ -12,7 +12,6 @@ class Transport extends Component {
           <Field
             component={Select}
             label='Work and school'
-            multiple
             name='commute'
           >
             <option value='publicTransport'>
@@ -28,7 +27,6 @@ class Transport extends Component {
           <Field
             component={Select}
             label='Other times'
-            multiple
             name='needCar'
           >
             <option value='mostDays'>
