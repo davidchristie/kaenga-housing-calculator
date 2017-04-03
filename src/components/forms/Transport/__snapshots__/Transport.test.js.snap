@@ -1,0 +1,47 @@
+exports[`test matches snapshot 1`] = `
+<form
+  onSubmit={undefined}>
+  <Panel
+    bsClass="panel"
+    bsStyle="default"
+    defaultExpanded={false}
+    header="Transport">
+    <Field
+      component={[Function]}
+      label="Work and school"
+      multiple={true}
+      name="commute">
+      <option
+        value="publicTransport">
+        We can use public transport, walk, or cycle
+      </option>
+      <option
+        value="carPooling">
+        We are open to car pooling
+      </option>
+      <option
+        value="car">
+        We need our own car
+      </option>
+    </Field>
+    <Field
+      component={[Function]}
+      label="Other times"
+      multiple={true}
+      name="needCar">
+      <option
+        value="mostDays">
+        We’ll need to use a car most days
+      </option>
+      <option
+        value="onceOrTwice">
+        We’ll need a car once or twice a week
+      </option>
+      <option
+        value="lessThanOnce">
+        We’ll need a car less than once a week
+      </option>
+    </Field>
+  </Panel>
+</form>
+`;

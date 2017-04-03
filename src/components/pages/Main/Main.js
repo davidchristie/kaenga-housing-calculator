@@ -14,6 +14,7 @@ import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
 import Sharing from '../../../containers/forms/Sharing'
 import Sustainability from '../../../containers/forms/Sustainability'
+import Transport from '../../../containers/forms/Transport'
 import './Main.css'
 import RegisterModal from './RegisterModal'
 
@@ -42,6 +43,7 @@ class Main extends Component {
           <Occupants />
           <Home />
           <Sustainability />
+          <Transport />
           <Sharing />
           <Hobbies />
           <Panel className='Main-register'>
