@@ -5,12 +5,12 @@ import { Field } from 'redux-form'
 import Checkbox from '../../controls/Checkbox'
 import NumberInput from '../../controls/NumberInput'
 
-class Home extends Component {
+class HomeBuilder extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
-        <Panel header='Home'>
+        <Panel header='Home Builder'>
           <Field
             component={NumberInput}
             label='How many double bedrooms do you need?'
@@ -47,8 +47,8 @@ class Home extends Component {
   }
 }
 
-Home.propTypes = {
+HomeBuilder.propTypes = {
   handleSubmit: PropTypes.func
 }
 
-export default Home
+export default HomeBuilder

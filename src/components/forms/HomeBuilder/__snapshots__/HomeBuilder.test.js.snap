@@ -5,7 +5,7 @@ exports[`test matches snapshot 1`] = `
     bsClass="panel"
     bsStyle="default"
     defaultExpanded={false}
-    header="Home">
+    header="Home Builder">
     <Field
       component={[Function]}
       label="How many double bedrooms do you need?"

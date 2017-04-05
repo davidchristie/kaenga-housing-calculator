@@ -1,8 +1,8 @@
 import { reduxForm } from 'redux-form'
 
-import Home from '../../../components/forms/Home'
+import HomeBuilder from '../../../components/forms/HomeBuilder'
 
 export default reduxForm({
   destroyOnUnmount: false,
   form: 'home'
-})(Home)
+})(HomeBuilder)
