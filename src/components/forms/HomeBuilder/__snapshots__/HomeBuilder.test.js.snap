@@ -8,28 +8,46 @@ exports[`test matches snapshot 1`] = `
     header="Home Builder">
     <Field
       component={[Function]}
-      label="How many double bedrooms do you need?"
-      name="doubleBedrooms" />
+      label="Number of occupants"
+      name="occupants" />
     <Field
       component={[Function]}
-      label="How many single bedrooms do you need?"
-      name="singleBedrooms" />
+      label="Number of bedrooms"
+      name="bedrooms" />
     <Field
       component={[Function]}
-      label="Do you need a study?"
+      label="Shared guest studio"
       name="study" />
     <Field
       component={[Function]}
-      label="How many bathrooms with a bathtub do you need?"
-      name="bathtubs" />
-    <Field
-      component={[Function]}
-      label="How many bathrooms with a shower do you need?"
-      name="showers" />
-    <Field
-      component={[Function]}
-      label="How many stand alone toilets do you need?"
-      name="toilets" />
+      label="Bathrooms"
+      name="bathrooms" />
+    <Panel
+      bsClass="panel"
+      bsStyle="warning"
+      defaultExpanded={false}
+      header="Old fields">
+      <Field
+        component={[Function]}
+        label="How many double bedrooms do you need?"
+        name="doubleBedrooms" />
+      <Field
+        component={[Function]}
+        label="How many single bedrooms do you need?"
+        name="singleBedrooms" />
+      <Field
+        component={[Function]}
+        label="How many bathrooms with a bathtub do you need?"
+        name="bathtubs" />
+      <Field
+        component={[Function]}
+        label="How many bathrooms with a shower do you need?"
+        name="showers" />
+      <Field
+        component={[Function]}
+        label="How many stand alone toilets do you need?"
+        name="toilets" />
+    </Panel>
   </Panel>
 </form>
 `;
