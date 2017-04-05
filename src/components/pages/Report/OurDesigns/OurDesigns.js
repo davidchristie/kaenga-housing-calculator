@@ -8,7 +8,6 @@ import design4 from './Noah-Fagan-portfolio-oct-14-7.jpg'
 
 class OurDesigns extends Component {
   render () {
-    console.log(design1)
     return (
       <div>
         <Carousel>

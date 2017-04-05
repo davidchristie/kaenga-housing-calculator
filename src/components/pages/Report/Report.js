@@ -6,7 +6,6 @@ import HomeFloorspace from '../../../containers/reports/HomeFloorspace'
 import LivingSpace from '../../../containers/reports/LivingSpace'
 import TotalCost from '../../../containers/reports/TotalCost'
 import OurDesigns from './OurDesigns'
-import './Report.css'
 
 class Report extends Component {
   render () {
