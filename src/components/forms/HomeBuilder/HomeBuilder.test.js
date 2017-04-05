@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-addons-test-utils'
 
-import Home from './Home'
+import HomeBuilder from './HomeBuilder'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(shallowRenderer.render(<Home />)).toMatchSnapshot()
+  expect(shallowRenderer.render(<HomeBuilder />)).toMatchSnapshot()
 })

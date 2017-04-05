@@ -6,12 +6,11 @@ import {
   getStudyFloorspace,
   getToiletFloorspace
 } from '../models/floorspace'
+import { getHomeBuilderValues } from './home-builder'
 import { getTotalLivingSpace } from './living-space'
 
 export function getHomeFloorspace (state) {
-  const form = state.form || {}
-  const home = form.home || {}
-  const values = home.values || {}
+  const values = getHomeBuilderValues(state)
   return {
     bathtubs: getBathtubFloorspace(values.bathtubs || 0),
     doubleBedrooms: getDoubleBedroomFloorspace(values.doubleBedrooms || 0),

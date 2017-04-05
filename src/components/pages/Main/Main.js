@@ -9,7 +9,7 @@ import {
 import { LinkContainer } from 'react-router-bootstrap'
 
 import Hobbies from '../../../containers/forms/Hobbies'
-import Home from '../../../containers/forms/Home'
+import HomeBuilder from '../../../containers/forms/HomeBuilder'
 import HousingType from '../../../containers/forms/HousingType'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
@@ -43,7 +43,7 @@ class Main extends Component {
           <Location />
           <HousingType />
           <Occupants />
-          <Home />
+          <HomeBuilder />
           <Sustainability />
           <Transport />
           <Sharing />
