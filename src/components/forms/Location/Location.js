@@ -9,24 +9,48 @@ class Location extends Component {
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Location'>
-          <h4>City</h4>
           <Button active>Auckland</Button>
           <Button disabled>Wellington</Button>
           <Button disabled>Christchurch</Button>
-          <h4>Suburbs</h4>
           <Field
             component={Select}
+            label='Commute to city'
             multiple
-            name='suburbs'
+            name='commute'
           >
-            {this.props.suburbs.map((suburb, index) => {
-              return (
-                <option key={index} value={suburb.name}>
-                  {suburb.name}
-                </option>
-              )
-            })}
+            <option value='Walking distance'>Walking distance</option>
+            <option value='5m-20m'>5m-20m</option>
+            <option value='21m-40m'>21m-40m</option>
+            <option value='41m-60m'>41m-60m</option>
           </Field>
+          <Field
+            component={Select}
+            label='Region'
+            multiple
+            name='region'
+          >
+            <option value='Central'>Central</option>
+            <option value='North'>North</option>
+            <option value='East'>East</option>
+            <option value='South'>South</option>
+            <option value='West'>West</option>
+          </Field>
+          <Panel bsStyle='warning' header='Old fields'>
+            <h4>Suburbs</h4>
+            <Field
+              component={Select}
+              multiple
+              name='suburbs'
+            >
+              {this.props.suburbs.map((suburb, index) => {
+                return (
+                  <option key={index} value={suburb.name}>
+                    {suburb.name}
+                  </option>
+                )
+              })}
+            </Field>
+          </Panel>
         </Panel>
       </form>
     )

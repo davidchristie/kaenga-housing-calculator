@@ -6,9 +6,6 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default"
     defaultExpanded={false}
     header="Location">
-    <h4>
-      City
-    </h4>
     <Button
       active={true}
       block={false}
@@ -33,15 +30,69 @@ exports[`test matches snapshot 1`] = `
       disabled={true}>
       Christchurch
     </Button>
-    <h4>
-      Suburbs
-    </h4>
     <Field
       component={[Function]}
+      label="Commute to city"
       multiple={true}
-      name="suburbs">
-      
+      name="commute">
+      <option
+        value="Walking distance">
+        Walking distance
+      </option>
+      <option
+        value="5m-20m">
+        5m-20m
+      </option>
+      <option
+        value="21m-40m">
+        21m-40m
+      </option>
+      <option
+        value="41m-60m">
+        41m-60m
+      </option>
     </Field>
+    <Field
+      component={[Function]}
+      label="Region"
+      multiple={true}
+      name="region">
+      <option
+        value="Central">
+        Central
+      </option>
+      <option
+        value="North">
+        North
+      </option>
+      <option
+        value="East">
+        East
+      </option>
+      <option
+        value="South">
+        South
+      </option>
+      <option
+        value="West">
+        West
+      </option>
+    </Field>
+    <Panel
+      bsClass="panel"
+      bsStyle="warning"
+      defaultExpanded={false}
+      header="Old fields">
+      <h4>
+        Suburbs
+      </h4>
+      <Field
+        component={[Function]}
+        multiple={true}
+        name="suburbs">
+        
+      </Field>
+    </Panel>
   </Panel>
 </form>
 `;
