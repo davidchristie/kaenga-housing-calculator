@@ -3,12 +3,12 @@ import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap'
 
-import Currency from '../units/Currency'
-import './App.css'
+import Currency from '../../units/Currency'
+import './Page.css'
 import Footer from './Footer'
 import logo from './logo.png'
 
-class App extends Component {
+class Page extends Component {
   componentWillMount () {
     this.props.loadSuburbs()
   }
@@ -16,7 +16,7 @@ class App extends Component {
   render () {
     const { totalCost } = this.props
     return (
-      <div className='App'>
+      <div className='Page'>
         <Navbar fixedTop>
           <Navbar.Header>
             <Link to='/'>
@@ -51,12 +51,12 @@ class App extends Component {
   }
 }
 
-App.defaultProps = {
+Page.defaultProps = {
   loadSuburbs: () => {}
 }
 
-App.propTypes = {
+Page.propTypes = {
   loadSuburbs: PropTypes.func.isRequired
 }
 
-export default App
+export default Page

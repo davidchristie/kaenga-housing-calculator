@@ -3,6 +3,7 @@ import { FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
+import Anchor from '../../layout/Anchor'
 
 class Sustainability extends Component {
   render () {
@@ -10,6 +11,7 @@ class Sustainability extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <Panel header='Sustainability'>
+          <Anchor id='sustainability' />
           <FormGroup>
             <Field component={Select} name='level'>
               <option value='low'>

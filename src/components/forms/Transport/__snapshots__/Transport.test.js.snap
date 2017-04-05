@@ -6,6 +6,8 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default"
     defaultExpanded={false}
     header="Transport">
+    <Anchor
+      id="transport" />
     <Field
       component={[Function]}
       label="Work and school"

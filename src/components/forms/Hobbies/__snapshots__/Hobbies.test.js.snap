@@ -6,6 +6,8 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default"
     defaultExpanded={false}
     header="Hobbies and Lifestyles">
+    <Anchor
+      id="hobbies" />
     <FormGroup
       bsClass="form-group">
       <ControlLabel
