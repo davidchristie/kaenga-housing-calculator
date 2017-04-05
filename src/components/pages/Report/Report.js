@@ -5,6 +5,7 @@ import CheapestSuburb from '../../../containers/reports/CheapestSuburb'
 import HomeFloorspace from '../../../containers/reports/HomeFloorspace'
 import LivingSpace from '../../../containers/reports/LivingSpace'
 import TotalCost from '../../../containers/reports/TotalCost'
+import OurDesigns from './OurDesigns'
 import './Report.css'
 
 class Report extends Component {
@@ -16,6 +17,7 @@ class Report extends Component {
           <Jumbotron className='Report-header'>
             <h1>Report</h1>
           </Jumbotron>
+          <OurDesigns />
           <CheapestSuburb />
           <HomeFloorspace />
           <LivingSpace />
