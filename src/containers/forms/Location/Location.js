@@ -15,6 +15,8 @@ export default connect(
     destroyOnUnmount: false,
     form: 'location',
     initialValues: {
+      commute: [],
+      region: [],
       suburbs: []
     }
   })(Location)
