@@ -3,12 +3,14 @@ import { Button, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
+import Anchor from '../../layout/Anchor'
 
 class Location extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Location'>
+          <Anchor id='location' />
           <Button active>Auckland</Button>
           <Button disabled>Wellington</Button>
           <Button disabled>Christchurch</Button>

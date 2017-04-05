@@ -3,6 +3,7 @@ import { FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
+import Anchor from '../../layout/Anchor'
 
 class HousingType extends Component {
   render () {
@@ -10,6 +11,7 @@ class HousingType extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <Panel header='Housing Type'>
+          <Anchor id='housing-type' />
           <FormGroup>
             <Field component={Select} name='type'>
               <option value='house'>

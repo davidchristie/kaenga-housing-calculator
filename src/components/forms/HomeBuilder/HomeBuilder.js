@@ -4,6 +4,7 @@ import { Field } from 'redux-form'
 
 import Checkbox from '../../controls/Checkbox'
 import NumberInput from '../../controls/NumberInput'
+import Anchor from '../../layout/Anchor'
 
 class HomeBuilder extends Component {
   render () {
@@ -11,6 +12,7 @@ class HomeBuilder extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <Panel header='Home Builder'>
+          <Anchor id='home-builder' />
           <Field
             component={NumberInput}
             label='Number of occupants'

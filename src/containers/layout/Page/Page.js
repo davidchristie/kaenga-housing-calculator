@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
 
-import { loadSuburbs } from '../../actions/suburbs'
-import App from '../../components/App'
-import { getReport } from '../../selectors/report'
+import { loadSuburbs } from '../../../actions/suburbs'
+import Page from '../../../components/layout/Page'
+import { getReport } from '../../../selectors/report'
 
 export default connect(
   state => {
@@ -15,4 +15,4 @@ export default connect(
       loadSuburbs: () => dispatch(loadSuburbs())
     }
   }
-)(App)
+)(Page)

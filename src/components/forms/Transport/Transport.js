@@ -3,12 +3,14 @@ import { Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
+import Anchor from '../../layout/Anchor'
 
 class Transport extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Transport'>
+          <Anchor id='transport' />
           <Field
             component={Select}
             label='Work and school'

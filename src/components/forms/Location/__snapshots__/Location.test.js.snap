@@ -6,6 +6,8 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default"
     defaultExpanded={false}
     header="Location">
+    <Anchor
+      id="location" />
     <Button
       active={true}
       block={false}

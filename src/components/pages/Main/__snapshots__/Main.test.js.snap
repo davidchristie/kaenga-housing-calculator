@@ -7,7 +7,39 @@ exports[`test matches snapshot 1`] = `
   <Col
     bsClass="col"
     componentClass="div"
-    md={2} />
+    md={2}>
+    <Panel
+      bsClass="panel"
+      bsStyle="default"
+      defaultExpanded={false}>
+      <SectionMenu>
+        <SectionMenuItem
+          to="#location">
+          Location
+        </SectionMenuItem>
+        <SectionMenuItem
+          to="#housing-type">
+          Housing Type
+        </SectionMenuItem>
+        <SectionMenuItem
+          to="#home-builder">
+          Home Builder
+        </SectionMenuItem>
+        <SectionMenuItem
+          to="#sustainability">
+          Sustainability
+        </SectionMenuItem>
+        <SectionMenuItem
+          to="#transport">
+          Transport
+        </SectionMenuItem>
+        <SectionMenuItem
+          to="#hobbies">
+          Hobbies and lifestyle
+        </SectionMenuItem>
+      </SectionMenu>
+    </Panel>
+  </Col>
   <Col
     bsClass="col"
     componentClass="div"

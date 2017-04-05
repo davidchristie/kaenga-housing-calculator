@@ -3,6 +3,7 @@ import { ControlLabel, FormGroup, Panel } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Checkbox from '../../controls/Checkbox'
+import Anchor from '../../layout/Anchor'
 
 class Hobbies extends Component {
   render () {
@@ -10,6 +11,7 @@ class Hobbies extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <Panel header='Hobbies and Lifestyles'>
+          <Anchor id='hobbies' />
           <FormGroup>
             <ControlLabel>What are your family’s hobbies?</ControlLabel>
             <Field
