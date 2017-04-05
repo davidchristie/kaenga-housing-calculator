@@ -1,6 +1,7 @@
 exports[`test matches snapshot 1`] = `
 <Grid
   bsClass="container"
+  className="Footer"
   componentClass="div"
   fluid={false}>
   <Col
@@ -20,11 +21,23 @@ exports[`test matches snapshot 1`] = `
           "textAlign": "center",
         }
       }>
-      <p>
-        <strong>
-          Images © Noah Fagan
-        </strong>
-      </p>
+      <ul>
+        <li>
+          <Link
+            onlyActiveOnIndex={false}
+            style={Object {}}
+            to="/privacy">
+            Privacy
+          </Link>
+        </li>
+      </ul>
+      <strong>
+        © 2017 Kaenga
+      </strong>
+      <br />
+      <strong>
+        Images © Noah Fagan
+      </strong>
     </Panel>
   </Col>
   <Col
