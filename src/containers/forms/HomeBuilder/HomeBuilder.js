@@ -4,5 +4,5 @@ import HomeBuilder from '../../../components/forms/HomeBuilder'
 
 export default reduxForm({
   destroyOnUnmount: false,
-  form: 'home'
+  form: 'homeBuilder'
 })(HomeBuilder)
