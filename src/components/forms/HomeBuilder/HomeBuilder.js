@@ -33,7 +33,11 @@ class HomeBuilder extends Component {
             label='Bathrooms'
             name='bathrooms'
           />
-          <Panel bsStyle='warning' header='Old fields'>
+          <Panel
+            bsStyle='warning'
+            header='Old fields'
+            style={{display: 'none'}}
+          >
             <Field
               component={NumberInput}
               label='How many double bedrooms do you need?'
