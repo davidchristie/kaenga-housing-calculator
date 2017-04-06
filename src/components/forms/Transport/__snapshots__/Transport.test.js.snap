@@ -8,6 +8,10 @@ exports[`test matches snapshot 1`] = `
     header="Transport">
     <Anchor
       id="transport" />
+    <Tip
+      name="transport">
+      We choose sites that are close to public transport. We also provide onsite car sharing services
+    </Tip>
     <Field
       component={[Function]}
       label="Work and school"
