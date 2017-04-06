@@ -4,6 +4,7 @@ import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
 import Anchor from '../../layout/Anchor'
+import Tip from '../../misc/Tip'
 
 class HousingType extends Component {
   render () {
@@ -12,6 +13,9 @@ class HousingType extends Component {
       <form onSubmit={handleSubmit}>
         <Panel header='Housing Type'>
           <Anchor id='housing-type' />
+          <Tip name='housing-types'>
+            In most locations, terraced housing and low rise apartments offer the best value for money
+          </Tip>
           <FormGroup>
             <Field component={Select} name='type'>
               <option value='house'>

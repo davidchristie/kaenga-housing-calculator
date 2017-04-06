@@ -8,6 +8,10 @@ exports[`test matches snapshot 1`] = `
     header="Housing Type">
     <Anchor
       id="housing-type" />
+    <Tip
+      name="housing-types">
+      In most locations, terraced housing and low rise apartments offer the best value for money
+    </Tip>
     <FormGroup
       bsClass="form-group">
       <Field
