@@ -4,6 +4,7 @@ import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
 import Anchor from '../../layout/Anchor'
+import Tip from '../../misc/Tip'
 
 class Transport extends Component {
   render () {
@@ -11,6 +12,9 @@ class Transport extends Component {
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Transport'>
           <Anchor id='transport' />
+          <Tip name='transport'>
+            We choose sites that are close to public transport. We also provide onsite car sharing services
+          </Tip>
           <Field
             component={Select}
             label='Work and school'

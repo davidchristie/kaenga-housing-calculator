@@ -1,0 +1,28 @@
+exports[`test matches snapshot 1`] = `
+<OverlayTrigger
+  defaultOverlayShown={false}
+  overlay={
+    <Popover
+      bsClass="popover"
+      id="Tip-"
+      placement="right" />
+  }
+  placement="bottom"
+  rootClose={true}
+  trigger="click">
+  <Button
+    active={false}
+    block={false}
+    bsClass="btn"
+    bsStyle="info"
+    className="pull-right"
+    disabled={false}>
+    <span>
+      Tip 
+    </span>
+    <Glyphicon
+      bsClass="glyphicon"
+      glyph="question-sign" />
+  </Button>
+</OverlayTrigger>
+`;

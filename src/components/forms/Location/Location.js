@@ -4,6 +4,7 @@ import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
 import Anchor from '../../layout/Anchor'
+import Tip from '../../misc/Tip'
 
 class Location extends Component {
   render () {
@@ -11,6 +12,9 @@ class Location extends Component {
       <form onSubmit={this.props.handleSubmit}>
         <Panel header='Location'>
           <Anchor id='location' />
+          <Tip name='more-locations'>
+            The more locations you are willing to live, the easier it will be to find you a home.
+          </Tip>
           <Button active>Auckland</Button>
           <Button disabled>Wellington</Button>
           <Button disabled>Christchurch</Button>
