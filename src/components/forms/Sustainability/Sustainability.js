@@ -4,6 +4,7 @@ import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
 import Anchor from '../../layout/Anchor'
+import Tip from '../../misc/Tip'
 
 class Sustainability extends Component {
   render () {
@@ -12,6 +13,9 @@ class Sustainability extends Component {
       <form onSubmit={handleSubmit}>
         <Panel header='Sustainability'>
           <Anchor id='sustainability' />
+          <Tip id='sustainability'>
+            Our buildings already provide technology
+          </Tip>
           <FormGroup>
             <Field component={Select} name='level'>
               <option value='low'>

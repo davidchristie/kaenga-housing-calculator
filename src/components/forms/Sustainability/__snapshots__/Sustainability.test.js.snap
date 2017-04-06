@@ -8,6 +8,11 @@ exports[`test matches snapshot 1`] = `
     header="Sustainability">
     <Anchor
       id="sustainability" />
+    <Tip
+      id="sustainability"
+      name="">
+      Our buildings already provide technology
+    </Tip>
     <FormGroup
       bsClass="form-group">
       <Field
