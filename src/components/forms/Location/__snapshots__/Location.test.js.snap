@@ -47,17 +47,21 @@ exports[`test matches snapshot 1`] = `
       </option>
       <option
         value="5m-20m">
-        5m-20m
+        5-20 minutes
       </option>
       <option
         value="21m-40m">
-        21m-40m
+        20-40 minutes
       </option>
       <option
         value="41m-60m">
-        41m-60m
+        40-60 minutes
       </option>
     </Field>
+    <Info
+      name="">
+      The time it takes to travel to the city in moderate traffic
+    </Info>
     <Field
       component={[Function]}
       label="Region"

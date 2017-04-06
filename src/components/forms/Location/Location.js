@@ -4,6 +4,7 @@ import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
 import Anchor from '../../layout/Anchor'
+import Info from '../../misc/Info'
 import Tip from '../../misc/Tip'
 
 class Location extends Component {
@@ -25,10 +26,13 @@ class Location extends Component {
             name='commute'
           >
             <option value='Walking distance'>Walking distance</option>
-            <option value='5m-20m'>5m-20m</option>
-            <option value='21m-40m'>21m-40m</option>
-            <option value='41m-60m'>41m-60m</option>
+            <option value='5m-20m'>5-20 minutes</option>
+            <option value='21m-40m'>20-40 minutes</option>
+            <option value='41m-60m'>40-60 minutes</option>
           </Field>
+          <Info>
+            The time it takes to travel to the city in moderate traffic
+          </Info>
           <Field
             component={Select}
             label='Region'

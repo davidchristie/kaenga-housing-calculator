@@ -6,10 +6,10 @@ import {
   Popover
 } from 'react-bootstrap'
 
-class Tip extends Component {
+class Info extends Component {
   render () {
     const popover = (
-      <Popover id={'Tip-' + this.props.name}>
+      <Popover id={'Info-' + this.props.name}>
         {this.props.children}
       </Popover>
     )
@@ -17,11 +17,11 @@ class Tip extends Component {
       <OverlayTrigger
         trigger='click'
         overlay={popover}
-        placement='left'
+        placement='right'
         rootClose
       >
-        <Button bsStyle='info' className='pull-right'>
-          <span>Tip </span>
+        <Button bsStyle='info'>
+          <span>Info </span>
           <Glyphicon glyph='question-sign' />
         </Button>
       </OverlayTrigger>
@@ -29,12 +29,12 @@ class Tip extends Component {
   }
 }
 
-Tip.defaultProps = {
+Info.defaultProps = {
   name: ''
 }
 
-Tip.propTypes = {
+Info.propTypes = {
   name: PropTypes.string.isRequired
 }
 
-export default Tip
+export default Info
