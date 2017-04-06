@@ -75,8 +75,8 @@ class Main extends Component {
           <Hobbies />
           <Panel className='Main-register'>
             <Button
-              bsStyle='success'
               bsSize='large'
+              bsStyle='success'
               onClick={showRegisterForm}
             >
               Register

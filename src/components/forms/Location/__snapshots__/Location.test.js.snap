@@ -8,6 +8,10 @@ exports[`test matches snapshot 1`] = `
     header="Location">
     <Anchor
       id="location" />
+    <Tip
+      name="more-locations">
+      The more locations you are willing to live, the easier it will be to find you a home.
+    </Tip>
     <Button
       active={true}
       block={false}
