@@ -8,6 +8,10 @@ exports[`test matches snapshot 1`] = `
     header="Hobbies and Lifestyles">
     <Anchor
       id="hobbies" />
+    <Tip
+      name="hobbies">
+      We recommend you select up to three but you can choose more or less if you really need to
+    </Tip>
     <FormGroup
       bsClass="form-group">
       <ControlLabel

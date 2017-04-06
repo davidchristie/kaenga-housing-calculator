@@ -4,6 +4,7 @@ import { Field } from 'redux-form'
 
 import Checkbox from '../../controls/Checkbox'
 import Anchor from '../../layout/Anchor'
+import Tip from '../../misc/Tip'
 
 class Hobbies extends Component {
   render () {
@@ -12,6 +13,9 @@ class Hobbies extends Component {
       <form onSubmit={handleSubmit}>
         <Panel header='Hobbies and Lifestyles'>
           <Anchor id='hobbies' />
+          <Tip name='hobbies'>
+            We recommend you select up to three but you can choose more or less if you really need to
+          </Tip>
           <FormGroup>
             <ControlLabel>What are your family’s hobbies?</ControlLabel>
             <Field
