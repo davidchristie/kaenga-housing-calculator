@@ -88,7 +88,12 @@ exports[`test matches snapshot 1`] = `
       bsClass="panel"
       bsStyle="warning"
       defaultExpanded={false}
-      header="Old fields">
+      header="Old fields"
+      style={
+        Object {
+          "display": "none",
+        }
+      }>
       <h4>
         Suburbs
       </h4>

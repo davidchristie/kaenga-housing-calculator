@@ -41,7 +41,11 @@ class Location extends Component {
             <option value='South'>South</option>
             <option value='West'>West</option>
           </Field>
-          <Panel bsStyle='warning' header='Old fields'>
+          <Panel
+            bsStyle='warning'
+            header='Old fields'
+            style={{display: 'none'}}
+          >
             <h4>Suburbs</h4>
             <Field
               component={Select}
