@@ -20,7 +20,6 @@ exports[`test matches snapshot 1`] = `
         Report
       </h1>
     </Jumbotron>
-    <OurDesigns />
     <Connect(CheapestSuburb) />
     <Connect(HomeFloorspace) />
     <Connect(LivingSpace) />

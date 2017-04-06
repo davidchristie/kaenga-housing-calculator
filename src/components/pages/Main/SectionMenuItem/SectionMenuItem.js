@@ -4,7 +4,7 @@ import { ListGroupItem } from 'react-bootstrap'
 class SectionMenuItem extends Component {
   render () {
     return (
-      <ListGroupItem href={this.props.to}>
+      <ListGroupItem>
         {this.props.children}
       </ListGroupItem>
     )

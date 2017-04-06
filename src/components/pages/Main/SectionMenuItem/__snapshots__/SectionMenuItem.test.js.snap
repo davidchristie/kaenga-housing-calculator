@@ -1,6 +1,5 @@
 exports[`test matches snapshot 1`] = `
 <ListGroupItem
   bsClass="list-group-item"
-  href={undefined}
   listItem={false} />
 `;
