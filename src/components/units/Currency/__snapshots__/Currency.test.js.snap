@@ -1,6 +1,7 @@
 exports[`test matches snapshot 1`] = `
 <FormattedNumber
   currency="nzd"
+  maximumSignificantDigits={2}
   style="currency"
   value={0} />
 `;
