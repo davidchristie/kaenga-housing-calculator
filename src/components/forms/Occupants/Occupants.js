@@ -8,7 +8,7 @@ class Occupants extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{display: 'none'}}>
         <Panel header='Occupants'>
           <Field
             component={NumberInput}

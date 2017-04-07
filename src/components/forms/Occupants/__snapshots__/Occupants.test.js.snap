@@ -1,6 +1,11 @@
 exports[`test matches snapshot 1`] = `
 <form
-  onSubmit={undefined}>
+  onSubmit={undefined}
+  style={
+    Object {
+      "display": "none",
+    }
+  }>
   <Panel
     bsClass="panel"
     bsStyle="default"
