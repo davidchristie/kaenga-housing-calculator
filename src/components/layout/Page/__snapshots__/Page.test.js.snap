@@ -57,6 +57,10 @@ exports[`test matches snapshot 1`] = `
               <Currency
                 type="nzd"
                 value={0} />
+              -
+              <Currency
+                type="nzd"
+                value={0} />
             </strong>
           </NavItem>
         </LinkContainer>

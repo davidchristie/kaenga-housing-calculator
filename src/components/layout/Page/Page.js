@@ -14,7 +14,7 @@ class Page extends Component {
   }
 
   render () {
-    const { totalCost } = this.props
+    const { range } = this.props
     return (
       <div className='Page'>
         <Navbar fixedTop>
@@ -37,7 +37,9 @@ class Page extends Component {
                 <NavItem>
                   <span>Price: </span>
                   <strong>
-                    <Currency value={totalCost} />
+                    <Currency value={range.min} />
+                    -
+                    <Currency value={range.max} />
                   </strong>
                 </NavItem>
               </LinkContainer>
@@ -52,11 +54,16 @@ class Page extends Component {
 }
 
 Page.defaultProps = {
-  loadSuburbs: () => {}
+  loadSuburbs: () => {},
+  range: {max: 0, min: 0}
 }
 
 Page.propTypes = {
-  loadSuburbs: PropTypes.func.isRequired
+  loadSuburbs: PropTypes.func.isRequired,
+  range: PropTypes.shape({
+    max: PropTypes.number.isRequired,
+    min: PropTypes.number.isRequired
+  }).isRequired
 }
 
 export default Page
