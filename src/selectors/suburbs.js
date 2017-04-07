@@ -8,6 +8,16 @@ export function getCheapestSelectedSuburb (state) {
   })
 }
 
+export function getMostExpensiveSelectedSuburb (state) {
+  const selected = getSelectedSuburbs(state)
+  const max = Math.max(...selected.map(suburb => {
+    return suburb.landCostPerSqmFloorspace
+  }))
+  return selected.find(suburb => {
+    return suburb.landCostPerSqmFloorspace === max
+  })
+}
+
 export function getSelectedSuburbs (state) {
   const form = state.form || {}
   const location = form.location || {}

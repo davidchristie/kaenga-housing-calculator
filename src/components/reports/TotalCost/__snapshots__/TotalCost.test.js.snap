@@ -8,7 +8,6 @@ exports[`test matches snapshot 1`] = `
     Build cost: 
     <strong>
       <Currency
-        type="nzd"
         value={0} />
     </strong>
   </p>
@@ -16,7 +15,6 @@ exports[`test matches snapshot 1`] = `
     Land cost: 
     <strong>
       <Currency
-        type="nzd"
         value={0} />
     </strong>
   </p>
@@ -25,7 +23,6 @@ exports[`test matches snapshot 1`] = `
     Total: 
     <strong>
       <Currency
-        type="nzd"
         value={0} />
     </strong>
   </p>

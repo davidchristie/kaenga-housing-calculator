@@ -7,7 +7,7 @@ import { getReport } from '../../../selectors/report'
 export default connect(
   state => {
     return {
-      totalCost: getReport(state).total
+      range: getReport(state).range
     }
   },
   dispatch => {
