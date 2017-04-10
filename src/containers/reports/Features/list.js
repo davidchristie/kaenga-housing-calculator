@@ -1,3 +1,6 @@
+import { getHobbies } from '../../../selectors/hobbies'
+import { getHomeBuilderValues } from '../../../selectors/home-builder'
+
 export default [
   {
     condition: state => true,
@@ -8,7 +11,7 @@ export default [
     text: 'Close to public transport'
   },
   {
-    condition: state => true,
+    condition: state => getHomeBuilderValues(state).study,
     text: 'Shared guest studios'
   },
   {
@@ -16,7 +19,7 @@ export default [
     text: 'Plenty of storage for your sports equipment'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).exercise,
     text: 'Onsite gym and yoga studio'
   },
   {
@@ -24,7 +27,7 @@ export default [
     text: 'Communal workshop/makers space'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).gardening,
     text: 'Roof top flower and vegie garden'
   },
   {

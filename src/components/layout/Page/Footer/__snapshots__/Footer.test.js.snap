@@ -23,12 +23,12 @@ exports[`test matches snapshot 1`] = `
       }>
       <ul>
         <li>
-          <Link
+          <Unknown
             onlyActiveOnIndex={false}
             style={Object {}}
             to="/privacy">
             Privacy
-          </Link>
+          </Unknown>
         </li>
       </ul>
       <strong>
