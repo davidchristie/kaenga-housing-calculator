@@ -26,10 +26,7 @@ class Privacy extends Component {
               Providing information about your housing preferences is optional, but if don't provide us this information, we won't be able design a home that meets your needs or give you a chance to buy this home before anyone else.
             </p>
             <p>
-              We keep your information safe by storing it in encrypted files.
-            </p>
-            <p>
-              You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at lucas.kengmana@kaenga.com, or 0220772329.
+              You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at <a href='mailto:hello@kaenga.com'>hello@kaenga.com</a>.
             </p>
           </Jumbotron>
         </Col>
