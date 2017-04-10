@@ -21,17 +21,16 @@ class Page extends Component {
           <Navbar.Header>
             <Link to='/'>
               <Navbar.Brand>
-                <img alt='Kaenga logo' style={{height: '80px'}} src={logo} />
+                <img
+                  alt='Kaenga logo'
+                  src={logo}
+                  style={{height: '80px'}}
+                />
               </Navbar.Brand>
             </Link>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav bsStyle='tabs'>
-              <LinkContainer to='/about'>
-                <NavItem>About</NavItem>
-              </LinkContainer>
-            </Nav>
             <Nav bsStyle='tabs' pullRight>
               <LinkContainer to='/report'>
                 <NavItem>

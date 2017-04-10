@@ -52,19 +52,6 @@ exports[`test matches snapshot 1`] = `
         Housing Calculator
       </h1>
       <p>
-        <LinkContainer
-          action="push"
-          onlyActiveOnIndex={false}
-          to="about">
-          <Button
-            active={false}
-            block={false}
-            bsClass="btn"
-            bsStyle="primary"
-            disabled={false}>
-            Learn more
-          </Button>
-        </LinkContainer>
         <AboutSection />
       </p>
     </Jumbotron>

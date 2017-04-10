@@ -6,7 +6,6 @@ import {
   Jumbotron,
   Panel
 } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
 
 import Hobbies from '../../../containers/forms/Hobbies'
 import HomeBuilder from '../../../containers/forms/HomeBuilder'
@@ -59,11 +58,6 @@ class Main extends Component {
           <Jumbotron className='Main-header'>
             <h1>Housing Calculator</h1>
             <p>
-              <LinkContainer to='about'>
-                <Button bsStyle='primary'>
-                  Learn more
-                </Button>
-              </LinkContainer>
               <AboutSection />
             </p>
           </Jumbotron>
