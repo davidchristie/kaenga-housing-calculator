@@ -22,7 +22,7 @@ class Tip extends Component {
       >
         <Button bsStyle='info' className='pull-right'>
           <span>Tip </span>
-          <Glyphicon glyph='question-sign' />
+          <Glyphicon glyph='exclamation-sign' />
         </Button>
       </OverlayTrigger>
     )
