@@ -16,6 +16,7 @@ import Occupants from '../../../containers/forms/Occupants'
 import Sharing from '../../../containers/forms/Sharing'
 import Sustainability from '../../../containers/forms/Sustainability'
 import Transport from '../../../containers/forms/Transport'
+import AboutSection from './AboutSection'
 import './Main.css'
 import RegisterModal from './RegisterModal'
 import SectionMenu from './SectionMenu'
@@ -63,6 +64,7 @@ class Main extends Component {
                   Learn more
                 </Button>
               </LinkContainer>
+              <AboutSection />
             </p>
           </Jumbotron>
           <Location />

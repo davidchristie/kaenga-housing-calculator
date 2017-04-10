@@ -65,6 +65,7 @@ exports[`test matches snapshot 1`] = `
             Learn more
           </Button>
         </LinkContainer>
+        <AboutSection />
       </p>
     </Jumbotron>
     <Connect(ReduxForm) />
