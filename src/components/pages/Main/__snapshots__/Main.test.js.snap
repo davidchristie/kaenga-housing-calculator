@@ -51,9 +51,7 @@ exports[`test matches snapshot 1`] = `
       <h1>
         Housing Calculator
       </h1>
-      <p>
-        <AboutSection />
-      </p>
+      <AboutSection />
     </Jumbotron>
     <Connect(ReduxForm) />
     <ReduxForm />
