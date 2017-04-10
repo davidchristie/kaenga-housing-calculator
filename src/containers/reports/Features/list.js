@@ -1,5 +1,6 @@
 import { getHobbies } from '../../../selectors/hobbies'
 import { getHomeBuilderValues } from '../../../selectors/home-builder'
+import { getSustainability } from '../../../selectors/sustainability'
 
 export default [
   {
@@ -15,15 +16,15 @@ export default [
     text: 'Shared guest studios'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).sports,
     text: 'Plenty of storage for your sports equipment'
   },
   {
-    condition: state => getHobbies(state).exercise,
+    condition: state => getHobbies(state).exercising,
     text: 'Onsite gym and yoga studio'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).building,
     text: 'Communal workshop/makers space'
   },
   {
@@ -31,23 +32,23 @@ export default [
     text: 'Roof top flower and vegie garden'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).games,
     text: 'A communal games room'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).reading,
     text: 'A communal study/reading room'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).artMusic,
     text: 'A music room'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).artMusic,
     text: 'An onsite artist studio'
   },
   {
-    condition: state => true,
+    condition: state => getHobbies(state).socialising,
     text: 'Indoor and outdoor entertainment spaces with a high end kitchen and barbeque'
   },
   {
@@ -55,11 +56,11 @@ export default [
     text: 'North facing, double glazing, solar water heating'
   },
   {
-    condition: state => true,
+    condition: state => ['medium', 'high'].includes(getSustainability(state).level),
     text: 'Water Reticulation, etc.'
   },
   {
-    condition: state => true,
-    text: 'Photovoltaic panels, triple glazing, etc.'
+    condition: state => getSustainability(state).level === 'high',
+    text: 'Photovoltaic panels, etc.'
   }
 ]
