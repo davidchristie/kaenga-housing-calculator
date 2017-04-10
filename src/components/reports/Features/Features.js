@@ -1,9 +1,10 @@
-import React, { PropTypes } from 'react'
+import PropTypes from 'prop-types'
+import React, { Component } from 'react'
 import { ListGroup, Well } from 'react-bootstrap'
 
 import Feature from './Feature'
 
-class Features extends React.Component {
+class Features extends Component {
   render () {
     const { features } = this.props
     return (
