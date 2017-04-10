@@ -21,7 +21,7 @@ class Page extends Component {
           <Navbar.Header>
             <Link to='/'>
               <Navbar.Brand>
-                <img alt='Kāenga logo' src={logo} />
+                <img alt='Kaenga logo' style={{height: '80px'}} src={logo} />
               </Navbar.Brand>
             </Link>
             <Navbar.Toggle />
