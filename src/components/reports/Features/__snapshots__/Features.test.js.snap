@@ -1,0 +1,12 @@
+exports[`test matches snapshot 1`] = `
+<Well
+  bsClass="well">
+  <h2>
+    Shared Features
+  </h2>
+  <ListGroup
+    bsClass="list-group">
+    
+  </ListGroup>
+</Well>
+`;
