@@ -1,18 +1,12 @@
 import { connect } from 'react-redux'
 
 import Features from '../../../components/reports/Features'
-
-const features = [
-  {
-    condition: state => true,
-    text: 'Onsite car share service'
-  }
-]
+import list from './list'
 
 export default connect(
   state => {
     return {
-      features: features
+      features: list
         .filter(feature => feature.condition(state))
     }
   }
