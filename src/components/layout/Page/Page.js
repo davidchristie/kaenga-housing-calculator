@@ -4,7 +4,7 @@ import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap'
 
-import Currency from '../../units/Currency'
+import PriceRange from '../../../containers/reports/PriceRange'
 import './Page.css'
 import Footer from './Footer'
 import logo from './logo.png'
@@ -15,7 +15,6 @@ class Page extends Component {
   }
 
   render () {
-    const { range } = this.props
     return (
       <div className='Page'>
         <Navbar fixedTop>
@@ -36,11 +35,7 @@ class Page extends Component {
               <LinkContainer to='/report'>
                 <NavItem>
                   <span>Price: </span>
-                  <strong>
-                    <Currency value={range.min} />
-                    -
-                    <Currency value={range.max} />
-                  </strong>
+                  <PriceRange />
                 </NavItem>
               </LinkContainer>
             </Nav>
@@ -54,16 +49,11 @@ class Page extends Component {
 }
 
 Page.defaultProps = {
-  loadSuburbs: () => {},
-  range: {max: 0, min: 0}
+  loadSuburbs: () => {}
 }
 
 Page.propTypes = {
-  loadSuburbs: PropTypes.func.isRequired,
-  range: PropTypes.shape({
-    max: PropTypes.number.isRequired,
-    min: PropTypes.number.isRequired
-  }).isRequired
+  loadSuburbs: PropTypes.func.isRequired
 }
 
 export default Page

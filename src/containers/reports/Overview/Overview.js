@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Col, Row, Well } from 'react-bootstrap'
 
 import { getHomeBuilderValues } from '../../../selectors/home-builder'
-import TotalCost from '../TotalCost'
+import PriceRange from '../PriceRange'
 
 class Overview extends React.Component {
   render () {
@@ -16,7 +16,7 @@ class Overview extends React.Component {
               Bedrooms: {this.props.bedrooms}
             </p>
             <p>
-              Price: $xxx(=cheapest suburb) - $yyy (=most expensive suburb)
+              Price: <PriceRange />
             </p>
           </Col>
           <Col md={6}>
