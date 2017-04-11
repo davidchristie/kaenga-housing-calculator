@@ -3,8 +3,9 @@ import { Col, Grid, Jumbotron } from 'react-bootstrap'
 
 import CheapestSuburb from '../../../containers/reports/CheapestSuburb'
 import HomeFloorspace from '../../../containers/reports/HomeFloorspace'
-import LivingSpace from '../../../containers/reports/LivingSpace'
 import Features from '../../../containers/reports/Features'
+import LivingSpace from '../../../containers/reports/LivingSpace'
+import Overview from '../../../containers/reports/Overview'
 import TotalCost from '../../../containers/reports/TotalCost'
 
 class Report extends Component {
@@ -16,6 +17,7 @@ class Report extends Component {
           <Jumbotron className='Report-header'>
             <h1>Report</h1>
           </Jumbotron>
+          <Overview />
           <Features />
           <CheapestSuburb />
           <HomeFloorspace />
