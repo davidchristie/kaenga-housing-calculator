@@ -19,8 +19,6 @@ import Transport from '../../../containers/forms/Transport'
 import AboutSection from './AboutSection'
 import './Main.css'
 import RegisterModal from './RegisterModal'
-import SectionMenu from './SectionMenu'
-import SectionMenuItem from './SectionMenuItem'
 
 class Main extends Component {
   render () {
@@ -31,30 +29,7 @@ class Main extends Component {
     } = this.props
     return (
       <Grid className='Main'>
-        <Col md={2}>
-          <Panel>
-            <SectionMenu>
-              <SectionMenuItem to='#location'>
-                Location
-              </SectionMenuItem>
-              <SectionMenuItem to='#housing-type'>
-                Housing Type
-              </SectionMenuItem>
-              <SectionMenuItem to='#home-builder'>
-                Home Builder
-              </SectionMenuItem>
-              <SectionMenuItem to='#sustainability'>
-                Sustainability
-              </SectionMenuItem>
-              <SectionMenuItem to='#transport'>
-                Transport
-              </SectionMenuItem>
-              <SectionMenuItem to='#hobbies'>
-                Hobbies and lifestyle
-              </SectionMenuItem>
-            </SectionMenu>
-          </Panel>
-        </Col>
+        <Col md={2} />
         <Col md={8}>
           <Jumbotron className='Main-header'>
             <h1>Housing Calculator</h1>
