@@ -15,7 +15,7 @@ class Report extends Component {
         <Col md={2} />
         <Col md={8}>
           <Jumbotron className='Report-header'>
-            <h1>Report</h1>
+            <h1>Your Home</h1>
           </Jumbotron>
           <Overview />
           <Features />

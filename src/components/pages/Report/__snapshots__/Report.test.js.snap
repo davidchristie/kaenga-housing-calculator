@@ -17,7 +17,7 @@ exports[`test matches snapshot 1`] = `
       className="Report-header"
       componentClass="div">
       <h1>
-        Report
+        Your Home
       </h1>
     </Jumbotron>
     <Connect(Overview) />
