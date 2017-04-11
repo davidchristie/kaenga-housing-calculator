@@ -7,7 +7,7 @@ import Checkbox from '../components/controls/Checkbox'
 import Anchor from '../components/layout/Anchor'
 import Tip from '../components/misc/Tip'
 
-class Hobbies extends Component {
+class HobbiesForm extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -66,11 +66,11 @@ class Hobbies extends Component {
   }
 }
 
-Hobbies.propTypes = {
+HobbiesForm.propTypes = {
   handleSubmit: PropTypes.func
 }
 
 export default reduxForm({
   destroyOnUnmount: false,
   form: 'hobbies'
-})(Hobbies)
+})(HobbiesForm)

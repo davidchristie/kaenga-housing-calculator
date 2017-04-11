@@ -8,7 +8,7 @@ import {
   Panel
 } from 'react-bootstrap'
 
-import HomeBuilder from '../../../containers/forms/HomeBuilder'
+import HomeForm from '../../../containers/HomeForm'
 import HousingType from '../../../containers/forms/HousingType'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
@@ -38,7 +38,7 @@ class Main extends Component {
           <Location />
           <HousingType />
           <Occupants />
-          <HomeBuilder />
+          <HomeForm />
           <Sustainability />
           <Transport />
           <Sharing />
