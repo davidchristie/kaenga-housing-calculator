@@ -12,7 +12,6 @@ import HomeForm from '../../../containers/HomeForm'
 import HousingType from '../../../containers/forms/HousingType'
 import Location from '../../../containers/forms/Location'
 import Occupants from '../../../containers/forms/Occupants'
-import Sharing from '../../../containers/forms/Sharing'
 import Sustainability from '../../../containers/forms/Sustainability'
 import Transport from '../../../containers/forms/Transport'
 import Hobbies from '../../../containers/HobbiesForm'
@@ -41,7 +40,6 @@ class Main extends Component {
           <HomeForm />
           <Sustainability />
           <Transport />
-          <Sharing />
           <Hobbies />
           <Panel className='Main-register'>
             <Button

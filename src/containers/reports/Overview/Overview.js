@@ -24,7 +24,7 @@ class Overview extends React.Component {
               Bathrooms: {this.props.bathrooms}
             </p>
             <p>
-            Savings: $zzz (aa%)
+              Savings: $zzz (aa%)
             </p>
           </Col>
         </ Row>

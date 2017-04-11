@@ -4,14 +4,17 @@ exports[`test matches snapshot 1`] = `
   <Panel
     bsClass="panel"
     bsStyle="default"
-    defaultExpanded={false}
-    header="Location">
+    defaultExpanded={false}>
     <Anchor
       id="location" />
-    <Tip
-      name="more-locations">
-      The more locations you are willing to live, the easier it will be to find you a home.
-    </Tip>
+    <h3>
+      Location
+       
+      <Tip
+        name="more-locations">
+        The more locations you are willing to live, the easier it will be to find you a home.
+      </Tip>
+    </h3>
     <Button
       active={true}
       block={false}
@@ -36,58 +39,77 @@ exports[`test matches snapshot 1`] = `
       disabled={true}>
       Christchurch
     </Button>
-    <Field
-      component={[Function]}
-      label="Commute to city"
-      multiple={true}
-      name="commute">
-      <option
-        value="Walking distance">
-        Walking distance
-      </option>
-      <option
-        value="5m-20m">
-        5-20 minutes
-      </option>
-      <option
-        value="21m-40m">
-        20-40 minutes
-      </option>
-      <option
-        value="41m-60m">
-        40-60 minutes
-      </option>
-    </Field>
-    <Info
-      name="">
-      The time it takes to travel to the city in moderate traffic
-    </Info>
-    <Field
-      component={[Function]}
-      label="Region"
-      multiple={true}
-      name="region">
-      <option
-        value="Central">
-        Central
-      </option>
-      <option
-        value="North">
-        North
-      </option>
-      <option
-        value="East">
-        East
-      </option>
-      <option
-        value="South">
-        South
-      </option>
-      <option
-        value="West">
-        West
-      </option>
-    </Field>
+    <Row
+      bsClass="row"
+      componentClass="div">
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={6}>
+        <h4>
+          Commute
+           
+          <Info
+            name="">
+            The time it takes to travel to the city in moderate traffic
+          </Info>
+        </h4>
+        <Field
+          component={[Function]}
+          multiple={true}
+          name="commute">
+          <option
+            value="Walking distance">
+            Walking distance
+          </option>
+          <option
+            value="5m-20m">
+            5-20 minutes
+          </option>
+          <option
+            value="21m-40m">
+            20-40 minutes
+          </option>
+          <option
+            value="41m-60m">
+            40-60 minutes
+          </option>
+        </Field>
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={6}>
+        <h4>
+          Region
+        </h4>
+        <Field
+          component={[Function]}
+          multiple={true}
+          name="region">
+          <option
+            value="Central">
+            Central
+          </option>
+          <option
+            value="North">
+            North
+          </option>
+          <option
+            value="East">
+            East
+          </option>
+          <option
+            value="South">
+            South
+          </option>
+          <option
+            value="West">
+            West
+          </option>
+        </Field>
+      </Col>
+    </Row>
     <Panel
       bsClass="panel"
       bsStyle="warning"
