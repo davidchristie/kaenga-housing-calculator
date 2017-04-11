@@ -8,7 +8,6 @@ import {
   Panel
 } from 'react-bootstrap'
 
-import Hobbies from '../../../containers/forms/Hobbies'
 import HomeBuilder from '../../../containers/forms/HomeBuilder'
 import HousingType from '../../../containers/forms/HousingType'
 import Location from '../../../containers/forms/Location'
@@ -16,6 +15,7 @@ import Occupants from '../../../containers/forms/Occupants'
 import Sharing from '../../../containers/forms/Sharing'
 import Sustainability from '../../../containers/forms/Sustainability'
 import Transport from '../../../containers/forms/Transport'
+import Hobbies from '../../../containers/HobbiesForm'
 import AboutSection from './AboutSection'
 import './Main.css'
 import RegisterModal from './RegisterModal'
