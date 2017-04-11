@@ -1,5 +1,9 @@
 exports[`test matches snapshot 1`] = `
-<div>
+<Well
+  bsClass="well">
+  <h2>
+    Our Designs
+  </h2>
   <Carousel
     bsClass="carousel"
     controls={true}
@@ -53,12 +57,5 @@ exports[`test matches snapshot 1`] = `
         src="Noah-Fagan-portfolio-oct-14-7.jpg" />
     </CarouselItem>
   </Carousel>
-  <Jumbotron
-    bsClass="jumbotron"
-    componentClass="div">
-    <h1>
-      Our Designs
-    </h1>
-  </Jumbotron>
-</div>
+</Well>
 `;

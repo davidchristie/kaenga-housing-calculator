@@ -22,6 +22,7 @@ exports[`test matches snapshot 1`] = `
     </Jumbotron>
     <Connect(Overview) />
     <Connect(Features) />
+    <OurDesigns />
   </Col>
   <Col
     bsClass="col"
