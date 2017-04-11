@@ -4,6 +4,7 @@ import { Col, ControlLabel, FormGroup, Panel, Row } from 'react-bootstrap'
 import { Field, reduxForm } from 'redux-form'
 
 import Checkbox from '../components/controls/Checkbox'
+import TextInput from '../components/controls/TextInput'
 import Anchor from '../components/layout/Anchor'
 import Tip from '../components/misc/Tip'
 
@@ -68,6 +69,12 @@ class HobbiesForm extends Component {
                 />
               </Col>
             </Row>
+            <Field
+              component={TextInput}
+              name='other'
+              placeholder='Other'
+              rows={1}
+            />
           </FormGroup>
         </Panel>
       </form>

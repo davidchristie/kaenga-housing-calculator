@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactTestUtils from 'react-dom/test-utils'
 
-import HomeBuilder from './HomeBuilder'
+import TextArea from './TextArea'
 
 const shallowRenderer = ReactTestUtils.createRenderer()
 
 it('matches snapshot', () => {
-  expect(shallowRenderer.render(<HomeBuilder />)).toMatchSnapshot()
+  expect(shallowRenderer.render(<TextArea />)).toMatchSnapshot()
 })

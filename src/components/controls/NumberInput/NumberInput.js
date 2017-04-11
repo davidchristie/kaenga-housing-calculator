@@ -19,7 +19,7 @@ class NumberInput extends Component {
           min={0}
           onChange={onChange}
           type='number'
-          value={Number(value)}
+          value={value}
         />
       </FormGroup>
     )

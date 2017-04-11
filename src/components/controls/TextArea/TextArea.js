@@ -7,7 +7,7 @@ import {
   HelpBlock
 } from 'react-bootstrap'
 
-class TextInput extends Component {
+class TextArea extends Component {
   render () {
     const {
       input: { onChange, value },
@@ -17,19 +17,24 @@ class TextInput extends Component {
     return (
       <FormGroup>
         <ControlLabel>{label}</ControlLabel>
-        <FormControl onChange={onChange} value={value} {...this.props} />
+        <FormControl
+          componentClass='textarea'
+          onChange={onChange}
+          value={value}
+          {...this.props}
+        />
         {error && <HelpBlock>{error}</HelpBlock>}
       </FormGroup>
     )
   }
 }
 
-TextInput.defaultProps = {
+TextArea.defaultProps = {
   input: {},
   meta: {}
 }
 
-TextInput.propTypes = {
+TextArea.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
     value: PropTypes.any
@@ -37,4 +42,4 @@ TextInput.propTypes = {
   label: PropTypes.string
 }
 
-export default TextInput
+export default TextArea

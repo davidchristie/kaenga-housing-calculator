@@ -12,24 +12,21 @@ class HousingType extends Component {
     const { handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
-        <Panel header='Housing Type'>
+        <Panel>
           <Anchor id='housing-type' />
-          <Tip name='housing-types'>
-            In most locations, terraced housing and low rise apartments offer the best value for money
-          </Tip>
+          <h3>
+            Type of Home{' '}
+            <Tip name='housing-types'>
+              We only build terraced housing and low rise apartments because they offer best value for money
+            </Tip>
+          </h3>
           <FormGroup>
             <Field component={Select} name='type'>
-              <option value='house'>
-                Standalone house
-              </option>
               <option value='terraced'>
                 Terraced house (3-10 homes)
               </option>
               <option value='lowRise'>
                 Low rise apartments (12-25 homes)
-              </option>
-              <option value='highRise'>
-                High rise apartments (30+ homes)
               </option>
             </Field>
           </FormGroup>

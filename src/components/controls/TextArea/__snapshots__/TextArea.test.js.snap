@@ -6,10 +6,10 @@ exports[`test matches snapshot 1`] = `
     srOnly={false} />
   <FormControl
     bsClass="form-control"
-    componentClass="input"
-    min={0}
+    componentClass="textarea"
+    input={Object {}}
+    meta={Object {}}
     onChange={undefined}
-    type="number"
     value={undefined} />
 </FormGroup>
 `;

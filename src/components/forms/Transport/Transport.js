@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Panel } from 'react-bootstrap'
+import { Col, Panel, Row } from 'react-bootstrap'
 import { Field } from 'redux-form'
 
 import Select from '../../controls/Select'
@@ -11,41 +11,53 @@ class Transport extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
-        <Panel header='Transport'>
+        <Panel>
           <Anchor id='transport' />
-          <Tip name='transport'>
-            We choose sites that are close to public transport. We also provide onsite car sharing services
-          </Tip>
-          <Field
-            component={Select}
-            label='Work and school'
-            name='commute'
-          >
-            <option value='publicTransport'>
-              We can use public transport, walk, or cycle
-            </option>
-            <option value='carPooling'>
-              We are open to car pooling
-            </option>
-            <option value='car'>
-              We need our own car
-            </option>
-          </Field>
-          <Field
-            component={Select}
-            label='Other times'
-            name='needCar'
-          >
-            <option value='mostDays'>
-              We’ll need to use a car most days
-            </option>
-            <option value='onceOrTwice'>
-              We’ll need a car once or twice a week
-            </option>
-            <option value='lessThanOnce'>
-              We’ll need a car less than once a week
-            </option>
-          </Field>
+          <h3>
+            Transport{' '}
+            <Tip name='transport'>
+              We choose sites that are close to public transport. We also provide onsite car sharing services
+            </Tip>
+          </h3>
+          <p>
+            How will you get to:
+          </p>
+          <Row>
+            <Col md={6}>
+              <Field
+                component={Select}
+                label='Work and school'
+                name='commute'
+              >
+                <option value='publicTransport'>
+                  Public transport, walk, or cycle
+                </option>
+                <option value='carPooling'>
+                  Car pool
+                </option>
+                <option value='car'>
+                  Use our own car
+                </option>
+              </Field>
+            </Col>
+            <Col md={6}>
+              <Field
+                component={Select}
+                label='Other places'
+                name='needCar'
+              >
+                <option value='mostDays'>
+                  We’ll need to use a car most days
+                </option>
+                <option value='onceOrTwice'>
+                  We’ll need a car once or twice a week
+                </option>
+                <option value='lessThanOnce'>
+                  We’ll need a car less than once a week
+                </option>
+              </Field>
+            </Col>
+          </Row>
         </Panel>
       </form>
     )
