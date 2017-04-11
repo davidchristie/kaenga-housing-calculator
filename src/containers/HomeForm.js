@@ -13,7 +13,7 @@ class HomeForm extends Component {
     const { handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
-        <Panel header='Home Builder'>
+        <Panel>
           <Anchor id='home-builder' />
           <h3>Home Design</h3>
           <Field
