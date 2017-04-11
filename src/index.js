@@ -1,8 +1,8 @@
 import React from 'react'
+import { render } from 'react-dom'
 import { IntlProvider } from 'react-intl'
 import { Provider } from 'react-redux'
 import { Router } from 'react-router'
-import { render } from 'react-snapshot'
 
 import history from './history'
 import routes from './routes'

@@ -22,10 +22,6 @@ exports[`test matches snapshot 1`] = `
     </Jumbotron>
     <Connect(Overview) />
     <Connect(Features) />
-    <Connect(CheapestSuburb) />
-    <Connect(HomeFloorspace) />
-    <Connect(LivingSpace) />
-    <Connect(TotalCost) />
   </Col>
   <Col
     bsClass="col"
