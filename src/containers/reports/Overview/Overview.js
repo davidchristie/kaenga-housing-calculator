@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Col, Row, Well } from 'react-bootstrap'
 
-import { getHomeBuilderValues } from '../../../selectors/home-builder'
+import design from '../../../selectors/design'
 import PriceRange from '../PriceRange'
 
 class Overview extends React.Component {
@@ -36,8 +36,8 @@ class Overview extends React.Component {
 export default connect(
   state => {
     return {
-      bathrooms: getHomeBuilderValues(state).bathrooms || 0,
-      bedrooms: getHomeBuilderValues(state).bedrooms || 0
+      bathrooms: design(state).bathrooms || 0,
+      bedrooms: design(state).bedrooms || 0
     }
   }
 )(Overview)

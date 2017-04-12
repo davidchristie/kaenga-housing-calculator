@@ -8,13 +8,13 @@ import NumberInput from '../components/controls/NumberInput'
 import Anchor from '../components/layout/Anchor'
 import Tip from '../components/misc/Tip'
 
-class HomeForm extends Component {
+class DesignForm extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
       <form onSubmit={handleSubmit}>
         <Panel>
-          <Anchor id='home-builder' />
+          <Anchor id='design' />
           <h3>Home Design</h3>
           <Field
             component={NumberInput}
@@ -78,5 +78,5 @@ class HomeForm extends Component {
 
 export default reduxForm({
   destroyOnUnmount: false,
-  form: 'homeBuilder'
-})(HomeForm)
+  form: 'design'
+})(DesignForm)

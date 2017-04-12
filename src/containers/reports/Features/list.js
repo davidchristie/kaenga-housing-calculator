@@ -1,5 +1,5 @@
 import { getHobbies } from '../../../selectors/hobbies'
-import { getHomeBuilderValues } from '../../../selectors/home-builder'
+import design from '../../../selectors/design'
 import { getSustainability } from '../../../selectors/sustainability'
 
 export default [
@@ -12,7 +12,7 @@ export default [
     text: 'Close to public transport'
   },
   {
-    condition: state => getHomeBuilderValues(state).study,
+    condition: state => design(state).study,
     text: 'Shared guest studios'
   },
   {

@@ -15,11 +15,10 @@ import {
 } from '../../actions/register'
 import HousingType from '../forms/HousingType'
 import Location from '../forms/Location'
-import Occupants from '../forms/Occupants'
 import Sustainability from '../forms/Sustainability'
 import Transport from '../forms/Transport'
 import Hobbies from '../HobbiesForm'
-import HomeForm from '../HomeForm'
+import DesignForm from '../DesignForm'
 import AboutSection from './AboutSection'
 import './MainPage.css'
 import RegisterModal from './RegisterModal'
@@ -48,8 +47,7 @@ class MainPage extends Component {
           </Jumbotron>
           <Location />
           <HousingType />
-          <Occupants />
-          <HomeForm />
+          <DesignForm />
           <Sustainability />
           <Transport />
           <Hobbies />
