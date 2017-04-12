@@ -18,13 +18,10 @@ class Info extends Component {
       <OverlayTrigger
         trigger='click'
         overlay={popover}
-        placement='right'
+        placement='bottom'
         rootClose
       >
-        <Button bsStyle='info'>
-          <span>Info </span>
-          <Glyphicon glyph='question-sign' />
-        </Button>
+        <Glyphicon glyph='question-sign' />
       </OverlayTrigger>
     )
   }

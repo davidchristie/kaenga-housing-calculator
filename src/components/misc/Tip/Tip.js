@@ -18,13 +18,10 @@ class Tip extends Component {
       <OverlayTrigger
         trigger='click'
         overlay={popover}
-        placement='left'
+        placement='bottom'
         rootClose
       >
-        <Button bsStyle='info' className='pull-right'>
-          <span>Tip </span>
-          <Glyphicon glyph='exclamation-sign' />
-        </Button>
+        <Glyphicon glyph='info-sign' />
       </OverlayTrigger>
     )
   }
