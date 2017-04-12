@@ -1,6 +1,6 @@
-import { getHobbies } from '../../../selectors/hobbies'
-import design from '../../../selectors/design'
-import { getSustainability } from '../../../selectors/sustainability'
+import design from '../selectors/design'
+import { getHobbies } from '../selectors/hobbies'
+import { getSustainability } from '../selectors/sustainability'
 
 export default [
   {
