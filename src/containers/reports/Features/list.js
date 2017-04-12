@@ -12,7 +12,7 @@ export default [
     text: 'Close to public transport'
   },
   {
-    condition: state => design(state).study,
+    condition: state => design(state).guestStudio,
     text: 'Shared guest studios'
   },
   {

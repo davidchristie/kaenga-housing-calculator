@@ -34,42 +34,11 @@ class DesignForm extends Component {
           <Field
             component={Checkbox}
             label='Shared guest studio'
-            name='study'
+            name='guestStudio'
           />
           <Tip>
             Sharing a guest studio with others is significantly cheaper than having your own guest room. If you decide to do this, make sure to reduce the number of bedrooms you need above
           </Tip>
-          <Panel
-            bsStyle='warning'
-            header='Old fields'
-            style={{display: 'none'}}
-          >
-            <Field
-              component={NumberInput}
-              label='How many double bedrooms do you need?'
-              name='doubleBedrooms'
-            />
-            <Field
-              component={NumberInput}
-              label='How many single bedrooms do you need?'
-              name='singleBedrooms'
-            />
-            <Field
-              component={NumberInput}
-              label='How many bathrooms with a bathtub do you need?'
-              name='bathtubs'
-            />
-            <Field
-              component={NumberInput}
-              label='How many bathrooms with a shower do you need?'
-              name='showers'
-            />
-            <Field
-              component={NumberInput}
-              label='How many stand alone toilets do you need?'
-              name='toilets'
-            />
-          </Panel>
         </Panel>
       </form>
     )

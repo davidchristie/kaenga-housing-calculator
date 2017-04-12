@@ -5,7 +5,7 @@ export default state => {
   return {
     bathrooms: values.bathrooms || 0,
     bedrooms: values.bedrooms || 0,
-    occupants: values.occupants || 0,
-    study: values.study || false
+    guestStudio: values.guestStudio || false,
+    occupants: values.occupants || 0
   }
 }

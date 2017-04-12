@@ -3,19 +3,16 @@ import livingSpace from './living-space'
 
 const bathroomSize = 5 // sqm
 const bedroomSize = 9.5 // sqm
-const studySize = 6.72// sqm
 
 function floorspace (state) {
   const {
     bedrooms,
-    bathrooms,
-    study
+    bathrooms
   } = design(state)
   return {
     bathrooms: bathrooms * bathroomSize,
     bedrooms: bedrooms * bedroomSize,
-    living: livingSpace(state).total,
-    study: study * studySize
+    living: livingSpace(state).total
   }
 }
 
@@ -23,10 +20,9 @@ function total (state) {
   const {
     bathrooms,
     bedrooms,
-    living,
-    study
+    living
   } = floorspace(state)
-  return bathrooms + bedrooms + living + study
+  return bathrooms + bedrooms + living
 }
 
 export default state => {
