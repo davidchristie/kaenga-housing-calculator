@@ -7,18 +7,24 @@ exports[`test matches snapshot 1`] = `
   <Col
     bsClass="col"
     componentClass="div"
-    md={2} />
+    md={1} />
   <Col
     bsClass="col"
     componentClass="div"
-    md={8}>
+    md={10}>
     <Jumbotron
       bsClass="jumbotron"
       className="Main-header"
       componentClass="div">
-      <h1>
-        Home Builder
-      </h1>
+      <PageHeader
+        bsClass="page-header">
+        <h1>
+          Home Builder
+        </h1>
+        <small>
+          Design a home that meets your needs and fits your budget
+        </small>
+      </PageHeader>
       <AboutSection />
     </Jumbotron>
     <Connect(ReduxForm) />
@@ -48,7 +54,7 @@ exports[`test matches snapshot 1`] = `
   <Col
     bsClass="col"
     componentClass="div"
-    md={2} />
+    md={1} />
   <RegisterModal
     hideRegisterForm={[Function]}
     registerFormOpen={false} />

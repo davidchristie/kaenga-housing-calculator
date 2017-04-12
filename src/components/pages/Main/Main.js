@@ -5,6 +5,7 @@ import {
   Col,
   Grid,
   Jumbotron,
+  PageHeader,
   Panel
 } from 'react-bootstrap'
 
@@ -28,10 +29,15 @@ class Main extends Component {
     } = this.props
     return (
       <Grid className='Main'>
-        <Col md={2} />
-        <Col md={8}>
+        <Col md={1} />
+        <Col md={10}>
           <Jumbotron className='Main-header'>
-            <h1>Home Builder</h1>
+            <PageHeader>
+              <h1>Home Builder</h1>
+              <small>
+                Design a home that meets your needs and fits your budget
+              </small>
+            </PageHeader>
             <AboutSection />
           </Jumbotron>
           <Location />
@@ -51,7 +57,7 @@ class Main extends Component {
             </Button>
           </Panel>
         </Col>
-        <Col md={2} />
+        <Col md={1} />
         <RegisterModal
           hideRegisterForm={hideRegisterForm}
           registerFormOpen={registerFormOpen}

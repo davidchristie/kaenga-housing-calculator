@@ -7,22 +7,11 @@ exports[`test matches snapshot 1`] = `
       id="Tip-"
       placement="right" />
   }
-  placement="left"
+  placement="bottom"
   rootClose={true}
   trigger="click">
-  <Button
-    active={false}
-    block={false}
-    bsClass="btn"
-    bsStyle="info"
-    className="pull-right"
-    disabled={false}>
-    <span>
-      Tip 
-    </span>
-    <Glyphicon
-      bsClass="glyphicon"
-      glyph="exclamation-sign" />
-  </Button>
+  <Glyphicon
+    bsClass="glyphicon"
+    glyph="info-sign" />
 </OverlayTrigger>
 `;
