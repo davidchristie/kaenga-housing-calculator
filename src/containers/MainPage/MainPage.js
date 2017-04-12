@@ -1,5 +1,3 @@
-import { connect } from 'react-redux'
-
 import React, { Component } from 'react'
 import {
   Button,
@@ -9,6 +7,7 @@ import {
   PageHeader,
   Panel
 } from 'react-bootstrap'
+import { connect } from 'react-redux'
 
 import {
   hideRegisterForm,
@@ -22,10 +21,10 @@ import Transport from '../forms/Transport'
 import Hobbies from '../HobbiesForm'
 import HomeForm from '../HomeForm'
 import AboutSection from './AboutSection'
-import './Main.css'
+import './MainPage.css'
 import RegisterModal from './RegisterModal'
 
-class Main extends Component {
+class MainPage extends Component {
   render () {
     const {
       hideRegisterForm,
@@ -33,12 +32,14 @@ class Main extends Component {
       showRegisterForm
     } = this.props
     return (
-      <Grid className='Main'>
+      <Grid className='MainPage'>
         <Col md={1} />
         <Col md={10}>
-          <Jumbotron className='Main-header'>
+          <Jumbotron className='MainPage-header'>
             <PageHeader>
-              Home Builder
+              <div>
+                Home Builder
+              </div>
               <small>
                 Design a home that meets your needs and fits your budget
               </small>
@@ -52,7 +53,7 @@ class Main extends Component {
           <Sustainability />
           <Transport />
           <Hobbies />
-          <Panel className='Main-register'>
+          <Panel className='MainPage-register'>
             <Button
               bsSize='large'
               bsStyle='success'
@@ -84,4 +85,4 @@ export default connect(
       showRegisterForm: () => dispatch(showRegisterForm())
     }
   }
-)(Main)
+)(MainPage)
