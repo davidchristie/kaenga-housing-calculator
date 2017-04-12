@@ -31,7 +31,7 @@ class Main extends Component {
         <Col md={2} />
         <Col md={8}>
           <Jumbotron className='Main-header'>
-            <h1>Housing Calculator</h1>
+            <h1>Home Builder</h1>
             <AboutSection />
           </Jumbotron>
           <Location />
