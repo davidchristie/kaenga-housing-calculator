@@ -9,7 +9,13 @@ class PriceRange extends Component {
     const { range } = this.props
     return (
       <strong>
-        <Currency value={range.min} />-<Currency value={range.max} />
+        {range.max === range.min
+          ? <Currency value={range.min} />
+          : <span>
+            <Currency value={range.min} />
+            -
+            <Currency value={range.max} />
+          </span>}
       </strong>
     )
   }
