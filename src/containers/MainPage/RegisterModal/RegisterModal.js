@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Modal } from 'react-bootstrap'
 
-import Register from '../../../../containers/forms/Register'
+import Register from '../../forms/Register'
 
 class RegisterModal extends Component {
   render () {

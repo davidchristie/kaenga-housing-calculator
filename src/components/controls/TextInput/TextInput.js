@@ -12,12 +12,13 @@ class TextInput extends Component {
     const {
       input: { onChange, value },
       label,
-      meta: { error }
+      meta: { error },
+      type
     } = this.props
     return (
       <FormGroup>
         <ControlLabel>{label}</ControlLabel>
-        <FormControl onChange={onChange} value={value} {...this.props} />
+        <FormControl onChange={onChange} value={value} type={type} />
         {error && <HelpBlock>{error}</HelpBlock>}
       </FormGroup>
     )

@@ -1,4 +1,5 @@
-import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+
 import React, { Component } from 'react'
 import {
   Button,
@@ -9,13 +10,17 @@ import {
   Panel
 } from 'react-bootstrap'
 
-import HomeForm from '../../../containers/HomeForm'
-import HousingType from '../../../containers/forms/HousingType'
-import Location from '../../../containers/forms/Location'
-import Occupants from '../../../containers/forms/Occupants'
-import Sustainability from '../../../containers/forms/Sustainability'
-import Transport from '../../../containers/forms/Transport'
-import Hobbies from '../../../containers/HobbiesForm'
+import {
+  hideRegisterForm,
+  showRegisterForm
+} from '../../actions/register'
+import HousingType from '../forms/HousingType'
+import Location from '../forms/Location'
+import Occupants from '../forms/Occupants'
+import Sustainability from '../forms/Sustainability'
+import Transport from '../forms/Transport'
+import Hobbies from '../HobbiesForm'
+import HomeForm from '../HomeForm'
 import AboutSection from './AboutSection'
 import './Main.css'
 import RegisterModal from './RegisterModal'
@@ -33,7 +38,7 @@ class Main extends Component {
         <Col md={10}>
           <Jumbotron className='Main-header'>
             <PageHeader>
-              <h1>Home Builder</h1>
+              Home Builder
               <small>
                 Design a home that meets your needs and fits your budget
               </small>
@@ -67,16 +72,16 @@ class Main extends Component {
   }
 }
 
-Main.defaultProps = {
-  hideRegisterForm: () => {},
-  registerFormOpen: false,
-  showRegisterForm: () => {}
-}
-
-Main.propTypes = {
-  hideRegisterForm: PropTypes.func.isRequired,
-  registerFormOpen: PropTypes.bool.isRequired,
-  showRegisterForm: PropTypes.func.isRequired
-}
-
-export default Main
+export default connect(
+  state => {
+    return {
+      registerFormOpen: state.registerFormOpen
+    }
+  },
+  dispatch => {
+    return {
+      hideRegisterForm: () => dispatch(hideRegisterForm()),
+      showRegisterForm: () => dispatch(showRegisterForm())
+    }
+  }
+)(Main)

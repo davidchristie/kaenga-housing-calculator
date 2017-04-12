@@ -5,7 +5,7 @@ exports[`test matches snapshot 1`] = `
     bsStyle="default"
     fixedTop={true}>
     <NavbarHeader>
-      <Unknown
+      <Link
         onlyActiveOnIndex={false}
         style={Object {}}
         to="/">
@@ -19,7 +19,7 @@ exports[`test matches snapshot 1`] = `
               }
             } />
         </NavbarBrand>
-      </Unknown>
+      </Link>
       <NavbarToggle />
     </NavbarHeader>
     <NavbarCollapse>
