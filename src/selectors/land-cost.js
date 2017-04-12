@@ -1,4 +1,4 @@
-import { getTotalFloorspace } from './floorspace'
+import floorspace from './floorspace'
 import {
   getCheapestSelectedSuburb,
   getMostExpensiveSelectedSuburb
@@ -13,7 +13,7 @@ export function getLandCostRange (state) {
   const maxLandCostPerSqmFloorspace = cheapest
   ? mostExpensive.landCostPerSqmFloorspace
   : 0
-  const totalFloorspace = getTotalFloorspace(state)
+  const totalFloorspace = floorspace(state).total
   return {
     max: maxLandCostPerSqmFloorspace * totalFloorspace,
     min: minLandCostPerSqmFloorspace * totalFloorspace
@@ -25,6 +25,5 @@ export function getTotalLandCost (state) {
   const landCostPerSqmFloorspace = cheapest
     ? cheapest.landCostPerSqmFloorspace
     : 0
-  const totalFloorspace = getTotalFloorspace(state)
-  return landCostPerSqmFloorspace * totalFloorspace
+  return floorspace(state).total * landCostPerSqmFloorspace
 }

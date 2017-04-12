@@ -1,44 +1,37 @@
-import {
-  getBathtubFloorspace,
-  getDoubleBedroomFloorspace,
-  getShowerFloorspace,
-  getSingleBedroomFloorspace,
-  getStudyFloorspace,
-  getToiletFloorspace
-} from '../models/floorspace'
 import design from './design'
 import livingSpace from './living-space'
 
-export function getHomeFloorspace (state) {
-  const values = design(state)
+const bathroomSize = 5 // sqm
+const bedroomSize = 9.5 // sqm
+const studySize = 6.72// sqm
+
+function floorspace (state) {
+  const {
+    bedrooms,
+    bathrooms,
+    study
+  } = design(state)
   return {
-    bathtubs: getBathtubFloorspace(values.bathtubs || 0),
-    doubleBedrooms: getDoubleBedroomFloorspace(values.doubleBedrooms || 0),
-    singleBedrooms: getSingleBedroomFloorspace(values.singleBedrooms || 0),
-    showers: getShowerFloorspace(values.showers || 0),
-    study: getStudyFloorspace(values.study || 0),
-    toilets: getToiletFloorspace(values.toilets || 0)
+    bathrooms: bathrooms * bathroomSize,
+    bedrooms: bedrooms * bedroomSize,
+    living: livingSpace(state).total,
+    study: study * studySize
   }
 }
 
-export function getTotalHomeFloorspace (state) {
+function total (state) {
   const {
-    bathtubs,
-    doubleBedrooms,
-    singleBedrooms,
-    showers,
-    study,
-    toilets
-  } = getHomeFloorspace(state)
-  return bathtubs +
-    doubleBedrooms +
-    singleBedrooms +
-    showers +
-    study +
-    toilets
+    bathrooms,
+    bedrooms,
+    living,
+    study
+  } = floorspace(state)
+  return bathrooms + bedrooms + living + study
 }
 
-export function getTotalFloorspace (state) {
-  const floorspace = getTotalHomeFloorspace(state)
-  return floorspace + livingSpace(state).total
+export default state => {
+  return {
+    ...floorspace(state),
+    total: total(state)
+  }
 }

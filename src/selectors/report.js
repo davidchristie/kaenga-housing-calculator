@@ -3,7 +3,7 @@ import { getTotalBuildCost } from './build-cost'
 import { getLandCostRange, getTotalLandCost } from './land-cost'
 
 const contingency = 1.1
-const developerMargin = 1.15
+const developerMargin = 1.20
 
 export function getPriceRange (state) {
   const averageInterest = getAverageInterest()

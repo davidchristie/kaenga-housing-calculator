@@ -1,16 +1,15 @@
-import { getTotalFloorspace } from './floorspace'
+import floorspace from './floorspace'
 
 const costOfServices = 1.15
-const grossBuildCostPerSqm = 3000
+const grossBuildCostPerSqm = 4000 // nzd
 const grossToNet = 0.9
 const gst = 1.15
 
-function getBuildCostPerSqmFloorspace () {
-  return grossBuildCostPerSqm * costOfServices * gst / grossToNet
-}
+const buildCostPerSqmFloorspace = grossBuildCostPerSqm *
+  costOfServices *
+  gst /
+  grossToNet
 
 export function getTotalBuildCost (state) {
-  const totalFloorspace = getTotalFloorspace(state)
-  const buildCostPerSqmFloorspace = getBuildCostPerSqmFloorspace()
-  return totalFloorspace * buildCostPerSqmFloorspace
+  return floorspace(state).total * buildCostPerSqmFloorspace
 }
