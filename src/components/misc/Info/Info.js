@@ -20,7 +20,7 @@ class Info extends Component {
         placement='bottom'
         rootClose
       >
-        <Glyphicon glyph='question-sign' />
+        <Glyphicon glyph='question-sign' style={{opacity: 0.3}} />
       </OverlayTrigger>
     )
   }

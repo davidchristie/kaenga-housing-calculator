@@ -20,7 +20,7 @@ class Tip extends Component {
         placement='bottom'
         rootClose
       >
-        <Glyphicon glyph='info-sign' />
+        <Glyphicon glyph='info-sign' style={{opacity: 0.3}} />
       </OverlayTrigger>
     )
   }
