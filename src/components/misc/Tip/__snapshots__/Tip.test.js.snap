@@ -12,6 +12,11 @@ exports[`test matches snapshot 1`] = `
   trigger="click">
   <Glyphicon
     bsClass="glyphicon"
-    glyph="info-sign" />
+    glyph="info-sign"
+    style={
+      Object {
+        "opacity": 0.3,
+      }
+    } />
 </OverlayTrigger>
 `;
