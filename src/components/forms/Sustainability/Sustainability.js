@@ -23,7 +23,7 @@ class Sustainability extends Component {
           <FormGroup>
             <Field component={Select} name='level'>
               <option value='high'>
-                I want my home to be of the highest ecological standard
+                I want my home to be built to the highest environmental standard
               </option>
               <option value='medium'>
                 I want to invest a little upfront to save money in the long run

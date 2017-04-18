@@ -22,7 +22,7 @@ exports[`test matches snapshot 1`] = `
         name="level">
         <option
           value="high">
-          I want my home to be of the highest ecological standard
+          I want my home to be built to the highest environmental standard
         </option>
         <option
           value="medium">
