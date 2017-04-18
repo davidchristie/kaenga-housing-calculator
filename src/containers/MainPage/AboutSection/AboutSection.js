@@ -20,13 +20,10 @@ class AboutSection extends Component {
         </Button>
         <Panel collapsible expanded={this.state.open}>
           <p>
-            We build innovative, community centric homes. These homes foster a sense of a community, coming with exciting features but are still surprisingly affordable.
+            We build innovative, medium density homes. They come with exciting shared features that foster community and they are surprisingly affordable.
           </p>
           <p>
-            If you fill in this form, we’ll tell you how much a home built with us would cost.
-          </p>
-          <p>
-            You’ll get the most out of this form if you approach it with a firm budget in mind. That way you can adjust your home’s design to fit your budget. You can use <a href='https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/' target='_blank'>ANZ’s calculator</a> to determine how much you might be able to borrow.
+            We’ll tell you how much we expect your home will cost as you fill in this form. To get the most out of this, we suggest you adjust your home’s design so it fits your budget. You can use <a href='https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/' target='_blank'>ANZ’s calculator</a> to work out your budget.
           </p>
         </Panel>
       </div>
