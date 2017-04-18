@@ -1,6 +1,6 @@
 import design from '../selectors/design'
 import { getHobbies } from '../selectors/hobbies'
-import { getSustainability } from '../selectors/sustainability'
+import sustainability from '../selectors/sustainability'
 
 export default [
   {
@@ -74,12 +74,12 @@ export default [
     text: 'North facing, double glazing, solar water heating'
   },
   {
-    condition: state => ['medium', 'high'].includes(getSustainability(state).level),
+    condition: state => ['medium', 'high'].includes(sustainability(state).level),
     cost: state => ({max: 0, min: 0}),
     text: 'Water Reticulation, etc.'
   },
   {
-    condition: state => getSustainability(state).level === 'high',
+    condition: state => sustainability(state).level === 'high',
     cost: state => ({max: 0, min: 0}),
     text: 'Photovoltaic panels, etc.'
   }
