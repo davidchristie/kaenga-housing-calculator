@@ -37,7 +37,7 @@ class MainPage extends Component {
           <Jumbotron className='MainPage-header'>
             <PageHeader>
               <div>
-                Home Builder
+                Kaenga Home Builder
               </div>
               <small>
                 Design a home that meets your needs and fits your budget
