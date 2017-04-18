@@ -1,5 +1,6 @@
 import floorspace from './floorspace'
-import sustainablity from './sustainability'
+import sustainability from './sustainability'
+import transport from './transport'
 
 const costOfServices = 1.15
 const grossBuildCostPerSqm = 4000 // nzd
@@ -13,11 +14,30 @@ const buildCostPerSqmFloorspace = grossBuildCostPerSqm *
 
 export function getTotalBuildCost (state) {
   let total = floorspace(state).total * buildCostPerSqmFloorspace
-  if (sustainablity(state).level === 'medium') {
-    total += 5000 // Cost of medium sustainablity
+
+  // Cost of sustainability options
+  if (sustainability(state).level === 'medium') {
+    total += 5000 // Cost of medium sustainability
   }
-  if (sustainablity(state).level === 'high') {
-    total += 10000 // Cost of high sustainablity
+  if (sustainability(state).level === 'high') {
+    total += 10000 // Cost of high sustainability
   }
+
+  // Cost of transport options
+  const transportValues = transport(state)
+  if (transportValues.commute === 'car') {
+    total += 50000
+  }
+  if (transportValues.commute === 'carPool') {
+    total += 17000
+  }
+  if (transportValues.commute === 'publicTransport') {
+    if (transportValues.needCar === 'mostDays') {
+      total += 17000
+    } else {
+      total += 10000
+    }
+  }
+
   return total
 }

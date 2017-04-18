@@ -30,7 +30,7 @@ class Transport extends Component {
                 <option value='publicTransport'>
                   Public transport, walk, or cycle
                 </option>
-                <option value='carPooling'>
+                <option value='carPool'>
                   Car pool
                 </option>
                 <option value='car'>

@@ -37,7 +37,7 @@ exports[`test matches snapshot 1`] = `
             Public transport, walk, or cycle
           </option>
           <option
-            value="carPooling">
+            value="carPool">
             Car pool
           </option>
           <option
