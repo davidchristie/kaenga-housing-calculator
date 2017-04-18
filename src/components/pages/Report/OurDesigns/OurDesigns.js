@@ -11,6 +11,9 @@ class OurDesigns extends Component {
     return (
       <Well>
         <h2>Our Designs</h2>
+        <p>
+          Wouldn’t it be cool if we could show you floor plans of your ideal home? We’re working on it, but until then why not check out some of our standard designs.
+        </p>
         <Carousel>
           <Carousel.Item>
             <img alt='Design 1' src={design1} />
