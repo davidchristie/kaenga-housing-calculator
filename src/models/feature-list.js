@@ -1,5 +1,7 @@
 import design from '../selectors/design'
+import * as buildCost from '../selectors/build-cost'
 import { getHobbies } from '../selectors/hobbies'
+import * as landCost from '../selectors/land-cost'
 import sustainability from '../selectors/sustainability'
 
 export default [
@@ -25,13 +27,23 @@ export default [
   },
   {
     condition: state => getHobbies(state).exercising,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     tags: ['multipurpose'],
     text: 'Onsite gym and yoga studio'
   },
   {
     condition: state => getHobbies(state).building,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 1.2 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 1.2 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     text: 'Communal workshop/makers space'
   },
   {
@@ -41,25 +53,45 @@ export default [
   },
   {
     condition: state => getHobbies(state).games,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     tags: ['multipurpose'],
     text: 'A communal games room'
   },
   {
     condition: state => getHobbies(state).reading,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     tags: ['multipurpose'],
     text: 'A communal study/reading room'
   },
   {
     condition: state => getHobbies(state).music,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     tags: ['multipurpose'],
     text: 'A music room'
   },
   {
     condition: state => getHobbies(state).art,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     tags: ['multipurpose'],
     text: 'An onsite artist studio'
   },

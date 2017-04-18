@@ -10,28 +10,28 @@ export const hideRegisterForm = () => {
 
 export const register = (values) => {
   return dispatch => {
-    console.log(values)
     dispatch({type: 'REGISTER_PENDING'})
 
-    var formBody = []
-    for (var property in values) {
-      var encodedKey = encodeURIComponent(property)
-      var encodedValue = encodeURIComponent(values[property])
-      formBody.push(encodedKey + '=' + encodedValue)
+    const formFields = []
+    for (const property in values) {
+      const encodedKey = encodeURIComponent(property)
+      const encodedValue = encodeURIComponent(values[property])
+      formFields.push(encodedKey + '=' + encodedValue)
     }
-    formBody = formBody.join('&')
+    const formBody = formFields.join('&')
 
-    axios.post('http://api.kaenga.rakau.com/calculator/v1/', {
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: formBody
-    }).then(response => console.log(response))
-
-    dispatch(hideRegisterForm())
-    dispatch({type: 'REGISTER_SUCCESS'})
-    history.push('/report')
+    axios.post('http://api.kaenga.rakau.com/calculator/v1/', formBody)
+      .then(response => {
+        dispatch(hideRegisterForm())
+        dispatch({type: 'REGISTER_SUCCESS'})
+        history.push('/report')
+      })
+      .catch(error => {
+        dispatch({
+          message: error.message,
+          type: 'REGISTER_FAILURE'
+        })
+      })
   }
 }
 

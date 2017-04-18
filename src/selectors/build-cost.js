@@ -12,6 +12,8 @@ const buildCostPerSqmFloorspace = grossBuildCostPerSqm *
   gst /
   grossToNet
 
+export const perSqm = buildCostPerSqmFloorspace
+
 export function getTotalBuildCost (state) {
   let total = floorspace(state).total * buildCostPerSqmFloorspace
 

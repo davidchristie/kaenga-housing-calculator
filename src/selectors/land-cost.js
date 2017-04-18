@@ -22,6 +22,21 @@ export function getLandCostRange (state) {
   }
 }
 
+export function getPerSqmRange (state) {
+  const cheapest = getCheapestSelectedSuburb(state)
+  const mostExpensive = getMostExpensiveSelectedSuburb(state)
+  const minLandCostPerSqmFloorspace = cheapest
+  ? cheapest.landCostPerSqmFloorspace
+  : 0
+  const maxLandCostPerSqmFloorspace = cheapest
+  ? mostExpensive.landCostPerSqmFloorspace
+  : 0
+  return {
+    max: maxLandCostPerSqmFloorspace,
+    min: minLandCostPerSqmFloorspace
+  }
+}
+
 export function getTotalLandCost (state) {
   const cheapest = getCheapestSelectedSuburb(state)
   const landCostPerSqmFloorspace = cheapest
