@@ -17,6 +17,7 @@ import HousingType from '../forms/HousingType'
 import Location from '../forms/Location'
 import Sustainability from '../forms/Sustainability'
 import Transport from '../forms/Transport'
+import Comments from '../CommentsForm'
 import Hobbies from '../HobbiesForm'
 import DesignForm from '../DesignForm'
 import AboutSection from './AboutSection'
@@ -51,6 +52,7 @@ class MainPage extends Component {
           <Sustainability />
           <Transport />
           <Hobbies />
+          <Comments />
           <Panel className='MainPage-register'>
             <Button
               bsSize='large'
