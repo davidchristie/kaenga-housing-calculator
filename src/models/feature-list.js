@@ -17,7 +17,12 @@ export default [
   },
   {
     condition: state => design(state).guestStudio,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     text: 'Shared guest studios'
   },
   {
@@ -97,7 +102,12 @@ export default [
   },
   {
     condition: state => getHobbies(state).socialising,
-    cost: state => ({max: 0, min: 0}),
+    cost: state => {
+      return {
+        max: 3.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
+        min: 3.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+      }
+    },
     text: 'Indoor and outdoor entertainment spaces with a high end kitchen and barbeque'
   },
   {
