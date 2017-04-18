@@ -14,14 +14,11 @@ class Transport extends Component {
         <Panel>
           <Anchor id='transport' />
           <h3>
-            Transport{' '}
+            How would you like to get to{' '}
             <Tip name='transport'>
               We choose sites that are close to public transport. We also provide onsite car sharing services
             </Tip>
           </h3>
-          <p>
-            How will you get to:
-          </p>
           <Row>
             <Col md={6}>
               <Field
