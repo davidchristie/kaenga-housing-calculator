@@ -12,7 +12,9 @@ class TextArea extends Component {
     const {
       input: { onChange, value },
       label,
-      meta: { error }
+      meta: { error },
+      rows,
+      style
     } = this.props
     return (
       <FormGroup>
@@ -20,8 +22,9 @@ class TextArea extends Component {
         <FormControl
           componentClass='textarea'
           onChange={onChange}
+          rows={rows}
           value={value}
-          {...this.props}
+          style={style}
         />
         {error && <HelpBlock>{error}</HelpBlock>}
       </FormGroup>

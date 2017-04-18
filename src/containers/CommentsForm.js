@@ -14,7 +14,6 @@ class CommentsForm extends Component {
           <h3>Any Comments/Questions</h3>
           <Field
             component={TextArea}
-            maxRows={8}
             name='text'
             rows={4}
             style={{resize: 'none'}}

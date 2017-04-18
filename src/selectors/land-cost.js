@@ -4,6 +4,8 @@ import {
   getMostExpensiveSelectedSuburb
 } from './suburbs'
 
+const fixedCosts = 30000 // cost of developer’s contribution, reserves
+
 export function getLandCostRange (state) {
   const cheapest = getCheapestSelectedSuburb(state)
   const mostExpensive = getMostExpensiveSelectedSuburb(state)
@@ -15,8 +17,8 @@ export function getLandCostRange (state) {
   : 0
   const totalFloorspace = floorspace(state).total
   return {
-    max: maxLandCostPerSqmFloorspace * totalFloorspace,
-    min: minLandCostPerSqmFloorspace * totalFloorspace
+    max: maxLandCostPerSqmFloorspace * totalFloorspace + fixedCosts,
+    min: minLandCostPerSqmFloorspace * totalFloorspace + fixedCosts
   }
 }
 
@@ -25,5 +27,5 @@ export function getTotalLandCost (state) {
   const landCostPerSqmFloorspace = cheapest
     ? cheapest.landCostPerSqmFloorspace
     : 0
-  return floorspace(state).total * landCostPerSqmFloorspace
+  return floorspace(state).total * landCostPerSqmFloorspace + fixedCosts
 }

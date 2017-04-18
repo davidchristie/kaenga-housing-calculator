@@ -7,9 +7,9 @@ exports[`test matches snapshot 1`] = `
   <FormControl
     bsClass="form-control"
     componentClass="textarea"
-    input={Object {}}
-    meta={Object {}}
     onChange={undefined}
+    rows={undefined}
+    style={undefined}
     value={undefined} />
 </FormGroup>
 `;
