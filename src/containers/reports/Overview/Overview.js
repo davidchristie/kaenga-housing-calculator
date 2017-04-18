@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Col, Row, Well } from 'react-bootstrap'
 
 import design from '../../../selectors/design'
+import housingType from '../../../selectors/housing-type'
 import PriceRange from '../PriceRange'
 
 class Overview extends React.Component {
@@ -13,18 +14,24 @@ class Overview extends React.Component {
         <Row>
           <Col md={6}>
             <p>
-              Bedrooms: {this.props.bedrooms}
+              Price: <PriceRange />
             </p>
             <p>
-              Price: <PriceRange />
+              House Type: <strong>{this.props.houseType}</strong>
+            </p>
+            <p>
+              Bedrooms: <strong>{this.props.bedrooms}</strong>
             </p>
           </Col>
           <Col md={6}>
             <p>
-              Bathrooms: {this.props.bathrooms}
+              Savings: <strong>$zzz (aa%)</strong>
             </p>
             <p>
-              Savings: $zzz (aa%)
+              Title: <strong>Freehold Unit Title</strong>
+            </p>
+            <p>
+              Bathrooms: <strong>{this.props.bathrooms}</strong>
             </p>
           </Col>
         </ Row>
@@ -37,7 +44,8 @@ export default connect(
   state => {
     return {
       bathrooms: design(state).bathrooms || 0,
-      bedrooms: design(state).bedrooms || 0
+      bedrooms: design(state).bedrooms || 0,
+      houseType: housingType(state).type || ''
     }
   }
 )(Overview)
