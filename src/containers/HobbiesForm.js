@@ -45,6 +45,11 @@ class HobbiesForm extends Component {
                   label='Reading'
                   name='reading'
                 />
+                <Field
+                  component={Checkbox}
+                  label='Socialising/meeting new people'
+                  name='socialising'
+                />
               </Col>
               <Col md={6}>
                 <Field
@@ -59,13 +64,13 @@ class HobbiesForm extends Component {
                 />
                 <Field
                   component={Checkbox}
-                  label='Art/music'
-                  name='artMusic'
+                  label='Art'
+                  name='art'
                 />
                 <Field
                   component={Checkbox}
-                  label='Socialising/meeting new people'
-                  name='socialising'
+                  label='Music'
+                  name='music'
                 />
               </Col>
             </Row>

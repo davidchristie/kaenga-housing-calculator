@@ -52,13 +52,13 @@ export default [
     text: 'A communal study/reading room'
   },
   {
-    condition: state => getHobbies(state).artMusic,
+    condition: state => getHobbies(state).music,
     cost: state => ({max: 0, min: 0}),
     tags: ['multipurpose'],
     text: 'A music room'
   },
   {
-    condition: state => getHobbies(state).artMusic,
+    condition: state => getHobbies(state).art,
     cost: state => ({max: 0, min: 0}),
     tags: ['multipurpose'],
     text: 'An onsite artist studio'
