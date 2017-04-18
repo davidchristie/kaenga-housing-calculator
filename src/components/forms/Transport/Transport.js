@@ -26,6 +26,7 @@ class Transport extends Component {
                 label='Work and school'
                 name='commute'
               >
+                <option disabled hidden value=''>Please select...</option>
                 <option value='publicTransport'>
                   Public transport, walk, or cycle
                 </option>
@@ -43,6 +44,7 @@ class Transport extends Component {
                 label='Other places'
                 name='needCar'
               >
+                <option disabled hidden value=''>Please select...</option>
                 <option value='mostDays'>
                   We’ll need to use a car most days
                 </option>

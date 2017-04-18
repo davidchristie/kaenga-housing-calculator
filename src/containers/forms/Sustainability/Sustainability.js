@@ -6,6 +6,6 @@ export default reduxForm({
   destroyOnUnmount: false,
   form: 'sustainability',
   initialValues: {
-    level: 'low'
+    level: ''
   }
 })(Sharing)

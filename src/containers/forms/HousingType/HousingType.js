@@ -6,6 +6,6 @@ export default reduxForm({
   destroyOnUnmount: false,
   form: 'housingType',
   initialValues: {
-    type: 'house'
+    type: ''
   }
 })(HousingType)

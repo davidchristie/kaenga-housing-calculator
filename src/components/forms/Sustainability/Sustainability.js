@@ -22,6 +22,7 @@ class Sustainability extends Component {
           </h3>
           <FormGroup>
             <Field component={Select} name='level'>
+              <option disabled hidden value=''>Please select...</option>
               <option value='high'>
                 I want my home to be built to the highest environmental standard
               </option>

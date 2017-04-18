@@ -27,6 +27,12 @@ exports[`test matches snapshot 1`] = `
           label="Work and school"
           name="commute">
           <option
+            disabled={true}
+            hidden={true}
+            value="">
+            Please select...
+          </option>
+          <option
             value="publicTransport">
             Public transport, walk, or cycle
           </option>
@@ -48,6 +54,12 @@ exports[`test matches snapshot 1`] = `
           component={[Function]}
           label="Other places"
           name="needCar">
+          <option
+            disabled={true}
+            hidden={true}
+            value="">
+            Please select...
+          </option>
           <option
             value="mostDays">
             We’ll need to use a car most days

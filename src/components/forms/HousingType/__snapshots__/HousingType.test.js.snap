@@ -21,6 +21,12 @@ exports[`test matches snapshot 1`] = `
         component={[Function]}
         name="type">
         <option
+          disabled={true}
+          hidden={true}
+          value="">
+          Please select...
+        </option>
+        <option
           value="terraced">
           Terraced house (3-10 homes)
         </option>

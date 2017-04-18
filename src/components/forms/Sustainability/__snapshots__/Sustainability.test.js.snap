@@ -21,6 +21,12 @@ exports[`test matches snapshot 1`] = `
         component={[Function]}
         name="level">
         <option
+          disabled={true}
+          hidden={true}
+          value="">
+          Please select...
+        </option>
+        <option
           value="high">
           I want my home to be built to the highest environmental standard
         </option>

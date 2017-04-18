@@ -22,6 +22,7 @@ class HousingType extends Component {
           </h3>
           <FormGroup>
             <Field component={Select} name='type'>
+              <option disabled hidden value=''>Please select...</option>
               <option value='terraced'>
                 Terraced house (3-10 homes)
               </option>
