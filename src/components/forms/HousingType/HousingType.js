@@ -24,10 +24,10 @@ class HousingType extends Component {
             <Field component={Select} name='type'>
               <option disabled hidden value=''>Please select...</option>
               <option value='terraced'>
-                Terraced house (3-10 homes)
+                Terraced housing (3-10 houses with an outdoor area shared in common)
               </option>
               <option value='lowRise'>
-                Low rise apartments (12-25 homes)
+                Low rise apartment (3 story apartment building with 12-25 units)
               </option>
             </Field>
           </FormGroup>
