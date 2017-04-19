@@ -1,13 +1,12 @@
-import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { FormGroup, Panel } from 'react-bootstrap'
-import { Field } from 'redux-form'
+import { Field, reduxForm } from 'redux-form'
 
-import Select from '../../controls/Select'
-import Anchor from '../../layout/Anchor'
-import Tip from '../../misc/Tip'
+import Select from '../components/controls/Select'
+import Anchor from '../components/layout/Anchor'
+import Tip from '../components/misc/Tip'
 
-class Sustainability extends Component {
+class SustainabilityForm extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -15,7 +14,7 @@ class Sustainability extends Component {
         <Panel>
           <Anchor id='sustainability' />
           <h3>
-            Sustainability{' '}
+            SustainabilityForm{' '}
             <Tip name='sustainability'>
               Our buildings already provide technology
             </Tip>
@@ -40,8 +39,10 @@ class Sustainability extends Component {
   }
 }
 
-Sustainability.propTypes = {
-  handleSubmit: PropTypes.func
-}
-
-export default Sustainability
+export default reduxForm({
+  destroyOnUnmount: false,
+  form: 'sustainability',
+  initialValues: {
+    level: ''
+  }
+})(SustainabilityForm)
