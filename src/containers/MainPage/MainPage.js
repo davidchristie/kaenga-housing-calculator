@@ -13,13 +13,13 @@ import {
   hideRegisterForm,
   showRegisterForm
 } from '../../actions/register'
-import HousingType from '../forms/HousingType'
 import CommentsForm from '../CommentsForm'
 import DesignForm from '../DesignForm'
+import HousingTypeForm from '../HousingTypeForm'
 import LifestyleForm from '../LifestyleForm'
 import LocationForm from '../LocationForm'
-import Sustainability from '../SustainabilityForm'
-import Transport from '../TransportForm'
+import SustainabilityForm from '../SustainabilityForm'
+import TransportForm from '../TransportForm'
 import AboutSection from './AboutSection'
 import './MainPage.css'
 import RegisterModal from './RegisterModal'
@@ -47,10 +47,10 @@ class MainPage extends Component {
             <AboutSection />
           </Jumbotron>
           <LocationForm />
-          <HousingType />
+          <HousingTypeForm />
           <DesignForm />
-          <Sustainability />
-          <Transport />
+          <SustainabilityForm />
+          <TransportForm />
           <LifestyleForm />
           <CommentsForm />
           <Panel className='MainPage-register'>
