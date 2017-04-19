@@ -1,3 +1,13 @@
+import location from './location'
+
+const commutes = [
+  'Walking distance',
+  '10-20',
+  '20-40',
+  '40-60',
+  '60+'
+]
+
 export function getCheapestSelectedSuburb (state) {
   const selected = getSelectedSuburbs(state)
   const min = Math.min(...selected.map(suburb => {
@@ -19,11 +29,17 @@ export function getMostExpensiveSelectedSuburb (state) {
 }
 
 export function getSelectedSuburbs (state) {
-  const form = state.form || {}
-  const location = form.location || {}
-  const values = location.values || {}
-  const selected = values.suburbs || []
-  return getSuburbs(state).filter(suburb => selected.includes(suburb.name))
+  const values = location(state)
+  const selected = getSuburbs(state)
+    .filter(suburb => suburb.city === values.city)
+    .filter(suburb => values.region.includes(suburb.region))
+    .filter(suburb => {
+      return values.commute.some(commute => {
+        return commutes.indexOf(suburb.commute) <= commutes.indexOf(commute)
+      })
+    })
+  console.log(selected.map(selected => selected.name))
+  return selected
 }
 
 export function getSuburbs (state) {
