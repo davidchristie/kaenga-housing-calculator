@@ -27,14 +27,21 @@ class SelectOne extends Component {
 }
 
 SelectOne.defaultProps = {
-  input: {}
+  input: {},
+  options: []
 }
 
 SelectOne.propTypes = {
   input: PropTypes.shape({
     onChange: PropTypes.func,
     value: PropTypes.any
-  }).isRequired
+  }).isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      value: PropTypes.string.isRequired
+    })
+  ).isRequired
 }
 
 export default SelectOne
