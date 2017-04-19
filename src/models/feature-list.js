@@ -1,6 +1,6 @@
 import design from '../selectors/design'
 import * as buildCost from '../selectors/build-cost'
-import { getHobbies } from '../selectors/hobbies'
+import lifestyle from '../selectors/lifestyle'
 import * as landCost from '../selectors/land-cost'
 import sustainability from '../selectors/sustainability'
 
@@ -26,12 +26,12 @@ export default [
     text: 'Shared guest studios'
   },
   {
-    condition: state => getHobbies(state).sports,
+    condition: state => lifestyle(state).sports,
     cost: state => ({max: 2000, min: 2000}),
     text: 'Plenty of storage for your sports equipment'
   },
   {
-    condition: state => getHobbies(state).exercising,
+    condition: state => lifestyle(state).exercising,
     cost: state => {
       return {
         max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
@@ -42,7 +42,7 @@ export default [
     text: 'Onsite gym and yoga studio'
   },
   {
-    condition: state => getHobbies(state).building,
+    condition: state => lifestyle(state).building,
     cost: state => {
       return {
         max: 1.2 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
@@ -52,12 +52,12 @@ export default [
     text: 'Communal workshop/makers space'
   },
   {
-    condition: state => getHobbies(state).gardening,
+    condition: state => lifestyle(state).gardening,
     cost: state => ({max: 10000, min: 10000}),
     text: 'Roof top flower and vegie garden'
   },
   {
-    condition: state => getHobbies(state).games,
+    condition: state => lifestyle(state).games,
     cost: state => {
       return {
         max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
@@ -68,7 +68,7 @@ export default [
     text: 'A communal games room'
   },
   {
-    condition: state => getHobbies(state).reading,
+    condition: state => lifestyle(state).reading,
     cost: state => {
       return {
         max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
@@ -79,7 +79,7 @@ export default [
     text: 'A communal study/reading room'
   },
   {
-    condition: state => getHobbies(state).music,
+    condition: state => lifestyle(state).music,
     cost: state => {
       return {
         max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
@@ -90,7 +90,7 @@ export default [
     text: 'A music room'
   },
   {
-    condition: state => getHobbies(state).art,
+    condition: state => lifestyle(state).art,
     cost: state => {
       return {
         max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
@@ -101,7 +101,7 @@ export default [
     text: 'An onsite artist studio'
   },
   {
-    condition: state => getHobbies(state).socialising,
+    condition: state => lifestyle(state).socialising,
     cost: state => {
       return {
         max: 3.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),

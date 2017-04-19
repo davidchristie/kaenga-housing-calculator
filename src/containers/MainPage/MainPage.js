@@ -14,10 +14,10 @@ import {
   showRegisterForm
 } from '../../actions/register'
 import HousingType from '../forms/HousingType'
-import Comments from '../CommentsForm'
+import CommentsForm from '../CommentsForm'
 import DesignForm from '../DesignForm'
-import Hobbies from '../HobbiesForm'
-import Location from '../LocationForm'
+import LifestyleForm from '../LifestyleForm'
+import LocationForm from '../LocationForm'
 import Sustainability from '../SustainabilityForm'
 import Transport from '../TransportForm'
 import AboutSection from './AboutSection'
@@ -46,13 +46,13 @@ class MainPage extends Component {
             </PageHeader>
             <AboutSection />
           </Jumbotron>
-          <Location />
+          <LocationForm />
           <HousingType />
           <DesignForm />
           <Sustainability />
           <Transport />
-          <Hobbies />
-          <Comments />
+          <LifestyleForm />
+          <CommentsForm />
           <Panel className='MainPage-register'>
             <Button
               bsSize='large'

@@ -8,7 +8,7 @@ import TextInput from '../components/controls/TextInput'
 import Anchor from '../components/layout/Anchor'
 import Tip from '../components/misc/Tip'
 
-class HobbiesForm extends Component {
+class LifestyleForm extends Component {
   render () {
     const { handleSubmit } = this.props
     return (
@@ -16,11 +16,11 @@ class HobbiesForm extends Component {
         <Panel>
           <h3>
             Hobbies and Lifestyles{' '}
-            <Tip name='hobbies'>
+            <Tip name='lifestyle'>
               We recommend you select up to three but you can choose more or less if you really need to
             </Tip>
           </h3>
-          <Anchor id='hobbies' />
+          <Anchor id='lifestyle' />
           <FormGroup>
             <ControlLabel>What are your family’s hobbies?</ControlLabel>
             <Row>
@@ -87,11 +87,11 @@ class HobbiesForm extends Component {
   }
 }
 
-HobbiesForm.propTypes = {
+LifestyleForm.propTypes = {
   handleSubmit: PropTypes.func
 }
 
 export default reduxForm({
   destroyOnUnmount: false,
-  form: 'hobbies'
-})(HobbiesForm)
+  form: 'lifestyle'
+})(LifestyleForm)
