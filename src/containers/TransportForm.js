@@ -1,13 +1,12 @@
-import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Col, Panel, Row } from 'react-bootstrap'
-import { Field } from 'redux-form'
+import { Field, reduxForm } from 'redux-form'
 
-import Select from '../../controls/Select'
-import Anchor from '../../layout/Anchor'
-import Tip from '../../misc/Tip'
+import Select from '../components/controls/Select'
+import Anchor from '../components/layout/Anchor'
+import Tip from '../components/misc/Tip'
 
-class Transport extends Component {
+class TransportForm extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
@@ -63,17 +62,7 @@ class Transport extends Component {
   }
 }
 
-Transport.defaultProps = {
-  suburbs: []
-}
-
-Transport.propTypes = {
-  handleSubmit: PropTypes.func,
-  suburbs: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired
-    })
-  ).isRequired
-}
-
-export default Transport
+export default reduxForm({
+  destroyOnUnmount: false,
+  form: 'transport'
+})(TransportForm)

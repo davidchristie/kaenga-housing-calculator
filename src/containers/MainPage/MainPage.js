@@ -14,12 +14,12 @@ import {
   showRegisterForm
 } from '../../actions/register'
 import HousingType from '../forms/HousingType'
-import Transport from '../forms/Transport'
 import Comments from '../CommentsForm'
 import DesignForm from '../DesignForm'
 import Hobbies from '../HobbiesForm'
 import Location from '../LocationForm'
 import Sustainability from '../SustainabilityForm'
+import Transport from '../TransportForm'
 import AboutSection from './AboutSection'
 import './MainPage.css'
 import RegisterModal from './RegisterModal'
