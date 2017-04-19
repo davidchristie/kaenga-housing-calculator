@@ -7,6 +7,7 @@ import Select from '../components/controls/Select'
 import Anchor from '../components/layout/Anchor'
 import Info from '../components/misc/Info'
 import Tip from '../components/misc/Tip'
+import SelectOne from '../components/SelectOne'
 import location from '../selectors/location'
 import { getSelectedRegions, getSuburbs } from '../selectors/suburbs'
 
@@ -25,16 +26,15 @@ class LocationForm extends Component {
           </h3>
           <h4>City</h4>
           <Field
-            component={Select}
+            component={SelectOne}
             name='city'
-          >
-            <option disabled hidden value=''>Please select...</option>
-            {cities.map((city, index) => {
-              return (
-                <option key={index} value={city}>{city}</option>
-              )
+            options={cities.map(city => {
+              return {
+                text: city,
+                value: city
+              }
             })}
-          </Field>
+          />
           <Row>
             <Col md={6}>
               <h4>
