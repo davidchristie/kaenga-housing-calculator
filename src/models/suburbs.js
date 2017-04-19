@@ -2,48 +2,21 @@ import { csv } from 'd3-request'
 
 import data from './data/suburbs.csv'
 
-const coverage = 0.5
-const grossToNet = 0.9
-const floors = 3
-const referenceBaseCost = {
-  'Grey Lynn': 3000,
-  'New Lynn': 1200
-}
-
 function parseSuburbRow (row) {
   return {
-    area: row['Area'],
-    name: row['Name'],
-    price: Number(row['Average house price']),
-    reference: row['Reference suburb']
+    city: row['City'],
+    commute: row['Commute to city'],
+    costPerSqmKaenga: Number(row['cost per net sqm floor area_kaenga']),
+    name: row['Suburb'],
+    threeBedroomHousePrice: Number(row['3bdr hse']),
+    region: row['Region']
   }
-}
-
-function withLandCostPerSqmFloorspace (suburbs) {
-  const nameToPrice = {}
-  suburbs.forEach(suburb => {
-    nameToPrice[suburb.name] = suburb.price
-  })
-  return suburbs.map(suburb => {
-    const referencePrice = nameToPrice[suburb.reference]
-    const baseCost = referenceBaseCost[suburb.reference]
-    const landCostPerSqmFloorspace = suburb.price /
-      referencePrice *
-      baseCost /
-      coverage /
-      floors /
-      grossToNet
-    return {
-      ...suburb,
-      landCostPerSqmFloorspace
-    }
-  })
 }
 
 export function readSuburbsData (callback) {
   csv(data, (error, rows) => {
     if (error) callback(error)
     const suburbs = rows.map(parseSuburbRow)
-    callback(null, withLandCostPerSqmFloorspace(suburbs))
+    callback(null, suburbs)
   })
 }

@@ -1,14 +1,15 @@
-import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Button, Col, Panel, Row } from 'react-bootstrap'
-import { Field } from 'redux-form'
+import { connect } from 'react-redux'
+import { Field, reduxForm } from 'redux-form'
 
-import Select from '../../controls/Select'
-import Anchor from '../../layout/Anchor'
-import Info from '../../misc/Info'
-import Tip from '../../misc/Tip'
+import Select from '../components/controls/Select'
+import Anchor from '../components/layout/Anchor'
+import Info from '../components/misc/Info'
+import Tip from '../components/misc/Tip'
+import { getSuburbs } from '../selectors/suburbs'
 
-class Location extends Component {
+class LocationForm extends Component {
   render () {
     return (
       <form onSubmit={this.props.handleSubmit}>
@@ -83,17 +84,20 @@ class Location extends Component {
   }
 }
 
-Location.defaultProps = {
-  suburbs: []
-}
-
-Location.propTypes = {
-  handleSubmit: PropTypes.func,
-  suburbs: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired
-    })
-  ).isRequired
-}
-
-export default Location
+export default connect(
+  state => {
+    return {
+      suburbs: getSuburbs(state)
+    }
+  }
+)(
+  reduxForm({
+    destroyOnUnmount: false,
+    form: 'location',
+    initialValues: {
+      commute: [],
+      region: [],
+      suburbs: []
+    }
+  })(LocationForm)
+)
