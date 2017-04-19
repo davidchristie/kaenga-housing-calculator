@@ -8,11 +8,11 @@ import Anchor from '../components/layout/Anchor'
 import Info from '../components/misc/Info'
 import Tip from '../components/misc/Tip'
 import location from '../selectors/location'
-import { getSuburbs } from '../selectors/suburbs'
+import { getSelectedRegions, getSuburbs } from '../selectors/suburbs'
 
 class LocationForm extends Component {
   render () {
-    const { cities, regions } = this.props
+    const { cities, regions, selectedCity } = this.props
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel>
@@ -49,9 +49,8 @@ class LocationForm extends Component {
                 name='commute'
               >
                 {
-                  regions.length === 0
-                    ? null
-                    : [
+                  selectedCity
+                    ? [
                       <option key={0} value='Walking distance'>
                         Walking distance
                       </option>,
@@ -60,6 +59,7 @@ class LocationForm extends Component {
                       <option key={3} value='40-60'>40-60 minutes</option>,
                       <option key={4} value='60+'>60+ minutes</option>
                     ]
+                    : null
                 }
               </Field>
             </Col>
@@ -87,16 +87,11 @@ class LocationForm extends Component {
 export default connect(
   state => {
     const suburbs = getSuburbs(state)
-    const cities = suburbs.map(suburb => suburb.city)
-    const uniqueCities = Array.from(new Set(cities))
-    const selectedCity = location(state).city
-    const regions = suburbs
-      .filter(suburb => suburb.city === selectedCity)
-      .map(suburb => suburb.region)
-    const uniqueRegions = Array.from(new Set(regions))
+    const cities = Array.from(new Set(suburbs.map(suburb => suburb.city)))
     return {
-      cities: uniqueCities,
-      regions: uniqueRegions
+      cities,
+      regions: getSelectedRegions(state),
+      selectedCity: location(state).city
     }
   }
 )(
