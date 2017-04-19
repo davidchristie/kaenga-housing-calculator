@@ -4,7 +4,7 @@ import { Col, Row, Well } from 'react-bootstrap'
 
 import design from '../../../selectors/design'
 import housingType from '../../../selectors/housing-type'
-import PriceRange from '../PriceRange'
+import PriceRangeWithSuburbs from '../../PriceRangeWithSuburbs'
 
 class Overview extends React.Component {
   render () {
@@ -14,7 +14,7 @@ class Overview extends React.Component {
         <Row>
           <Col md={6}>
             <p>
-              Price: <PriceRange />
+              Price: <PriceRangeWithSuburbs />
             </p>
             <p>
               House Type: <strong>{this.props.houseType}</strong>
