@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Modal } from 'react-bootstrap'
 
-import Register from '../../forms/Register'
+import RegisterForm from '../../RegisterForm'
 
 class RegisterModal extends Component {
   render () {
@@ -16,7 +16,7 @@ class RegisterModal extends Component {
           <Modal.Title>Register</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Register />
+          <RegisterForm />
         </Modal.Body>
       </Modal>
     )
