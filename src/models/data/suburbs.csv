@@ -1,220 +1,220 @@
 City,Region,Suburb,Commute to city,3bdr hse,cost per net sqm floor area_kaenga
-Auckland,Central,Avondale,21-40,863821,1282.902158
-Auckland,Central,Blockhouse Bay,21-40,974880,1447.841226
-Auckland,Central,Epsom,11-20,1781938,2646.441919
+Auckland,Central,Avondale,20-40,863821,1282.902158
+Auckland,Central,Blockhouse Bay,20-40,974880,1447.841226
+Auckland,Central,Epsom,10-20,1781938,2646.441919
 Auckland,Central,Freemans Bay,Walking distance,1423750,2114.479675
-Auckland,Central,Greenlane,21-40,1346667,2000
-Auckland,Central,Grey Lynn,11-20,1390625,2065.284142
-Auckland,Central,Mt Albert,11-20,1086333,1613.365442
-Auckland,Central,Mt Eden,11-20,1564823,2323.993979
-Auckland,Central,Mt Roskill,21-40,925465,1374.45263
-Auckland,Central,New Windsor,21-40,973700,1446.088751
-Auckland,Central,One Tree Hill,21-40,1232235,1830.051527
-Auckland,Central,Onehunga,21-40,1046450,1554.133279
+Auckland,Central,Greenlane,20-40,1346667,2000
+Auckland,Central,Grey Lynn,10-20,1390625,2065.284142
+Auckland,Central,Mt Albert,10-20,1086333,1613.365442
+Auckland,Central,Mt Eden,10-20,1564823,2323.993979
+Auckland,Central,Mt Roskill,20-40,925465,1374.45263
+Auckland,Central,New Windsor,20-40,973700,1446.088751
+Auckland,Central,One Tree Hill,20-40,1232235,1830.051527
+Auckland,Central,Onehunga,20-40,1046450,1554.133279
 Auckland,Central,Ponsonby,Walking distance,1513714,2248.089543
-Auckland,Central,Pt Chevalier,11-20,1513714,2248.089543
-Auckland,Central,Royal Oak,21-40,1210800,1798.217377
-Auckland,Central,Sandringham,11-20,1375861,2043.357415
-Auckland,Central,Three Kings,21-40,1162333,1726.236701
-Auckland,Central,Westmere,11-20,1365400,2027.82128
-Auckland,Eastern,Ellerslie,21-40,1096222,1628.052072
-Auckland,Eastern,Glen Innes,21-40,1016542,1509.715468
-Auckland,Eastern,Glendowie,21-40,1584722,2353.546942
-Auckland,Eastern,Meadowbank,21-40,1220500,1812.623314
-Auckland,Eastern,Mt Wellington,21-40,1009119,1498.691213
-Auckland,Eastern,Panmure,21-40,1175900,1746.385706
+Auckland,Central,Pt Chevalier,10-20,1513714,2248.089543
+Auckland,Central,Royal Oak,20-40,1210800,1798.217377
+Auckland,Central,Sandringham,10-20,1375861,2043.357415
+Auckland,Central,Three Kings,20-40,1162333,1726.236701
+Auckland,Central,Westmere,10-20,1365400,2027.82128
+Auckland,Eastern,Ellerslie,20-40,1096222,1628.052072
+Auckland,Eastern,Glen Innes,20-40,1016542,1509.715468
+Auckland,Eastern,Glendowie,20-40,1584722,2353.546942
+Auckland,Eastern,Meadowbank,20-40,1220500,1812.623314
+Auckland,Eastern,Mt Wellington,20-40,1009119,1498.691213
+Auckland,Eastern,Panmure,20-40,1175900,1746.385706
 Auckland,Eastern,Parnell,Walking distance,1780625,2644.49192
-Auckland,Eastern,Pt England,21-40,1126500,1673.019388
-Auckland,Eastern,Remuera,11-20,1447958,2150.432141
-Auckland,Eastern,St Heliers,21-40,1555125,2309.591012
-Auckland,Eastern,St Johns,21-40,1351250,2006.806434
+Auckland,Eastern,Pt England,20-40,1126500,1673.019388
+Auckland,Eastern,Remuera,10-20,1447958,2150.432141
+Auckland,Eastern,St Heliers,20-40,1555125,2309.591012
+Auckland,Eastern,St Johns,20-40,1351250,2006.806434
 Auckland,Franklin/Manukau,Pukekohe,60+,805177,860.8756549
 Auckland,Franklin/Manukau,Tuakau,60+,551350,589.4900032
 Auckland,Franklin/Manukau,Waiuku,60+,595300,636.4802737
-Auckland,North Shore,Albany,41-60,945611,1011.02427
-Auckland,North Shore,Beach Haven,21-40,879292,940.1176093
-Auckland,North Shore,Birkdale,21-40,764994,817.9129691
-Auckland,North Shore,Birkenhead,11-20,1069267,1143.234256
-Auckland,North Shore,Browns Bay,21-40,960364,1026.797819
-Auckland,North Shore,Castor Bay,21-40,1767000,1889.233401
-Auckland,North Shore,Devonport,21-40,1349000,1442.317973
-Auckland,North Shore,Forrest Hill,21-40,985583,1053.76136
-Auckland,North Shore,Glenfield,21-40,859187,918.6218326
-Auckland,North Shore,Greenhithe,21-40,1266250,1353.843687
-Auckland,North Shore,Mairangi Bay,21-40,1267050,1354.699027
-Auckland,North Shore,Milford,21-40,1462600,1563.776328
-Auckland,North Shore,Murrays Bay,21-40,1360500,1454.613493
-Auckland,North Shore,Sunnynook,21-40,1008563,1078.331017
-Auckland,North Shore,Takapuna,11-20,1190471,1272.822624
-Auckland,North Shore,Torbay,21-40,934636,999.2900674
-Auckland,Pakuranga/Howick,Beachlands,41-60,1598333,1708.898749
-Auckland,Pakuranga/Howick,Bucklands Beach,41-60,1127167,1205.139527
-Auckland,Pakuranga/Howick,Dannemora,41-60,942000,1007.163477
-Auckland,Pakuranga/Howick,Half Moon Bay,41-60,959972,1026.378702
-Auckland,Pakuranga/Howick,Howick,41-60,894550,956.4310916
-Auckland,Pakuranga/Howick,Maraetai,41-60,1166590,1247.28964
-Auckland,Pakuranga/Howick,Northpark,21-40,1040513,1112.491179
-Auckland,Pakuranga/Howick,Pakuranga,21-40,1097158,1173.054635
+Auckland,North Shore,Albany,40-60,945611,1011.02427
+Auckland,North Shore,Beach Haven,20-40,879292,940.1176093
+Auckland,North Shore,Birkdale,20-40,764994,817.9129691
+Auckland,North Shore,Birkenhead,10-20,1069267,1143.234256
+Auckland,North Shore,Browns Bay,20-40,960364,1026.797819
+Auckland,North Shore,Castor Bay,20-40,1767000,1889.233401
+Auckland,North Shore,Devonport,20-40,1349000,1442.317973
+Auckland,North Shore,Forrest Hill,20-40,985583,1053.76136
+Auckland,North Shore,Glenfield,20-40,859187,918.6218326
+Auckland,North Shore,Greenhithe,20-40,1266250,1353.843687
+Auckland,North Shore,Mairangi Bay,20-40,1267050,1354.699027
+Auckland,North Shore,Milford,20-40,1462600,1563.776328
+Auckland,North Shore,Murrays Bay,20-40,1360500,1454.613493
+Auckland,North Shore,Sunnynook,20-40,1008563,1078.331017
+Auckland,North Shore,Takapuna,10-20,1190471,1272.822624
+Auckland,North Shore,Torbay,20-40,934636,999.2900674
+Auckland,Pakuranga/Howick,Beachlands,40-60,1598333,1708.898749
+Auckland,Pakuranga/Howick,Bucklands Beach,40-60,1127167,1205.139527
+Auckland,Pakuranga/Howick,Dannemora,40-60,942000,1007.163477
+Auckland,Pakuranga/Howick,Half Moon Bay,40-60,959972,1026.378702
+Auckland,Pakuranga/Howick,Howick,40-60,894550,956.4310916
+Auckland,Pakuranga/Howick,Maraetai,40-60,1166590,1247.28964
+Auckland,Pakuranga/Howick,Northpark,20-40,1040513,1112.491179
+Auckland,Pakuranga/Howick,Pakuranga,20-40,1097158,1173.054635
 Auckland,Rodney,Arkles Bay,60+,772143,825.5565059
 Auckland,Rodney,Gulf Harbour,60+,805111,860.8050893
 Auckland,Rodney,Helensville,60+,814000,870.3089918
 Auckland,Rodney,Manly,60+,752889,804.9705977
 Auckland,Rodney,Orewa,60+,938357,1003.26847
-Auckland,Rodney,Red Beach,21-40,861056,920.6201219
+Auckland,Rodney,Red Beach,20-40,861056,920.6201219
 Auckland,Rodney,Stanmore Bay,60+,788895,843.4673367
 Auckland,Rodney,Warkworth,60+,1283875,1372.687908
-Auckland,South,Clendon Park,41-60,558400,597.0276916
-Auckland,South,Favona,21-40,652583,697.7258634
-Auckland,South,Flat Bush,21-40,765714,818.6827756
-Auckland,South,Mangere,21-40,645955,690.639367
-Auckland,South,Mangere Bridge,21-40,917500,980.9686732
-Auckland,South,Manurewa,41-60,637567,681.6711216
-Auckland,South,Otahuhu,21-40,954292,1020.305784
-Auckland,South,Otara,21-40,590389,631.229552
-Auckland,South,Papakura,41-60,633517,677.3409601
-Auckland,South,Papatoetoe,21-40,760058,812.635518
-Auckland,South,Takanini,41-60,668250,714.4766385
-Auckland,South,The Gardens,41-60,925375,989.3884315
-Auckland,South,Totara Heights,41-60,686600,734.096012
-Auckland,South,Wattle Downs,41-60,683423,730.6992409
-Auckland,South,Weymouth,41-60,676400,723.1904202
-Auckland,West,Glen Eden,21-40,708549,757.5633487
-Auckland,West,Glendene,21-40,750464,802.3778467
-Auckland,West,Henderson,21-40,760510,813.1187854
-Auckland,West,Hobsonville,21-40,811195,867.309954
-Auckland,West,Kelston,21-40,727000,777.2907089
-Auckland,West,Massey,21-40,735808,786.7080081
-Auckland,West,New Lynn,21-40,748240,800
-Auckland,West,Ranui,21-40,645854,690.5313803
-Auckland,West,Royal Heights,21-40,806438,862.2238854
-Auckland,West,Sunnyvale,41-60,716067,765.6014113
-Auckland,West,Swanson,41-60,793364,848.2454827
-Auckland,West,Te Atatu Peninsula,21-40,902905,965.3640543
-Auckland,West,Te Atatu South,21-40,869571,929.7241527
-Auckland,West,Titirangi,41-60,848850,907.5697637
-Auckland,West,Waitakere,41-60,823750,880.7334545
-Auckland,West,West Harbour,21-40,882235,943.2641933
+Auckland,South,Clendon Park,40-60,558400,597.0276916
+Auckland,South,Favona,20-40,652583,697.7258634
+Auckland,South,Flat Bush,20-40,765714,818.6827756
+Auckland,South,Mangere,20-40,645955,690.639367
+Auckland,South,Mangere Bridge,20-40,917500,980.9686732
+Auckland,South,Manurewa,40-60,637567,681.6711216
+Auckland,South,Otahuhu,20-40,954292,1020.305784
+Auckland,South,Otara,20-40,590389,631.229552
+Auckland,South,Papakura,40-60,633517,677.3409601
+Auckland,South,Papatoetoe,20-40,760058,812.635518
+Auckland,South,Takanini,40-60,668250,714.4766385
+Auckland,South,The Gardens,40-60,925375,989.3884315
+Auckland,South,Totara Heights,40-60,686600,734.096012
+Auckland,South,Wattle Downs,40-60,683423,730.6992409
+Auckland,South,Weymouth,40-60,676400,723.1904202
+Auckland,West,Glen Eden,20-40,708549,757.5633487
+Auckland,West,Glendene,20-40,750464,802.3778467
+Auckland,West,Henderson,20-40,760510,813.1187854
+Auckland,West,Hobsonville,20-40,811195,867.309954
+Auckland,West,Kelston,20-40,727000,777.2907089
+Auckland,West,Massey,20-40,735808,786.7080081
+Auckland,West,New Lynn,20-40,748240,800
+Auckland,West,Ranui,20-40,645854,690.5313803
+Auckland,West,Royal Heights,20-40,806438,862.2238854
+Auckland,West,Sunnyvale,40-60,716067,765.6014113
+Auckland,West,Swanson,40-60,793364,848.2454827
+Auckland,West,Te Atatu Peninsula,20-40,902905,965.3640543
+Auckland,West,Te Atatu South,20-40,869571,929.7241527
+Auckland,West,Titirangi,40-60,848850,907.5697637
+Auckland,West,Waitakere,40-60,823750,880.7334545
+Auckland,West,West Harbour,20-40,882235,943.2641933
 Wellington,Central,Thorndon,Walking distance,740000,259.6491228
 Wellington,Central,Pipitea,Walking distance,650000,228.0701754
 Wellington,Central,Oriental Bay,Walking distance,1835000,643.8596491
 Wellington,Central,Mount Victoria,Walking distance,910000,319.2982456
 Wellington,Central,Te Aro,Walking distance,655000,229.8245614
-Wellington,Central,Brooklyn,11-20,700000,245.6140351
+Wellington,Central,Brooklyn,10-20,700000,245.6140351
 Wellington,Central,Aro Valley,Walking distance,642500,225.4385965
-Wellington,Central,Highbury,11-20,790000,277.1929825
+Wellington,Central,Highbury,10-20,790000,277.1929825
 Wellington,Central,Kelburn,Walking distance,950000,333.3333333
-Wellington,Northern,Broadmeadows,11-20,540000,200
-Wellington,Northern,Churton Park,11-20,595000,220.3703704
-Wellington,Northern,Glenside,11-20,500000,185.1851852
-Wellington,Northern,Grenada,21-40,545000,201.8518519
-Wellington,Northern,Grenada North,21-40,380000,140.7407407
-Wellington,Northern,Johnsonville,11-20,575000,212.962963
-Wellington,Northern,Newlands,11-20,545000,201.8518519
-Wellington,Northern,Ohariu,21-40,597500,221.2962963
-Wellington,Northern,Paparangi,11-20,545000,201.8518519
-Wellington,Northern,Tawa,21-40,525000,194.4444444
-Wellington,Northern,Takapu Valley,21-40,650000,240.7407407
-Wellington,Northern,Woodridge,11-20,535000,198.1481481
-Wellington,Eastern,Hataitai,11-20,805000,298.1481481
-Wellington,Eastern,Lyall Bay,21-40,730000,270.3703704
-Wellington,Eastern,Kilbirnie,11-20,680000,251.8518519
-Wellington,Eastern,Miramar,21-40,705000,261.1111111
-Wellington,Eastern,Seatoun,21-40,1025000,379.6296296
-Wellington,Eastern,Breakers Bay,21-40,875000,324.0740741
-Wellington,Eastern,Karaka Bays,21-40,990000,366.6666667
-Wellington,Eastern,Maupuia,21-40,652500,241.6666667
-Wellington,Eastern,Melrose,21-40,720000,266.6666667
-Wellington,Eastern,Moa Point,21-40,805000,298.1481481
-Wellington,Eastern,Rongotai,21-40,655000,242.5925926
-Wellington,Eastern,Roseneath,11-20,855000,316.6666667
-Wellington,Eastern,Strathmore,21-40,655000,242.5925926
-Wellington,Southern,Berhampore,21-40,650000,228.0701754
-Wellington,Southern,Island Bay,21-40,740000,259.6491228
-Wellington,Southern,Newtown,11-20,660000,231.5789474
-Wellington,Southern,Vogeltown,11-20,665000,233.3333333
-Wellington,Southern,Houghton Bay,21-40,682500,239.4736842
-Wellington,Southern,Kingston,21-40,645000,226.3157895
-Wellington,Southern,Mornington,21-40,665000,233.3333333
+Wellington,Northern,Broadmeadows,10-20,540000,200
+Wellington,Northern,Churton Park,10-20,595000,220.3703704
+Wellington,Northern,Glenside,10-20,500000,185.1851852
+Wellington,Northern,Grenada,20-40,545000,201.8518519
+Wellington,Northern,Grenada North,20-40,380000,140.7407407
+Wellington,Northern,Johnsonville,10-20,575000,212.962963
+Wellington,Northern,Newlands,10-20,545000,201.8518519
+Wellington,Northern,Ohariu,20-40,597500,221.2962963
+Wellington,Northern,Paparangi,10-20,545000,201.8518519
+Wellington,Northern,Tawa,20-40,525000,194.4444444
+Wellington,Northern,Takapu Valley,20-40,650000,240.7407407
+Wellington,Northern,Woodridge,10-20,535000,198.1481481
+Wellington,Eastern,Hataitai,10-20,805000,298.1481481
+Wellington,Eastern,Lyall Bay,20-40,730000,270.3703704
+Wellington,Eastern,Kilbirnie,10-20,680000,251.8518519
+Wellington,Eastern,Miramar,20-40,705000,261.1111111
+Wellington,Eastern,Seatoun,20-40,1025000,379.6296296
+Wellington,Eastern,Breakers Bay,20-40,875000,324.0740741
+Wellington,Eastern,Karaka Bays,20-40,990000,366.6666667
+Wellington,Eastern,Maupuia,20-40,652500,241.6666667
+Wellington,Eastern,Melrose,20-40,720000,266.6666667
+Wellington,Eastern,Moa Point,20-40,805000,298.1481481
+Wellington,Eastern,Rongotai,20-40,655000,242.5925926
+Wellington,Eastern,Roseneath,10-20,855000,316.6666667
+Wellington,Eastern,Strathmore,20-40,655000,242.5925926
+Wellington,Southern,Berhampore,20-40,650000,228.0701754
+Wellington,Southern,Island Bay,20-40,740000,259.6491228
+Wellington,Southern,Newtown,10-20,660000,231.5789474
+Wellington,Southern,Vogeltown,10-20,665000,233.3333333
+Wellington,Southern,Houghton Bay,20-40,682500,239.4736842
+Wellington,Southern,Kingston,20-40,645000,226.3157895
+Wellington,Southern,Mornington,20-40,665000,233.3333333
 Wellington,Southern,Mount Cook,Walking distance,660000,231.5789474
-Wellington,Southern,Owhiro Bay,21-40,610000,214.0350877
-Wellington,Southern,Southgae,21-40,695000,243.8596491
-Wellington,Western,Karori,21-40,665000,246.2962963
-Wellington,Western,Northland,11-20,715000,264.8148148
-Wellington,Western,Crofton Downs,21-40,630000,233.3333333
-Wellington,Western,Kaiwharawhara,11-20,675000,250
-Wellington,Western,Khandallah,11-20,760000,281.4814815
-Wellington,Western,Ngaio,11-20,690000,255.5555556
-Wellington,Western,Ngauranga,11-20,660000,244.4444444
-Wellington,Western,Makara,21-40,535000,198.1481481
-Wellington,Western,Makara Beach,21-40,472500,175
-Wellington,Western,Wadestown,11-20,800000,296.2962963
-Wellington,Western,Wilton,11-20,675000,250
-Wellington,Lower Hutt,Petone,21-40,660000,244.4444444
-Wellington,Lower Hutt,Melling,21-40,580000,214.8148148
-Wellington,Lower Hutt,Maungaraki,21-40,565000,209.2592593
-Wellington,Lower Hutt,Normandale,21-40,550000,203.7037037
-Wellington,Lower Hutt,Kelson,21-40,485000,179.6296296
-Wellington,Lower Hutt,Belmont,21-40,495000,183.3333333
-Wellington,Lower Hutt,Alicetown,21-40,620000,229.6296296
-Wellington,Lower Hutt,Moera,21-40,495000,183.3333333
-Wellington,Lower Hutt,Woburn,21-40,715000,264.8148148
-Wellington,Lower Hutt,Waiwhetu,21-40,520000,192.5925926
-Wellington,Lower Hutt,Waterloo,21-40,585000,216.6666667
-Wellington,Lower Hutt,Taita,21-40,350000,129.6296296
-Wellington,Lower Hutt,Avalon,21-40,500000,185.1851852
-Wellington,Lower Hutt,Stokes Valley,21-40,370000,137.037037
-Wellington,Lower Hutt,Waomiuomata,21-40,300000,111.1111111
-Wellington,Lower Hutt,Eastbourne,41-60,730000,270.3703704
-Wellington,Lower Hutt,Fairfield,21-40,535000,198.1481481
-Wellington,Lower Hutt,Epuni,21-40,565000,209.2592593
-Wellington,Lower Hutt,Gracefield,21-40,445000,164.8148148
-Wellington,Lower Hutt,Point Howard,21-40,695000,257.4074074
-Wellington,Lower Hutt,Lowry Bay,21-40,845000,312.962963
-Wellington,Lower Hutt,York Bay,21-40,665000,246.2962963
-Wellington,Lower Hutt,Mahina Bay,21-40,737500,273.1481481
-Wellington,Lower Hutt,Sunshine Bay,41-60,757500,280.5555556
-Wellington,Lower Hutt,Days Bay,41-60,720000,266.6666667
-Wellington,Porirua,Aotea,21-40,750000,277.7777778
-Wellington,Porirua,Ascot Park,21-40,375000,138.8888889
-Wellington,Porirua,Camborne,21-40,555000,205.5555556
-Wellington,Porirua,Cannons Creek,21-40,265000,98.14814815
-Wellington,Porirua,Elsdon,21-40,340000,125.9259259
-Wellington,Porirua,Hongoeka,21-40,540000,200
-Wellington,Porirua,Kenepuru,21-40,695000,257.4074074
-Wellington,Porirua,Papkowhai,21-40,560000,207.4074074
-Wellington,Porirua,Paremata,21-40,550000,203.7037037
-Wellington,Porirua,Pauatahanui,21-40,557500,206.4814815
-Wellington,Porirua,Plimmerton,21-40,662000,245.1851852
-Wellington,Porirua,Pukerua Bay,21-40,540000,200
-Wellington,Porirua,Ranui,21-40,330000,122.2222222
-Wellington,Porirua,Takapuwahia,21-40,335000,124.0740741
-Wellington,Porirua,Titahi Bay,21-40,420000,155.5555556
-Wellington,Porirua,Waitangirua,21-40,255000,94.44444444
-Wellington,Porirua,Whitby,21-40,530000,196.2962963
+Wellington,Southern,Owhiro Bay,20-40,610000,214.0350877
+Wellington,Southern,Southgae,20-40,695000,243.8596491
+Wellington,Western,Karori,20-40,665000,246.2962963
+Wellington,Western,Northland,10-20,715000,264.8148148
+Wellington,Western,Crofton Downs,20-40,630000,233.3333333
+Wellington,Western,Kaiwharawhara,10-20,675000,250
+Wellington,Western,Khandallah,10-20,760000,281.4814815
+Wellington,Western,Ngaio,10-20,690000,255.5555556
+Wellington,Western,Ngauranga,10-20,660000,244.4444444
+Wellington,Western,Makara,20-40,535000,198.1481481
+Wellington,Western,Makara Beach,20-40,472500,175
+Wellington,Western,Wadestown,10-20,800000,296.2962963
+Wellington,Western,Wilton,10-20,675000,250
+Wellington,Lower Hutt,Petone,20-40,660000,244.4444444
+Wellington,Lower Hutt,Melling,20-40,580000,214.8148148
+Wellington,Lower Hutt,Maungaraki,20-40,565000,209.2592593
+Wellington,Lower Hutt,Normandale,20-40,550000,203.7037037
+Wellington,Lower Hutt,Kelson,20-40,485000,179.6296296
+Wellington,Lower Hutt,Belmont,20-40,495000,183.3333333
+Wellington,Lower Hutt,Alicetown,20-40,620000,229.6296296
+Wellington,Lower Hutt,Moera,20-40,495000,183.3333333
+Wellington,Lower Hutt,Woburn,20-40,715000,264.8148148
+Wellington,Lower Hutt,Waiwhetu,20-40,520000,192.5925926
+Wellington,Lower Hutt,Waterloo,20-40,585000,216.6666667
+Wellington,Lower Hutt,Taita,20-40,350000,129.6296296
+Wellington,Lower Hutt,Avalon,20-40,500000,185.1851852
+Wellington,Lower Hutt,Stokes Valley,20-40,370000,137.037037
+Wellington,Lower Hutt,Waomiuomata,20-40,300000,111.1111111
+Wellington,Lower Hutt,Eastbourne,40-60,730000,270.3703704
+Wellington,Lower Hutt,Fairfield,20-40,535000,198.1481481
+Wellington,Lower Hutt,Epuni,20-40,565000,209.2592593
+Wellington,Lower Hutt,Gracefield,20-40,445000,164.8148148
+Wellington,Lower Hutt,Point Howard,20-40,695000,257.4074074
+Wellington,Lower Hutt,Lowry Bay,20-40,845000,312.962963
+Wellington,Lower Hutt,York Bay,20-40,665000,246.2962963
+Wellington,Lower Hutt,Mahina Bay,20-40,737500,273.1481481
+Wellington,Lower Hutt,Sunshine Bay,40-60,757500,280.5555556
+Wellington,Lower Hutt,Days Bay,40-60,720000,266.6666667
+Wellington,Porirua,Aotea,20-40,750000,277.7777778
+Wellington,Porirua,Ascot Park,20-40,375000,138.8888889
+Wellington,Porirua,Camborne,20-40,555000,205.5555556
+Wellington,Porirua,Cannons Creek,20-40,265000,98.14814815
+Wellington,Porirua,Elsdon,20-40,340000,125.9259259
+Wellington,Porirua,Hongoeka,20-40,540000,200
+Wellington,Porirua,Kenepuru,20-40,695000,257.4074074
+Wellington,Porirua,Papkowhai,20-40,560000,207.4074074
+Wellington,Porirua,Paremata,20-40,550000,203.7037037
+Wellington,Porirua,Pauatahanui,20-40,557500,206.4814815
+Wellington,Porirua,Plimmerton,20-40,662000,245.1851852
+Wellington,Porirua,Pukerua Bay,20-40,540000,200
+Wellington,Porirua,Ranui,20-40,330000,122.2222222
+Wellington,Porirua,Takapuwahia,20-40,335000,124.0740741
+Wellington,Porirua,Titahi Bay,20-40,420000,155.5555556
+Wellington,Porirua,Waitangirua,20-40,255000,94.44444444
+Wellington,Porirua,Whitby,20-40,530000,196.2962963
 Christchurch,Northern,Mairehau,Walking distance,420000,189.0909091
-Christchurch,Northern,Shirley,11-20,390000,189.0909091
-Christchurch,Northern,Dallington,11-20,395000,189.0909091
+Christchurch,Northern,Shirley,10-20,390000,189.0909091
+Christchurch,Northern,Dallington,10-20,395000,189.0909091
 Christchurch,Central,Richmond,Walking distance,385000,175.5844156
-Christchurch,Eastern,Avonside,11-20,350000,177.8354978
-Christchurch,Central,Linwood,11-20,350000,173.3333333
+Christchurch,Eastern,Avonside,10-20,350000,177.8354978
+Christchurch,Central,Linwood,10-20,350000,173.3333333
 Christchurch,Central,Phillipstown,Walking distance,320000,157.5757576
-Christchurch,Eastern,Woolston,11-20,345000,157.5757576
-Christchurch,Southern,Opawa,11-20,490000,144.0692641
+Christchurch,Eastern,Woolston,10-20,345000,157.5757576
+Christchurch,Southern,Opawa,10-20,490000,144.0692641
 Christchurch,Central,Waltham,Walking distance,350000,155.3246753
-Christchurch,Soothern,St Martins,11-20,480000,220.6060606
-Christchurch,Southern,Beckenham,11-20,550000,157.5757576
+Christchurch,Soothern,St Martins,10-20,480000,220.6060606
+Christchurch,Southern,Beckenham,10-20,550000,157.5757576
 Christchurch,Central,Sydenham,Walking distance,475000,216.1038961
-Christchurch,Southern,Somerfield,11-20,475000,247.6190476
-Christchurch,Southern,Spreydon,11-20,430000,213.8528139
+Christchurch,Southern,Somerfield,10-20,475000,247.6190476
+Christchurch,Southern,Spreydon,10-20,430000,213.8528139
 Christchurch,Central,Addington,Walking distance,395000,213.8528139
-Christchurch,Central,Riccarton,11-20,510000,193.5930736
-Christchurch,Western,Ilam,11-20,620000,177.8354978
-Christchurch,Western,Upper Riccarton,11-20,485000,229.6103896
-Christchurch,Western,Burnside,11-20,510000,279.1341991
-Christchurch,Western,Fendalton,11-20,790000,218.3549784
-Christchurch,Northern,Bryndwr,11-20,485000,229.6103896
-Christchurch,Northern,Strowan,11-20,655000,355.6709957
-Christchurch,Northern,Merival,11-20,815000,218.3549784
-Christchurch,Northern,Papnui,11-20,485000,294.8917749
-Christchurch,Northern,St Albans,11-20,530000,366.9264069
-Christchurch,Northern,Edgeware,11-20,420000,218.3549784
+Christchurch,Central,Riccarton,10-20,510000,193.5930736
+Christchurch,Western,Ilam,10-20,620000,177.8354978
+Christchurch,Western,Upper Riccarton,10-20,485000,229.6103896
+Christchurch,Western,Burnside,10-20,510000,279.1341991
+Christchurch,Western,Fendalton,10-20,790000,218.3549784
+Christchurch,Northern,Bryndwr,10-20,485000,229.6103896
+Christchurch,Northern,Strowan,10-20,655000,355.6709957
+Christchurch,Northern,Merival,Oct-17,815000,218.3549784
+Christchurch,Northern,Papnui,Oct-17,485000,294.8917749
+Christchurch,Northern,St Albans,Oct-17,530000,366.9264069
+Christchurch,Northern,Edgeware,Oct-17,420000,218.3549784

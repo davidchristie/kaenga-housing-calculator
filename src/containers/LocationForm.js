@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Col, Panel, Row } from 'react-bootstrap'
+import { Col, Panel, Row } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 
@@ -7,10 +7,12 @@ import Select from '../components/controls/Select'
 import Anchor from '../components/layout/Anchor'
 import Info from '../components/misc/Info'
 import Tip from '../components/misc/Tip'
+import location from '../selectors/location'
 import { getSuburbs } from '../selectors/suburbs'
 
 class LocationForm extends Component {
   render () {
+    const { cities, regions } = this.props
     return (
       <form onSubmit={this.props.handleSubmit}>
         <Panel>
@@ -21,9 +23,18 @@ class LocationForm extends Component {
               The more locations you are willing to live, the easier it will be to find you a home.
             </Tip>
           </h3>
-          <Button active>Auckland</Button>
-          <Button disabled>Wellington</Button>
-          <Button disabled>Christchurch</Button>
+          <h4>City</h4>
+          <Field
+            component={Select}
+            name='city'
+          >
+            <option disabled hidden value=''>Please select...</option>
+            {cities.map((city, index) => {
+              return (
+                <option key={index} value={city}>{city}</option>
+              )
+            })}
+          </Field>
           <Row>
             <Col md={6}>
               <h4>
@@ -37,10 +48,19 @@ class LocationForm extends Component {
                 multiple
                 name='commute'
               >
-                <option value='Walking distance'>Walking distance</option>
-                <option value='5m-20m'>5-20 minutes</option>
-                <option value='21m-40m'>20-40 minutes</option>
-                <option value='41m-60m'>40-60 minutes</option>
+                {
+                  regions.length === 0
+                    ? null
+                    : [
+                      <option key={0} value='Walking distance'>
+                        Walking distance
+                      </option>,
+                      <option key={1} value='10-20'>10-20 minutes</option>,
+                      <option key={2} value='20-40'>20-40 minutes</option>,
+                      <option key={3} value='40-60'>40-60 minutes</option>,
+                      <option key={4} value='60+'>60+ minutes</option>
+                    ]
+                }
               </Field>
             </Col>
             <Col md={6}>
@@ -50,34 +70,14 @@ class LocationForm extends Component {
                 multiple
                 name='region'
               >
-                <option value='Central'>Central</option>
-                <option value='North'>North</option>
-                <option value='East'>East</option>
-                <option value='South'>South</option>
-                <option value='West'>West</option>
+                {regions.map((region, index) => {
+                  return (
+                    <option key={index} value={region}>{region}</option>
+                  )
+                })}
               </Field>
             </Col>
           </Row>
-          <Panel
-            bsStyle='warning'
-            header='Old fields'
-            style={{display: 'none'}}
-          >
-            <h4>Suburbs</h4>
-            <Field
-              component={Select}
-              multiple
-              name='suburbs'
-            >
-              {this.props.suburbs.map((suburb, index) => {
-                return (
-                  <option key={index} value={suburb.name}>
-                    {suburb.name}
-                  </option>
-                )
-              })}
-            </Field>
-          </Panel>
         </Panel>
       </form>
     )
@@ -86,8 +86,17 @@ class LocationForm extends Component {
 
 export default connect(
   state => {
+    const suburbs = getSuburbs(state)
+    const cities = suburbs.map(suburb => suburb.city)
+    const uniqueCities = Array.from(new Set(cities))
+    const selectedCity = location(state).city
+    const regions = suburbs
+      .filter(suburb => suburb.city === selectedCity)
+      .map(suburb => suburb.region)
+    const uniqueRegions = Array.from(new Set(regions))
     return {
-      suburbs: getSuburbs(state)
+      cities: uniqueCities,
+      regions: uniqueRegions
     }
   }
 )(
