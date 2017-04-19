@@ -10,10 +10,10 @@ export function getLandCostRange (state) {
   const cheapest = getCheapestSelectedSuburb(state)
   const mostExpensive = getMostExpensiveSelectedSuburb(state)
   const minLandCostPerSqmFloorspace = cheapest
-  ? cheapest.landCostPerSqmFloorspace
+  ? cheapest.costPerSqmKaenga
   : 0
   const maxLandCostPerSqmFloorspace = cheapest
-  ? mostExpensive.landCostPerSqmFloorspace
+  ? mostExpensive.costPerSqmKaenga
   : 0
   const totalFloorspace = floorspace(state).total
   return {
@@ -26,10 +26,10 @@ export function getPerSqmRange (state) {
   const cheapest = getCheapestSelectedSuburb(state)
   const mostExpensive = getMostExpensiveSelectedSuburb(state)
   const minLandCostPerSqmFloorspace = cheapest
-  ? cheapest.landCostPerSqmFloorspace
+  ? cheapest.costPerSqmKaenga
   : 0
   const maxLandCostPerSqmFloorspace = cheapest
-  ? mostExpensive.landCostPerSqmFloorspace
+  ? mostExpensive.costPerSqmKaenga
   : 0
   return {
     max: maxLandCostPerSqmFloorspace,

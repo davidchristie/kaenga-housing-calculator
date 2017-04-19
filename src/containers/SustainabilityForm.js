@@ -14,7 +14,7 @@ class SustainabilityForm extends Component {
         <Panel>
           <Anchor id='sustainability' />
           <h3>
-            SustainabilityForm{' '}
+            Sustainability{' '}
             <Tip name='sustainability'>
               Our buildings already provide technology
             </Tip>

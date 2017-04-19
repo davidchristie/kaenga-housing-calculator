@@ -3,20 +3,20 @@ import location from './location'
 export function getCheapestSelectedSuburb (state) {
   const selected = getSelectedSuburbs(state)
   const min = Math.min(...selected.map(suburb => {
-    return suburb.landCostPerSqmFloorspace
+    return suburb.costPerSqmKaenga
   }))
   return selected.find(suburb => {
-    return suburb.landCostPerSqmFloorspace === min
+    return suburb.costPerSqmKaenga === min
   })
 }
 
 export function getMostExpensiveSelectedSuburb (state) {
   const selected = getSelectedSuburbs(state)
   const max = Math.max(...selected.map(suburb => {
-    return suburb.landCostPerSqmFloorspace
+    return suburb.costPerSqmKaenga
   }))
   return selected.find(suburb => {
-    return suburb.landCostPerSqmFloorspace === max
+    return suburb.costPerSqmKaenga === max
   })
 }
 
@@ -35,7 +35,6 @@ export function getSelectedSuburbs (state) {
     .filter(suburb => suburb.city === values.city)
     .filter(suburb => values.commute.includes(suburb.commute))
     .filter(suburb => values.region.includes(suburb.region))
-  console.log(selected.map(selected => selected.name))
   return selected
 }
 
