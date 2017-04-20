@@ -5,6 +5,7 @@ import { Col, Row, Well } from 'react-bootstrap'
 import design from '../../../selectors/design'
 import housingType from '../../../selectors/housing-type'
 import PriceRangeWithSuburbs from '../../PriceRangeWithSuburbs'
+import SavingsVsAverageHouse from '../../SavingsVsAverageHouse'
 
 class Overview extends React.Component {
   render () {
@@ -25,7 +26,8 @@ class Overview extends React.Component {
           </Col>
           <Col md={6}>
             <p>
-              Savings: <strong>$zzz (aa%)</strong>
+              Savings verse average house:
+              <strong> <SavingsVsAverageHouse /></strong>
             </p>
             <p>
               Title: <strong>Freehold Unit Title</strong>

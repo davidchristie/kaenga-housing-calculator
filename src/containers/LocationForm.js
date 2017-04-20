@@ -56,8 +56,7 @@ class LocationForm extends Component {
                       </option>,
                       <option key={1} value='10-20'>10-20 minutes</option>,
                       <option key={2} value='20-40'>20-40 minutes</option>,
-                      <option key={3} value='40-60'>40-60 minutes</option>,
-                      <option key={4} value='60+'>60+ minutes</option>
+                      <option key={3} value='40-60'>40-60 minutes</option>
                     ]
                     : null
                 }
