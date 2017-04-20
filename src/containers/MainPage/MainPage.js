@@ -46,9 +46,9 @@ class MainPage extends Component {
             </PageHeader>
             <AboutSection />
           </Jumbotron>
+          <DesignForm />
           <LocationForm />
           <HousingTypeForm />
-          <DesignForm />
           <SustainabilityForm />
           <TransportForm />
           <LifestyleForm />

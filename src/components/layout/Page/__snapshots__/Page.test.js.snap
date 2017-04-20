@@ -25,24 +25,23 @@ exports[`test matches snapshot 1`] = `
     <NavbarCollapse>
       <Nav
         bsClass="nav"
-        bsStyle="tabs"
         justified={false}
         pullLeft={false}
         pullRight={true}
         stacked={false}>
-        <LinkContainer
-          action="push"
-          onlyActiveOnIndex={false}
-          to="/report">
-          <NavItem
-            active={false}
-            disabled={false}>
-            <span>
-              Price: 
-            </span>
-            <Connect(PriceRange) />
-          </NavItem>
-        </LinkContainer>
+        <NavItem
+          active={false}
+          disabled={false}
+          style={
+            Object {
+              "display": "none",
+            }
+          }>
+          <span>
+            Price: 
+          </span>
+          <Connect(PriceRange) />
+        </NavItem>
       </Nav>
     </NavbarCollapse>
   </Uncontrolled(Navbar)>
