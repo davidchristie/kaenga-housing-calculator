@@ -19,8 +19,10 @@ export default [
     condition: state => design(state).guestStudio,
     cost: state => {
       return {
-        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     text: 'Shared guest studios'
@@ -34,8 +36,10 @@ export default [
     condition: state => lifestyle(state).exercising,
     cost: state => {
       return {
-        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     tags: ['multipurpose'],
@@ -45,8 +49,10 @@ export default [
     condition: state => lifestyle(state).building,
     cost: state => {
       return {
-        max: 1.2 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 1.2 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 1.2 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 1.2 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     text: 'Communal workshop/makers space'
@@ -60,8 +66,10 @@ export default [
     condition: state => lifestyle(state).games,
     cost: state => {
       return {
-        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     tags: ['multipurpose'],
@@ -71,8 +79,10 @@ export default [
     condition: state => lifestyle(state).reading,
     cost: state => {
       return {
-        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     tags: ['multipurpose'],
@@ -82,8 +92,10 @@ export default [
     condition: state => lifestyle(state).music,
     cost: state => {
       return {
-        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     tags: ['multipurpose'],
@@ -93,8 +105,10 @@ export default [
     condition: state => lifestyle(state).art,
     cost: state => {
       return {
-        max: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 2.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 2.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     tags: ['multipurpose'],
@@ -104,8 +118,10 @@ export default [
     condition: state => lifestyle(state).socialising,
     cost: state => {
       return {
-        max: 3.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).max),
-        min: 3.5 * (buildCost.perSqm + landCost.getPerSqmRange(state).min)
+        max: 3.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).max),
+        min: 3.5 * (buildCost.getBuildCostPerSqm(state) +
+          landCost.getPerSqmRange(state).min)
       }
     },
     text: 'Indoor and outdoor entertainment spaces with a high end kitchen and barbeque'

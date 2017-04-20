@@ -1,21 +1,23 @@
 import floorspace from './floorspace'
+import { getCheapestSelectedSuburb } from './suburbs'
 import sustainability from './sustainability'
 import transport from './transport'
 
 const costOfServices = 1.15
-const grossBuildCostPerSqm = 4000 // nzd
 const grossToNet = 0.9
 const gst = 1.15
 
-const buildCostPerSqmFloorspace = grossBuildCostPerSqm *
-  costOfServices *
-  gst /
-  grossToNet
-
-export const perSqm = buildCostPerSqmFloorspace
+export function getBuildCostPerSqm (state) {
+  const cheapest = getCheapestSelectedSuburb(state) || {}
+  const grossBuildCostPerSqm = cheapest.grossBuildCostPerSqm || 0
+  return grossBuildCostPerSqm *
+    costOfServices *
+    gst /
+    grossToNet
+}
 
 export function getTotalBuildCost (state) {
-  let total = floorspace(state).total * buildCostPerSqmFloorspace
+  let total = floorspace(state).total * getBuildCostPerSqm(state)
 
   // Cost of sustainability options
   if (sustainability(state).level === 'medium') {

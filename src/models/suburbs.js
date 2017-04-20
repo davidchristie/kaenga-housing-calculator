@@ -7,6 +7,7 @@ function parseSuburbRow (row) {
     city: row['City'],
     commute: row['Commute to city'],
     costPerSqmKaenga: Number(row['cost per net sqm floor area_kaenga']),
+    grossBuildCostPerSqm: Number(row['Gross Build cost per sqm']),
     name: row['Suburb'],
     threeBedroomHousePrice: Number(row['3bdr hse']),
     region: row['Region']
