@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router'
-import { LinkContainer } from 'react-router-bootstrap'
 
 import PriceRange from '../../../containers/reports/PriceRange'
 import './Page.css'
@@ -15,6 +14,8 @@ class Page extends Component {
   }
 
   render () {
+    const { showPrice } = this.props
+    const priceStyle = showPrice ? {} : {display: 'none'}
     return (
       <div className='Page'>
         <Navbar fixedTop>
@@ -31,13 +32,11 @@ class Page extends Component {
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Nav bsStyle='tabs' pullRight>
-              <LinkContainer to='/report'>
-                <NavItem>
-                  <span>Price: </span>
-                  <PriceRange />
-                </NavItem>
-              </LinkContainer>
+            <Nav pullRight>
+              <NavItem style={priceStyle}>
+                <span>Price: </span>
+                <PriceRange />
+              </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
