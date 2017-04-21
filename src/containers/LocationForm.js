@@ -83,6 +83,20 @@ class LocationForm extends Component {
   }
 }
 
+const validate = values => {
+  const errors = {}
+  if (!values.city) {
+    errors.city = 'Required'
+  }
+  if (values.commute.length === 0) {
+    errors.commute = 'Required'
+  }
+  if (values.region.length === 0) {
+    errors.region = 'Required'
+  }
+  return errors
+}
+
 export default connect(
   state => {
     const suburbs = getSuburbs(state)
@@ -101,6 +115,7 @@ export default connect(
       city: '',
       commute: [],
       region: []
-    }
+    },
+    validate
   })(LocationForm)
 )
