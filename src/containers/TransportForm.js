@@ -62,7 +62,19 @@ class TransportForm extends Component {
   }
 }
 
+const validate = values => {
+  const errors = {}
+  if (!values.commute) {
+    errors.commute = 'Required'
+  }
+  if (!values.needCar) {
+    errors.needCar = 'Required'
+  }
+  return errors
+}
+
 export default reduxForm({
   destroyOnUnmount: false,
-  form: 'transport'
+  form: 'transport',
+  validate
 })(TransportForm)
