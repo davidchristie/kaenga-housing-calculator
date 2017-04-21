@@ -34,7 +34,8 @@ class NumberInput extends Component {
 
 NumberInput.defaultProps = {
   input: {},
-  label: ''
+  label: '',
+  meta: {}
 }
 
 NumberInput.propTypes = {
