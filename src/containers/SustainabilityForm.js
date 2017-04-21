@@ -39,10 +39,19 @@ class SustainabilityForm extends Component {
   }
 }
 
+const validate = values => {
+  const errors = {}
+  if (!values.level) {
+    errors.level = 'Required'
+  }
+  return errors
+}
+
 export default reduxForm({
   destroyOnUnmount: false,
   form: 'sustainability',
   initialValues: {
     level: ''
-  }
+  },
+  validate
 })(SustainabilityForm)
