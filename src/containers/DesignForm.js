@@ -45,7 +45,28 @@ class DesignForm extends Component {
   }
 }
 
+const validate = values => {
+  const errors = {}
+  if (!values.occupants) {
+    errors.occupants = 'Required'
+  } else if (values.occupants < 1) {
+    errors.occupants = 'Must have at least one occupant'
+  }
+  if (!values.bedrooms) {
+    errors.bedrooms = 'Required'
+  } else if (values.bedrooms < 1) {
+    errors.bedrooms = 'Must have at least one bedroom'
+  }
+  if (!values.bathrooms) {
+    errors.bathrooms = 'Required'
+  } else if (values.bathrooms < 1) {
+    errors.bathrooms = 'Must have at least one bathroom'
+  }
+  return errors
+}
+
 export default reduxForm({
   destroyOnUnmount: false,
-  form: 'design'
+  form: 'design',
+  validate
 })(DesignForm)

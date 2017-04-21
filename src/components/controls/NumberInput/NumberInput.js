@@ -3,12 +3,17 @@ import React, { Component } from 'react'
 import {
   ControlLabel,
   FormControl,
-  FormGroup
+  FormGroup,
+  HelpBlock
 } from 'react-bootstrap'
 
 class NumberInput extends Component {
   render () {
-    const { input: { onChange, value }, label } = this.props
+    const {
+      input: { onChange, value },
+      label,
+      meta: { error }
+    } = this.props
     return (
       <FormGroup>
         <ControlLabel>
@@ -21,6 +26,7 @@ class NumberInput extends Component {
           type='number'
           value={value}
         />
+        {error && <HelpBlock>{error}</HelpBlock>}
       </FormGroup>
     )
   }
