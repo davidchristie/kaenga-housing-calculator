@@ -11,10 +11,11 @@ class CommentsForm extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <Panel>
-          <h3>Any Comments/Questions</h3>
+          <h3>Any Comments/Questions?</h3>
           <Field
             component={TextArea}
             name='text'
+            placeholder='Type here'
             rows={4}
             style={{resize: 'none'}}
           />

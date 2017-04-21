@@ -134,11 +134,11 @@ export default [
   {
     condition: state => ['medium', 'high'].includes(sustainability(state).level),
     cost: state => ({max: 0, min: 0}),
-    text: 'Water Reticulation, etc.'
+    text: 'Water Reticulation and water efficient applicances'
   },
   {
     condition: state => sustainability(state).level === 'high',
     cost: state => ({max: 0, min: 0}),
-    text: 'Photovoltaic panels, etc.'
+    text: 'Photovoltaic panels and native planting'
   }
 ]

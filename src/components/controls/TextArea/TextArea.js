@@ -13,6 +13,7 @@ class TextArea extends Component {
       input: { onChange, value },
       label,
       meta: { error },
+      placeholder,
       rows,
       style
     } = this.props
@@ -22,6 +23,7 @@ class TextArea extends Component {
         <FormControl
           componentClass='textarea'
           onChange={onChange}
+          placeholder={placeholder}
           rows={rows}
           value={value}
           style={style}
@@ -42,7 +44,8 @@ TextArea.propTypes = {
     onChange: PropTypes.func,
     value: PropTypes.any
   }).isRequired,
-  label: PropTypes.string
+  label: PropTypes.string,
+  placeholder: PropTypes.string
 }
 
 export default TextArea
