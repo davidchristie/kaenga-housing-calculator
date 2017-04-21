@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import {
   ControlLabel,
   FormControl,
-  FormGroup
+  FormGroup,
+  HelpBlock
 } from 'react-bootstrap'
 
 class Select extends Component {
@@ -11,6 +12,9 @@ class Select extends Component {
     const {
       input: { onChange, value },
       label,
+      meta: {
+        error
+      },
       multiple
     } = this.props
     return (
@@ -24,13 +28,15 @@ class Select extends Component {
         >
           {this.props.children}
         </FormControl>
+        {error && <HelpBlock>{error}</HelpBlock>}
       </FormGroup>
     )
   }
 }
 
 Select.defaultProps = {
-  input: {}
+  input: {},
+  meta: {}
 }
 
 Select.propTypes = {

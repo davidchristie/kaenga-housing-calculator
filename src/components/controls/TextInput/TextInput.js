@@ -35,7 +35,10 @@ TextInput.propTypes = {
     onChange: PropTypes.func,
     value: PropTypes.any
   }).isRequired,
-  label: PropTypes.string
+  label: PropTypes.string,
+  meta: PropTypes.shape({
+    error: PropTypes.string
+  })
 }
 
 export default TextInput

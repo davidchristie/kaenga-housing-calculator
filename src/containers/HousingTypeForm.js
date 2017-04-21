@@ -36,10 +36,19 @@ class HousingTypeForm extends Component {
   }
 }
 
+const validate = values => {
+  const errors = {}
+  if (!values.type) {
+    errors.type = 'Required'
+  }
+  return errors
+}
+
 export default reduxForm({
   destroyOnUnmount: false,
   form: 'housingType',
   initialValues: {
     type: ''
-  }
+  },
+  validate
 })(HousingTypeForm)
