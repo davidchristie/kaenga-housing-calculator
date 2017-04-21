@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 
-import { register } from '../actions/register'
+import { postRegistration } from '../actions/register'
 import TextInput from '../components/controls/TextInput'
 
 class RegisterForm extends Component {
@@ -83,7 +83,7 @@ export default connect(
   },
   dispatch => {
     return {
-      register: values => dispatch(register(values))
+      register: values => dispatch(postRegistration(values))
     }
   }
 )(

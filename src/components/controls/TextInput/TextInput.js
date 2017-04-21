@@ -13,12 +13,18 @@ class TextInput extends Component {
       input: { onChange, value },
       label,
       meta: { error },
+      placeholder,
       type
     } = this.props
     return (
       <FormGroup>
         <ControlLabel>{label}</ControlLabel>
-        <FormControl onChange={onChange} value={value} type={type} />
+        <FormControl
+          onChange={onChange}
+          placeholder={placeholder}
+          value={value}
+          type={type}
+        />
         {error && <HelpBlock>{error}</HelpBlock>}
       </FormGroup>
     )
@@ -38,7 +44,9 @@ TextInput.propTypes = {
   label: PropTypes.string,
   meta: PropTypes.shape({
     error: PropTypes.string
-  })
+  }),
+  placeholder: PropTypes.string,
+  type: PropTypes.string
 }
 
 export default TextInput

@@ -8,6 +8,7 @@ exports[`test matches snapshot 1`] = `
     bsClass="form-control"
     componentClass="textarea"
     onChange={undefined}
+    placeholder={undefined}
     rows={undefined}
     style={undefined}
     value={undefined} />

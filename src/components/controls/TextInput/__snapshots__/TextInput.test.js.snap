@@ -8,6 +8,7 @@ exports[`test matches snapshot 1`] = `
     bsClass="form-control"
     componentClass="input"
     onChange={undefined}
+    placeholder={undefined}
     type={undefined}
     value={undefined} />
 </FormGroup>
