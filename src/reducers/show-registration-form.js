@@ -1,9 +1,6 @@
 export default (state = false, action) => {
   switch (action.type) {
-    case 'HIDE_REGISTER_FORM':
-      return false
-
-    case 'SHOW_REGISTER_FORM':
+    case 'REGISTER_SUCCESS':
       return true
 
     default:

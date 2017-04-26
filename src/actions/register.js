@@ -11,12 +11,6 @@ import { getSelectedSuburbs } from '../selectors/suburbs'
 import sustainability from '../selectors/sustainability'
 import transport from '../selectors/transport'
 
-export const hideRegisterForm = () => {
-  return {
-    type: 'HIDE_REGISTER_FORM'
-  }
-}
-
 export const postRegistration = () => {
   return (dispatch, getState) => {
     dispatch({type: 'REGISTER_PENDING'})
@@ -92,7 +86,6 @@ export const postRegistration = () => {
 
     axios.post('http://api.kaenga.rakau.com/calculator/v1/', formBody)
       .then(response => {
-        dispatch(hideRegisterForm())
         dispatch({type: 'REGISTER_SUCCESS'})
         history.push('/report')
       })
@@ -102,11 +95,5 @@ export const postRegistration = () => {
           type: 'REGISTER_FAILURE'
         })
       })
-  }
-}
-
-export const showRegisterForm = () => {
-  return {
-    type: 'SHOW_REGISTER_FORM'
   }
 }

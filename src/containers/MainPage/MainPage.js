@@ -12,7 +12,7 @@ import DesignForm from '../DesignForm'
 import HousingTypeForm from '../HousingTypeForm'
 import LifestyleForm from '../LifestyleForm'
 import LocationForm from '../LocationForm'
-import RegisterForm from '../RegisterForm'
+import RegisterSection from '../RegisterSection'
 import SustainabilityForm from '../SustainabilityForm'
 import TransportForm from '../TransportForm'
 import AboutSection from './AboutSection'
@@ -42,7 +42,7 @@ class MainPage extends Component {
           <TransportForm />
           <LifestyleForm />
           <CommentsForm />
-          <RegisterForm />
+          <RegisterSection />
         </Col>
         <Col md={1} />
       </Grid>
