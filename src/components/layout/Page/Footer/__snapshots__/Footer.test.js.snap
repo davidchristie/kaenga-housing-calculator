@@ -1,48 +1,26 @@
 exports[`test matches snapshot 1`] = `
-<Grid
-  bsClass="container"
+<Well
+  bsClass="well"
   className="Footer"
-  componentClass="div"
-  fluid={false}>
-  <Col
-    bsClass="col"
-    componentClass="div"
-    md={2} />
-  <Col
-    bsClass="col"
-    componentClass="div"
-    md={8}>
-    <Panel
-      bsClass="panel"
-      bsStyle="default"
-      defaultExpanded={false}
-      style={
-        Object {
-          "textAlign": "center",
-        }
-      }>
-      <ul>
-        <li>
-          <Link
-            onlyActiveOnIndex={false}
-            style={Object {}}
-            to="/privacy">
-            Privacy
-          </Link>
-        </li>
-      </ul>
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }>
+  <ul>
+    <li>
       <strong>
         © 2017 Kaenga
       </strong>
-      <br />
-      <strong>
-        Images © Noah Fagan
-      </strong>
-    </Panel>
-  </Col>
-  <Col
-    bsClass="col"
-    componentClass="div"
-    md={2} />
-</Grid>
+    </li>
+    <li>
+      <Link
+        onlyActiveOnIndex={false}
+        style={Object {}}
+        to="/privacy">
+        Privacy
+      </Link>
+    </li>
+  </ul>
+</Well>
 `;
