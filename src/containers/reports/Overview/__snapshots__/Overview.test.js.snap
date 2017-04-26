@@ -1,0 +1,67 @@
+exports[`test matches snapshot 1`] = `
+<div
+  className="well">
+  <h2>
+    Overview
+  </h2>
+  <div
+    className="row">
+    <div
+      className="col-md-6">
+      <p>
+        Price: 
+        <span />
+      </p>
+      <p>
+        House Type: 
+        <strong>
+          
+        </strong>
+      </p>
+      <p>
+        Bedrooms: 
+        <strong>
+          0
+        </strong>
+      </p>
+    </div>
+    <div
+      className="col-md-6">
+      <p>
+        Savings verse average house:
+        <strong>
+           
+          <span>
+            <span>
+              $
+              <span>
+                0
+              </span>
+            </span>
+             (
+            <span>
+              <span>
+                0
+              </span>
+              %
+            </span>
+            )
+          </span>
+        </strong>
+      </p>
+      <p>
+        Title: 
+        <strong>
+          Freehold Unit Title
+        </strong>
+      </p>
+      <p>
+        Bathrooms: 
+        <strong>
+          0
+        </strong>
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -90,7 +90,7 @@ export const postRegistration = () => {
     }
     const formBody = formFields.join('&')
 
-    axios.post('http://api.kaenga.rakau.com/calculator/v1/', formBody)
+    return axios.post('http://api.kaenga.rakau.com/calculator/v1/', formBody)
       .then(response => {
         dispatch({type: 'REGISTER_SUCCESS'})
         history.push('/report')
