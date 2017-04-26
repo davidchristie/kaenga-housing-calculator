@@ -24,7 +24,7 @@
   "name": "kaenga-housing-calculator",
   "private": true,
   "scripts": {
-    "build": "react-scripts build && mv build/index.html build/200.html",
+    "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
