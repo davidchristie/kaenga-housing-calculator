@@ -88,10 +88,10 @@ const validate = values => {
   if (!values.city) {
     errors.city = 'Required'
   }
-  if (values.commute.length === 0) {
+  if (!values.commute) {
     errors.commute = 'Required'
   }
-  if (values.region.length === 0) {
+  if (!values.region) {
     errors.region = 'Required'
   }
   return errors

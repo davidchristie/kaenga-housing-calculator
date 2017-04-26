@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, HelpBlock } from 'react-bootstrap'
 
 class SelectOne extends Component {
   render () {
     const {
       input: { onChange, value },
+      meta: {
+        error
+      },
       options
     } = this.props
     return (
@@ -21,6 +24,7 @@ class SelectOne extends Component {
             </Button>
           )
         })}
+        {error && <HelpBlock>{error}</HelpBlock>}
       </div>
     )
   }
@@ -28,6 +32,7 @@ class SelectOne extends Component {
 
 SelectOne.defaultProps = {
   input: {},
+  meta: {},
   options: []
 }
 
