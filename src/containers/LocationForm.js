@@ -66,12 +66,12 @@ class LocationForm extends Component {
               <h4>Region</h4>
               <Field
                 component={Select}
-                multiple
                 name='region'
               >
+                {selectedCity ? <option key={0} value='Any'>Any</option> : null}
                 {regions.map((region, index) => {
                   return (
-                    <option key={index} value={region}>{region}</option>
+                    <option key={index + 1} value={region}>{region}</option>
                   )
                 })}
               </Field>
@@ -114,7 +114,7 @@ export default connect(
     initialValues: {
       city: '',
       commute: 'Any',
-      region: []
+      region: 'Any'
     },
     validate
   })(LocationForm)

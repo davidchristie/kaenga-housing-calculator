@@ -33,8 +33,8 @@ export function getSelectedSuburbs (state) {
   const values = location(state)
   const selected = getSuburbs(state)
     .filter(suburb => suburb.city === values.city)
-    .filter(suburb => values.commute.includes(suburb.commute))
-    .filter(suburb => values.region.includes(suburb.region))
+    .filter(suburb => values.commute === 'Any' || values.commute.includes(suburb.commute))
+    .filter(suburb => values.region === 'Any' || values.region.includes(suburb.region))
   return selected
 }
 
