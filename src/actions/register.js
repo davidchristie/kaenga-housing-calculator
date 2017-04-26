@@ -11,6 +11,12 @@ import { getSelectedSuburbs } from '../selectors/suburbs'
 import sustainability from '../selectors/sustainability'
 import transport from '../selectors/transport'
 
+export const editRegistration = () => {
+  return {
+    type: 'EDIT_REGISTRATION'
+  }
+}
+
 export const postRegistration = () => {
   return (dispatch, getState) => {
     dispatch({type: 'REGISTER_PENDING'})

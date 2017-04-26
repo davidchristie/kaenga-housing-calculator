@@ -2,16 +2,17 @@ import React, { Component } from 'react'
 import { Button, Panel } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
-import { postRegistration } from '../actions/register'
+import { editRegistration, postRegistration } from '../actions/register'
 import register from '../selectors/register'
 import RegisterForm from './RegisterForm'
 
 class RegisterSection extends Component {
   render () {
     const {
+      editRegistration,
+      email,
       firstName,
       lastName,
-      email,
       postRegistration,
       showRegistrationForm
     } = this.props
@@ -24,6 +25,7 @@ class RegisterSection extends Component {
           <p>
             Email: <strong>{email}</strong>
           </p>
+          <Button onClick={editRegistration}>Edit</Button><br />
           <Button bsStyle='success' onClick={postRegistration}>
             Re-submit
           </Button>
@@ -44,6 +46,7 @@ export default connect(
   },
   dispatch => {
     return {
+      editRegistration: () => dispatch(editRegistration()),
       postRegistration: () => dispatch(postRegistration())
     }
   }
