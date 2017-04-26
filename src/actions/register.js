@@ -49,8 +49,8 @@ export const postRegistration = () => {
       },
       {
         'City': locationValues.city,
-        'Commute time': locationValues.commute.join(', '),
-        'Region': locationValues.region.join(', '),
+        'Commute time': locationValues.commute,
+        'Region': locationValues.region,
         'Suburbs': getSelectedSuburbs(state)
           .map(suburb => suburb.name)
           .join(', ')

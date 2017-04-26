@@ -1,5 +1,4 @@
 import React from 'react'
-import { Label } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import Currency from '../components/units/Currency'
@@ -10,11 +9,15 @@ import { getCheapestSelectedSuburb } from '../selectors/suburbs'
 class SavingsVsAverageHouse extends React.Component {
   render () {
     const { absolute, percentage } = this.props
-    return (
-      <Label bsStyle={absolute >= 0 ? 'success' : 'danger'}>
-        <Currency value={absolute} /> (<Percentage value={percentage} />)
-      </Label>
-    )
+    if (absolute < 0) {
+      return null
+    } else {
+      return (
+        <span>
+          <Currency value={absolute} /> (<Percentage value={percentage} />)
+        </span>
+      )
+    }
   }
 }
 
