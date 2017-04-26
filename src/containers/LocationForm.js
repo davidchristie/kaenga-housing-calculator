@@ -9,7 +9,7 @@ import Info from '../components/misc/Info'
 import Tip from '../components/misc/Tip'
 import SelectOne from '../components/SelectOne'
 import location from '../selectors/location'
-import { getSelectedRegions, getSuburbs } from '../selectors/suburbs'
+import { getPossibleRegions, getSuburbs } from '../selectors/suburbs'
 
 class LocationForm extends Component {
   render () {
@@ -45,18 +45,18 @@ class LocationForm extends Component {
               </h4>
               <Field
                 component={Select}
-                multiple
                 name='commute'
               >
                 {
                   selectedCity
                     ? [
-                      <option key={0} value='Walking distance'>
+                      <option key={0} value='Any'>Any</option>,
+                      <option key={1} value='Walking distance'>
                         Walking distance
                       </option>,
-                      <option key={1} value='10-20'>10-20 minutes</option>,
-                      <option key={2} value='20-40'>20-40 minutes</option>,
-                      <option key={3} value='40-60'>40-60 minutes</option>
+                      <option key={2} value='10-20'>10-20 minutes</option>,
+                      <option key={3} value='20-40'>20-40 minutes</option>,
+                      <option key={4} value='40-60'>40-60 minutes</option>
                     ]
                     : null
                 }
@@ -103,7 +103,7 @@ export default connect(
     const cities = Array.from(new Set(suburbs.map(suburb => suburb.city)))
     return {
       cities,
-      regions: getSelectedRegions(state),
+      regions: getPossibleRegions(state),
       selectedCity: location(state).city
     }
   }
@@ -113,7 +113,7 @@ export default connect(
     form: 'location',
     initialValues: {
       city: '',
-      commute: [],
+      commute: 'Any',
       region: []
     },
     validate

@@ -20,11 +20,11 @@ export function getMostExpensiveSelectedSuburb (state) {
   })
 }
 
-export function getSelectedRegions (state) {
+export function getPossibleRegions (state) {
   const values = location(state)
   const regions = getSuburbs(state)
     .filter(suburb => suburb.city === values.city)
-    .filter(suburb => values.commute.includes(suburb.commute))
+    .filter(suburb => values.commute === 'Any' || values.commute.includes(suburb.commute))
     .map(suburb => suburb.region)
   return Array.from(new Set(regions))
 }
