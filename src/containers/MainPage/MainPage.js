@@ -1,36 +1,25 @@
 import React, { Component } from 'react'
 import {
-  Button,
   Col,
   Grid,
   Jumbotron,
-  PageHeader,
-  Panel
+  PageHeader
 } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
-import {
-  hideRegisterForm,
-  showRegisterForm
-} from '../../actions/register'
 import CommentsForm from '../CommentsForm'
 import DesignForm from '../DesignForm'
 import HousingTypeForm from '../HousingTypeForm'
 import LifestyleForm from '../LifestyleForm'
 import LocationForm from '../LocationForm'
+import RegisterForm from '../RegisterForm'
 import SustainabilityForm from '../SustainabilityForm'
 import TransportForm from '../TransportForm'
 import AboutSection from './AboutSection'
 import './MainPage.css'
-import RegisterModal from './RegisterModal'
 
 class MainPage extends Component {
   render () {
-    const {
-      hideRegisterForm,
-      registerFormOpen,
-      showRegisterForm
-    } = this.props
     return (
       <Grid className='MainPage'>
         <Col md={1} />
@@ -53,21 +42,9 @@ class MainPage extends Component {
           <TransportForm />
           <LifestyleForm />
           <CommentsForm />
-          <Panel className='MainPage-register'>
-            <Button
-              bsSize='large'
-              bsStyle='success'
-              onClick={showRegisterForm}
-            >
-              Register
-            </Button>
-          </Panel>
+          <RegisterForm />
         </Col>
         <Col md={1} />
-        <RegisterModal
-          hideRegisterForm={hideRegisterForm}
-          registerFormOpen={registerFormOpen}
-        />
       </Grid>
     )
   }
@@ -77,12 +54,6 @@ export default connect(
   state => {
     return {
       registerFormOpen: state.registerFormOpen
-    }
-  },
-  dispatch => {
-    return {
-      hideRegisterForm: () => dispatch(hideRegisterForm()),
-      showRegisterForm: () => dispatch(showRegisterForm())
     }
   }
 )(MainPage)
