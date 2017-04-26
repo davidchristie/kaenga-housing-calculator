@@ -1,0 +1,18 @@
+exports[`test matches snapshot 1`] = `
+Object {
+  "createHref": [Function],
+  "createKey": [Function],
+  "createLocation": [Function],
+  "createPath": [Function],
+  "getCurrentLocation": [Function],
+  "go": [Function],
+  "goBack": [Function],
+  "goForward": [Function],
+  "listen": [Function],
+  "listenBefore": [Function],
+  "push": [Function],
+  "replace": [Function],
+  "transitionTo": [Function],
+  "unsubscribe": [Function],
+}
+`;
