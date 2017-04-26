@@ -36,10 +36,10 @@ export const postRegistration = () => {
     Object.assign(
       values,
       {
-        'Email': registerValues.email,
-        'First name': registerValues.firstName,
-        'Last name': registerValues.lastName,
-        'Phone number': registerValues.phone
+        'email': registerValues.email,
+        'firstName': registerValues.firstName,
+        'lastName': registerValues.lastName,
+        'phone': registerValues.phone
       },
       {
         'Bathrooms': designValues.bathrooms,
