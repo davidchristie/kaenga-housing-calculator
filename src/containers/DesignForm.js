@@ -33,10 +33,12 @@ class DesignForm extends Component {
           />
           <Field
             component={Checkbox}
+            inline
             label='Shared guest studio'
             name='guestStudio'
           />
-          <Tip>
+          {` `}
+          <Tip style={{fontSize: '1.8em'}}>
             Sharing a guest studio with others is significantly cheaper than having your own guest room. If you decide to do this, make sure to reduce the number of bedrooms you need above
           </Tip>
         </Panel>

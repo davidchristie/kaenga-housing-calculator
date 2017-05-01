@@ -20,18 +20,20 @@ class Tip extends Component {
         placement='bottom'
         rootClose
       >
-        <Glyphicon glyph='info-sign' style={{opacity: 0.3}} />
+        <Glyphicon glyph='info-sign' style={{...this.props.style, opacity: 0.3}} />
       </OverlayTrigger>
     )
   }
 }
 
 Tip.defaultProps = {
-  name: ''
+  name: '',
+  style: {}
 }
 
 Tip.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  style: PropTypes.object
 }
 
 export default Tip

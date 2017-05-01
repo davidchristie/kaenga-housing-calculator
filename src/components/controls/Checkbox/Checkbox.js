@@ -4,9 +4,9 @@ import { Checkbox as BootstrapCheckbox } from 'react-bootstrap'
 
 class Checkbox extends Component {
   render () {
-    const { input: { onChange, value }, label } = this.props
+    const { inline, input: { onChange, value }, label } = this.props
     return (
-      <BootstrapCheckbox checked={value} onChange={onChange}>
+      <BootstrapCheckbox checked={value} inline={inline} onChange={onChange}>
         {label}
       </BootstrapCheckbox>
     )
