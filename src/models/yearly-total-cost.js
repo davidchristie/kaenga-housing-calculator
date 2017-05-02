@@ -1,20 +1,20 @@
-import yearlyElectricityCost from './yearly-electricity-cost'
 import yearlyMaintenanceCost from './yearly-maintenance-cost'
+import yearlyPowerCost from './yearly-power-cost'
 import yearlyTransportCost from './yearly-transport-cost'
 
 export default state => {
-  const electricity = yearlyElectricityCost(state)
   const maintenance = yearlyMaintenanceCost(state)
+  const power = yearlyPowerCost(state)
   const transport = yearlyTransportCost(state)
 
   const totalSaving =
-    electricity.saving.absolute +
     maintenance.saving.absolute +
+    power.saving.absolute +
     transport.saving.absolute
 
   const ourCost =
-    electricity.value +
     maintenance.value +
+    power.value +
     transport.value
 
   const averageCost = ourCost + totalSaving

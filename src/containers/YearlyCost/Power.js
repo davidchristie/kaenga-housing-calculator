@@ -3,14 +3,14 @@ import { connect } from 'react-redux'
 
 import Currency from '../../components/units/Currency'
 import Percentage from '../../components/units/Percentage'
-import yearlyElectricityCost from '../../models/yearly-electricity-cost'
+import yearlyPowerCost from '../../models/yearly-power-cost'
 
-class Electricity extends Component {
+class Power extends Component {
   render () {
     const { saving: { absolute, percentage }, value } = this.props
     return (
       <div>
-        <h3>Electricity</h3>
+        <h3>Power</h3>
         <p>
           Total: <Currency value={value} />
         </p>
@@ -25,7 +25,7 @@ class Electricity extends Component {
 export default connect(
   state => {
     return {
-      ...yearlyElectricityCost(state)
+      ...yearlyPowerCost(state)
     }
   }
-)(Electricity)
+)(Power)
