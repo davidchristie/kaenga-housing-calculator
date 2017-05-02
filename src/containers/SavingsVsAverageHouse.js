@@ -3,8 +3,7 @@ import { connect } from 'react-redux'
 
 import Currency from '../components/units/Currency'
 import Percentage from '../components/units/Percentage'
-import { getPriceRange } from '../selectors/report'
-import { getCheapestSelectedSuburb } from '../selectors/suburbs'
+import totalCostSaving from '../models/total-cost-saving'
 
 class SavingsVsAverageHouse extends React.Component {
   render () {
@@ -23,14 +22,8 @@ class SavingsVsAverageHouse extends React.Component {
 
 export default connect(
   state => {
-    const kaengaMin = getPriceRange(state).min
-    const cheapest = getCheapestSelectedSuburb(state) || {}
-    const averageHouse = cheapest.threeBedroomHousePrice || kaengaMin
-    const absolute = averageHouse - kaengaMin
-    const percentage = (averageHouse - kaengaMin) / averageHouse * 100
     return {
-      absolute,
-      percentage
+      ...totalCostSaving(state)
     }
   }
 )(SavingsVsAverageHouse)

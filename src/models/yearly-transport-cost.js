@@ -15,6 +15,7 @@ export default state => {
     case 'car':
       value += costOfCar
       break
+    default:
   }
   if (commute !== 'car') {
     switch (needCar) {
@@ -27,6 +28,7 @@ export default state => {
       case 'lessThanOnce':
         value += 390
         break
+      default:
     }
   }
   return {
