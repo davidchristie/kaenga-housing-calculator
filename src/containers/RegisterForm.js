@@ -12,7 +12,7 @@ class RegisterForm extends Component {
     return (
       <form onSubmit={handleSubmit(register)}>
         <Panel>
-          <h3>Register</h3>
+          <h3>Our Details</h3>
           <Field
             component={TextInput}
             label='First name'
