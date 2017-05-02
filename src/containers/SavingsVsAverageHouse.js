@@ -14,7 +14,7 @@ class SavingsVsAverageHouse extends React.Component {
     } else {
       return (
         <span>
-          <Currency value={absolute} /> (<Percentage value={percentage} />)
+          <Currency value={absolute} /> - <Percentage value={percentage} />
         </span>
       )
     }

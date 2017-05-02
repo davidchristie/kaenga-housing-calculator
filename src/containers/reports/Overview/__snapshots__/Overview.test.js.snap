@@ -38,14 +38,13 @@ exports[`test matches snapshot 1`] = `
                 0
               </span>
             </span>
-             (
+             - 
             <span>
               <span>
                 0
               </span>
               %
             </span>
-            )
           </span>
         </strong>
       </p>
@@ -62,6 +61,41 @@ exports[`test matches snapshot 1`] = `
         </strong>
       </p>
     </div>
+  </div>
+  <div
+    className="well">
+    <h2>
+      Yearly Cost
+    </h2>
+    <h3>
+      Electricity
+    </h3>
+    <p>
+      Total: 
+      <span>
+        $
+        <span>
+          0
+        </span>
+      </span>
+    </p>
+    <p>
+      Saving: 
+      <span>
+        $
+        <span>
+          3.1
+        </span>
+        K
+      </span>
+       - 
+      <span>
+        <span>
+          100
+        </span>
+        %
+      </span>
+    </p>
   </div>
 </div>
 `;
