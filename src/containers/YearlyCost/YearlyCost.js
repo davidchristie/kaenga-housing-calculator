@@ -3,6 +3,7 @@ import { Well } from 'react-bootstrap'
 
 import Electricity from './Electricity'
 import Maintenance from './Maintenance'
+import Total from './Total'
 import Transport from './Transport'
 
 export default class YearlyCost extends Component {
@@ -13,6 +14,7 @@ export default class YearlyCost extends Component {
         <Electricity />
         <Transport />
         <Maintenance />
+        <Total />
       </Well>
     )
   }
