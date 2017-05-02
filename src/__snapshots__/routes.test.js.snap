@@ -7,8 +7,5 @@ exports[`test matches snapshot 1`] = `
   <Route
     component={[Function]}
     path="privacy" />
-  <Route
-    component={[Function]}
-    path="report" />
 </Route>
 `;

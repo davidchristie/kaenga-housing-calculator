@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-import history from '../history'
 import comments from '../selectors/comments'
 import design from '../selectors/design'
 import housing from '../selectors/housing-type'
@@ -93,7 +92,6 @@ export const postRegistration = () => {
     return axios.post('https://api.kaenga.com/calculator/v1/', formBody)
       .then(response => {
         dispatch({type: 'REGISTER_SUCCESS'})
-        history.push('/report')
       })
       .catch(error => {
         dispatch({
