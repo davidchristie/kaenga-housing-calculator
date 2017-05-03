@@ -40,6 +40,7 @@ export default state => {
     our.water
 
   return {
+    average: averageTotal,
     saving: {
       absolute: averageTotal - ourTotal,
       percentage: (averageTotal - ourTotal) / averageTotal * 100

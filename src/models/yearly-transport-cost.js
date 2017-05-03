@@ -32,6 +32,7 @@ export default state => {
     }
   }
   return {
+    average: costOfCar,
     saving: {
       absolute: costOfCar - value,
       percentage: (costOfCar - value) / costOfCar * 100

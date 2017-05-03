@@ -20,6 +20,7 @@ export default state => {
   const averageCost = ourCost + totalSaving
 
   return {
+    average: averageCost,
     saving: {
       absolute: totalSaving,
       percentage: totalSaving / averageCost * 100

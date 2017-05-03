@@ -87,6 +87,7 @@ export default function (state) {
   const v = value(state)
   const b = base(state)
   return {
+    average: b,
     saving: {
       absolute: b - v,
       percentage: (b - v) / b * 100
