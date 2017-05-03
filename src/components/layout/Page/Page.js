@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import { Nav, Navbar, NavItem } from 'react-bootstrap'
 import { Link } from 'react-router'
 
+import Footer from '../../../containers/Footer'
 import PriceRange from '../../../containers/reports/PriceRange'
 import './Page.css'
-import Footer from './Footer'
 import logo from './logo.png'
 
 class Page extends Component {
@@ -25,7 +25,7 @@ class Page extends Component {
                 <img
                   alt='Kaenga logo'
                   src={logo}
-                  style={{height: '80px'}}
+                  style={{padding: '10px'}}
                 />
               </Navbar.Brand>
             </Link>
@@ -40,7 +40,9 @@ class Page extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        {this.props.children}
+        <div style={{marginBottom: '80px'}}>
+          {this.props.children}
+        </div>
         <Footer />
       </div>
     )

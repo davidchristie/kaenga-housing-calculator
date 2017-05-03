@@ -15,7 +15,7 @@ exports[`test matches snapshot 1`] = `
             src="logo.png"
             style={
               Object {
-                "height": "80px",
+                "padding": "10px",
               }
             } />
         </NavbarBrand>
@@ -45,6 +45,12 @@ exports[`test matches snapshot 1`] = `
       </Nav>
     </NavbarCollapse>
   </Uncontrolled(Navbar)>
-  <Footer />
+  <div
+    style={
+      Object {
+        "marginBottom": "80px",
+      }
+    } />
+  <Connect(Footer) />
 </div>
 `;

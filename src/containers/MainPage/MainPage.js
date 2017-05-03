@@ -25,14 +25,15 @@ class MainPage extends Component {
       <Grid className='MainPage'>
         <Col md={1} />
         <Col md={10}>
-          <Jumbotron className='MainPage-header'>
+          <Jumbotron className='MainPage-header' style={{textAlign: 'center'}}>
             <PageHeader>
               <div>
                 Kaenga Home Builder
               </div>
-              <small>
+              <hr />
+              <p style={{fontSize: '0.6em'}}>
                 Design a home that meets your needs and fits your budget
-              </small>
+              </p>
             </PageHeader>
             <AboutSection />
           </Jumbotron>
