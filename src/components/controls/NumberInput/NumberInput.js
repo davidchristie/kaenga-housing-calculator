@@ -12,7 +12,9 @@ class NumberInput extends Component {
     const {
       input: { onChange, value },
       label,
-      meta: { error }
+      max,
+      meta: { error },
+      min
     } = this.props
     return (
       <FormGroup>
@@ -21,7 +23,8 @@ class NumberInput extends Component {
         </ControlLabel>
         <FormControl
           componentClass='input'
-          min={0}
+          max={max}
+          min={min}
           onChange={onChange}
           type='number'
           value={value}
@@ -35,7 +38,8 @@ class NumberInput extends Component {
 NumberInput.defaultProps = {
   input: {},
   label: '',
-  meta: {}
+  meta: {},
+  min: 0
 }
 
 NumberInput.propTypes = {
@@ -43,7 +47,12 @@ NumberInput.propTypes = {
     onChange: PropTypes.func,
     value: PropTypes.any
   }).isRequired,
-  label: PropTypes.string
+  label: PropTypes.string,
+  max: PropTypes.number,
+  meta: PropTypes.shape({
+    error: PropTypes.string
+  }).isRequired,
+  min: PropTypes.number
 }
 
 export default NumberInput
