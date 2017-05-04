@@ -4,6 +4,7 @@ import { reducer as formReducer } from 'redux-form'
 
 import hasRegistered from './has-registered'
 import showRegistrationForm from './show-registration-form'
+import submittedData from './submitted-data'
 import suburbs from './suburbs'
 
 export default combineReducers({
@@ -11,5 +12,6 @@ export default combineReducers({
   hasRegistered,
   routing: routerReducer,
   showRegistrationForm,
+  submittedData,
   suburbs
 })

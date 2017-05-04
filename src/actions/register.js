@@ -91,7 +91,10 @@ export const postRegistration = () => {
 
     return axios.post('https://api.kaenga.com/calculator/v1/', formBody)
       .then(response => {
-        dispatch({type: 'REGISTER_SUCCESS'})
+        dispatch({
+          data: state.form,
+          type: 'REGISTER_SUCCESS'
+        })
       })
       .catch(error => {
         dispatch({
