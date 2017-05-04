@@ -4,10 +4,12 @@ import { Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import { postRegistration } from '../../actions/register'
+import isValidInput from '../../models/is-valid-input'
 
 class SubmitButton extends Component {
   render () {
     const {
+      disabled,
       hasChanged,
       hasRegistered,
       postRegistration
@@ -16,7 +18,7 @@ class SubmitButton extends Component {
     const show = !hasRegistered || hasChanged
     if (show) {
       return (
-        <Button onClick={postRegistration}>
+        <Button disabled={disabled} onClick={postRegistration}>
           {hasRegistered ? 'Re-submit' : 'Submit'}
         </Button>
       )
@@ -29,6 +31,7 @@ class SubmitButton extends Component {
 export default connect(
   state => {
     return {
+      disabled: !isValidInput(state),
       hasChanged: !equal(state.form, state.submittedData),
       hasRegistered: state.hasRegistered
     }

@@ -41,13 +41,6 @@ class RegisterForm extends Component {
           <p>
             Even better, we’ll take into account your preferences when designing future projects and give you the opportunity to buy before releasing the project to the public.
           </p>
-          <Button
-            bsStyle='success'
-            disabled={invalid}
-            type='submit'
-          >
-            Submit
-          </Button>
         </Panel>
       </form>
     )
