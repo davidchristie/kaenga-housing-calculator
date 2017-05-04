@@ -18,7 +18,6 @@ import Report from '../Report'
 import SustainabilityForm from '../SustainabilityForm'
 import TransportForm from '../TransportForm'
 import AboutSection from './AboutSection'
-import './MainPage.css'
 
 class MainPage extends Component {
   render () {

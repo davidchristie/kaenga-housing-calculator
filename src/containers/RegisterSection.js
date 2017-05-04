@@ -13,22 +13,23 @@ class RegisterSection extends Component {
       email,
       firstName,
       lastName,
-      postRegistration,
+      phone,
       showRegistrationForm
     } = this.props
     if (showRegistrationForm) {
       return (
         <Panel>
+          <h3>Your Details</h3>
           <p>
             Name: <strong>{firstName} {lastName}</strong>
+          </p>
+          <p>
+            Phone: <strong>{phone}</strong>
           </p>
           <p>
             Email: <strong>{email}</strong>
           </p>
           <Button onClick={editRegistration}>Edit</Button><br />
-          <Button bsStyle='success' onClick={postRegistration}>
-            Re-submit
-          </Button>
         </Panel>
       )
     } else {

@@ -4,7 +4,6 @@ import { Navbar } from 'react-bootstrap'
 import { Link } from 'react-router'
 
 import Footer from '../../../containers/Footer'
-import './Page.css'
 import logo from './logo.png'
 
 class Page extends Component {
@@ -15,7 +14,7 @@ class Page extends Component {
   render () {
     return (
       <div className='Page'>
-        <Navbar fixedTop>
+        <Navbar>
           <Navbar.Header>
             <Link to='/'>
               <Navbar.Brand>
