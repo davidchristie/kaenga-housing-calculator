@@ -15,7 +15,6 @@ import {
 
 class YearlyCost extends Component {
   render () {
-    console.log(this.props)
     const data = {
       labels: [
         `Our project (${this.props.minSuburb})`,

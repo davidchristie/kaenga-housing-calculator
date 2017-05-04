@@ -1,20 +1,24 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Navbar } from 'react-bootstrap'
+import { Nav, Navbar } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import { getSelectedSuburbs } from '../../selectors/suburbs'
 import PriceRange from '../reports/PriceRange'
 import './Footer.css'
+import SubmitButton from './SubmitButton'
 
 class Footer extends Component {
   render () {
     if (this.props.show) {
       return (
         <Navbar className='Footer' fixedBottom>
-          <span style={{fontSize: '2em'}}>
-            Cost Estimate: <PriceRange />
+          <span style={{fontSize: '1.4em'}}>
+            Cost: <PriceRange />
           </span>
+          <Nav pullRight>
+            <SubmitButton />
+          </Nav>
         </Navbar>
       )
     } else {
