@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Panel } from 'react-bootstrap'
+import { Panel } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 
@@ -8,9 +8,9 @@ import TextInput from '../components/controls/TextInput'
 
 class RegisterForm extends Component {
   render () {
-    const { handleSubmit, invalid, register } = this.props
+    const { handleSubmit } = this.props
     return (
-      <form onSubmit={handleSubmit(register)}>
+      <form onSubmit={handleSubmit}>
         <Panel>
           <h3>Your Details</h3>
           <Field
