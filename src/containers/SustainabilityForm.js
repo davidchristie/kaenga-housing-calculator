@@ -4,7 +4,7 @@ import { Field, reduxForm } from 'redux-form'
 
 import Select from '../components/controls/Select'
 import Anchor from '../components/layout/Anchor'
-import Tip from '../components/misc/Tip'
+import Tip from '../components/Tip'
 
 class SustainabilityForm extends Component {
   render () {

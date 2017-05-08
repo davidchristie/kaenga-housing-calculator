@@ -4,10 +4,10 @@ import { connect } from 'react-redux'
 import { Field, reduxForm } from 'redux-form'
 
 import Select from '../components/controls/Select'
-import Anchor from '../components/layout/Anchor'
 import Info from '../components/Info'
-import Tip from '../components/misc/Tip'
+import Anchor from '../components/layout/Anchor'
 import SelectOne from '../components/SelectOne'
+import Tip from '../components/Tip'
 import location from '../selectors/location'
 import { getPossibleRegions, getSuburbs } from '../selectors/suburbs'
 

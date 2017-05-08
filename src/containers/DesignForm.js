@@ -6,7 +6,7 @@ import { Panel } from 'react-bootstrap'
 import Checkbox from '../components/controls/Checkbox'
 import NumberInput from '../components/controls/NumberInput'
 import Anchor from '../components/layout/Anchor'
-import Tip from '../components/misc/Tip'
+import Tip from '../components/Tip'
 
 class DesignForm extends Component {
   render () {

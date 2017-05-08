@@ -6,7 +6,7 @@ import { Field, reduxForm } from 'redux-form'
 import Checkbox from '../components/controls/Checkbox'
 import TextInput from '../components/controls/TextInput'
 import Anchor from '../components/layout/Anchor'
-import Tip from '../components/misc/Tip'
+import Tip from '../components/Tip'
 
 class LifestyleForm extends Component {
   render () {
