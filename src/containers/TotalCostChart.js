@@ -51,7 +51,13 @@ class TotalCostChart extends Component {
             scales: {
               yAxes: [{
                 ticks: {
-                  beginAtZero: true
+                  beginAtZero: true,
+                  userCallback: (value, index) => {
+                    return '$' + value
+                      .toString()
+                      .split(/(?=(?:...)*$)/)
+                      .join(',')
+                  }
                 }
               }]
             }

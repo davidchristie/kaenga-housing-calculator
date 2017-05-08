@@ -62,7 +62,13 @@ class Maintenance extends Component {
               yAxes: [{
                 stacked: true,
                 ticks: {
-                  beginAtZero: true
+                  beginAtZero: true,
+                  userCallback: (value, index) => {
+                    return '$' + value
+                      .toString()
+                      .split(/(?=(?:...)*$)/)
+                      .join(',')
+                  }
                 }
               }]
             }
