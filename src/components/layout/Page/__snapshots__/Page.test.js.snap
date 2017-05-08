@@ -2,8 +2,7 @@ exports[`test matches snapshot 1`] = `
 <div
   className="Page">
   <Uncontrolled(Navbar)
-    bsStyle="default"
-    fixedTop={true}>
+    bsStyle="default">
     <NavbarHeader>
       <Link
         onlyActiveOnIndex={false}

@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
+import { Well } from 'react-bootstrap'
 
 import Interest from './Interest'
-import Maintenance from './Maintenance'
+import Other from './Other'
 
 class YearlyCost extends Component {
   render () {
     return (
-      <div>
+      <Well>
+        <h3>Yearly Cost</h3>
         <Interest />
-        <Maintenance />
-      </div>
+        <Other />
+      </Well>
     )
   }
 }

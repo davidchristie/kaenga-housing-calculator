@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Well } from 'react-bootstrap'
 import { Bar } from 'react-chartjs-2'
 import { connect } from 'react-redux'
 
+import Info from '../../components/misc/Info'
 import yearlyInterestCost from '../../models/yearly-interest-cost'
 import yearlyMaintenanceCost from '../../models/yearly-maintenance-cost'
 import yearlyPowerCost from '../../models/yearly-power-cost'
@@ -48,8 +48,8 @@ class Interest extends Component {
       ]
     }
     return (
-      <Well>
-        <h2>Yearly Interest</h2>
+      <div>
+        <h4>Interest <Info>At 20% deposit.</Info></h4>
         <Bar
           data={data}
           options={{
@@ -62,7 +62,7 @@ class Interest extends Component {
             }
           }}
         />
-      </Well>
+      </div>
     )
   }
 }

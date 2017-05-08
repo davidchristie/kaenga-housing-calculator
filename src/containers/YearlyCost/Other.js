@@ -6,7 +6,7 @@ import yearlyMaintenanceCost from '../../models/yearly-maintenance-cost'
 import yearlyPowerCost from '../../models/yearly-power-cost'
 import yearlyTransportCost from '../../models/yearly-transport-cost'
 
-class Other extends Component {
+class Maintenance extends Component {
   render () {
     const data = {
       labels: [
@@ -81,4 +81,4 @@ export default connect(
       transport: yearlyTransportCost(state)
     }
   }
-)(Other)
+)(Maintenance)

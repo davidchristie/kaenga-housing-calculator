@@ -1,4 +1,3 @@
-import finance from '../selectors/finance'
 import { getPriceRange } from '../selectors/report'
 import {
   getCheapestSelectedSuburb,
@@ -6,9 +5,9 @@ import {
 } from '../selectors/suburbs'
 
 const interestRate = 0.06
+const percentage = 20
 
 export default state => {
-  const { percentage } = finance(state)
   const proportion = (100 - percentage) / 100
   const range = getPriceRange(state)
   const loan = {
