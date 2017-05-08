@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
-import { Well } from 'react-bootstrap'
 
 import Interest from './Interest'
 import Other from './Other'
 
-class YearlyCost extends Component {
+class YearlyCostChart extends Component {
   render () {
     return (
-      <Well>
+      <div>
         <h3>Yearly Cost</h3>
         <Interest />
         <Other />
-      </Well>
+      </div>
     )
   }
 }
 
-export default YearlyCost
+export default YearlyCostChart

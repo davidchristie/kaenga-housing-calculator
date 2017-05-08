@@ -6,7 +6,8 @@ import design from '../../../selectors/design'
 import housingType from '../../../selectors/housing-type'
 import PriceRangeWithSuburbs from '../../PriceRangeWithSuburbs'
 import SavingsVsAverageHouse from '../../SavingsVsAverageHouse'
-import YearlyCost from '../../YearlyCost'
+import YearlyCostChart from '../../YearlyCostChart'
+import TotalCostChart from '../../TotalCostChart'
 
 class Overview extends React.Component {
   render () {
@@ -38,7 +39,8 @@ class Overview extends React.Component {
             </p>
           </Col>
         </ Row>
-        <YearlyCost />
+        <TotalCostChart />
+        <YearlyCostChart />
       </Well>
     )
   }
