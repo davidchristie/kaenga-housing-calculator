@@ -14,7 +14,6 @@ class SubmitButton extends Component {
       hasRegistered,
       postRegistration
     } = this.props
-    console.log(this.props)
     const show = !hasRegistered || hasChanged
     if (show) {
       return (
