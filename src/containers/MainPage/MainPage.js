@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {
-  Col,
   Grid,
   Jumbotron,
   PageHeader
@@ -21,10 +20,9 @@ import AboutSection from './AboutSection'
 class MainPage extends Component {
   render () {
     return (
-      <Grid className='MainPage'>
-        <Col md={1} />
-        <Col md={10}>
-          <Jumbotron className='MainPage-header' style={{textAlign: 'center'}}>
+      <div className='MainPage'>
+        <Jumbotron className='MainPage-header' style={{textAlign: 'center'}}>
+          <Grid>
             <PageHeader>
               <div>
                 Kaenga Home Builder
@@ -35,7 +33,9 @@ class MainPage extends Component {
               </p>
             </PageHeader>
             <AboutSection />
-          </Jumbotron>
+          </Grid>
+        </Jumbotron>
+        <Grid>
           <DesignForm />
           <LocationForm />
           <HousingTypeForm />
@@ -44,10 +44,9 @@ class MainPage extends Component {
           <LifestyleForm />
           <CommentsForm />
           <RegisterSection />
-          <Report />
-        </Col>
-        <Col md={1} />
-      </Grid>
+        </Grid>
+        <Report />
+      </div>
     )
   }
 }

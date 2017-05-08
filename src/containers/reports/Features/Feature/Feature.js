@@ -6,7 +6,7 @@ class Feature extends React.Component {
   render () {
     const { text } = this.props
     return (
-      <ListGroupItem>{text}</ListGroupItem>
+      <ListGroupItem style={{fontSize: '1.4em'}}>{text}</ListGroupItem>
     )
   }
 }

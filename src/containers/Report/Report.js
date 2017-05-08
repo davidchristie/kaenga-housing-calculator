@@ -12,7 +12,7 @@ class Report extends Component {
     if (showResults) {
       return (
         <div>
-          <Jumbotron className='Report-header'>
+          <Jumbotron className='Report-header' style={{textAlign: 'center'}}>
             <h1>Your Home</h1>
           </Jumbotron>
           <Overview />

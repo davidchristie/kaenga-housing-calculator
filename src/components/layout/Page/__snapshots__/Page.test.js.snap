@@ -2,7 +2,12 @@ exports[`test matches snapshot 1`] = `
 <div
   className="Page">
   <Uncontrolled(Navbar)
-    bsStyle="default">
+    bsStyle="default"
+    style={
+      Object {
+        "margin": 0,
+      }
+    }>
     <NavbarHeader>
       <Link
         onlyActiveOnIndex={false}
@@ -24,7 +29,7 @@ exports[`test matches snapshot 1`] = `
   <div
     style={
       Object {
-        "marginBottom": "80px",
+        "marginBottom": "100px",
       }
     } />
   <Connect(Footer) />

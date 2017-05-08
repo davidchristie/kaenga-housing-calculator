@@ -1,64 +1,69 @@
 exports[`test matches snapshot 1`] = `
 <Well
   bsClass="well">
-  <h2>
-    Our Designs
-  </h2>
-  <p>
-    Wouldn’t it be cool if we could show you floor plans of your ideal home? We’re working on it, but until then why not check out some of our standard designs.
-  </p>
-  <Carousel
-    bsClass="carousel"
-    controls={true}
-    indicators={true}
-    interval={5000}
-    nextIcon={
-      <Glyphicon
-        bsClass="glyphicon"
-        glyph="chevron-right" />
-    }
-    nextLabel="Next"
-    pauseOnHover={true}
-    prevIcon={
-      <Glyphicon
-        bsClass="glyphicon"
-        glyph="chevron-left" />
-    }
-    prevLabel="Previous"
-    slide={true}
-    wrap={true}>
-    <CarouselItem
-      active={false}
-      animateIn={false}
-      animateOut={false}>
-      <img
-        alt="Design 1"
-        src="Noah-Fagan-portfolio-oct-14-4.jpg" />
-    </CarouselItem>
-    <CarouselItem
-      active={false}
-      animateIn={false}
-      animateOut={false}>
-      <img
-        alt="Design 2"
-        src="Noah-Fagan-portfolio-oct-14-5.jpg" />
-    </CarouselItem>
-    <CarouselItem
-      active={false}
-      animateIn={false}
-      animateOut={false}>
-      <img
-        alt="Design 3"
-        src="Noah-Fagan-portfolio-oct-14-6.jpg" />
-    </CarouselItem>
-    <CarouselItem
-      active={false}
-      animateIn={false}
-      animateOut={false}>
-      <img
-        alt="Design 4"
-        src="Noah-Fagan-portfolio-oct-14-7.jpg" />
-    </CarouselItem>
-  </Carousel>
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}>
+    <h2>
+      Our Designs
+    </h2>
+    <p>
+      Wouldn’t it be cool if we could show you floor plans of your ideal home? We’re working on it, but until then why not check out some of our standard designs.
+    </p>
+    <Carousel
+      bsClass="carousel"
+      controls={true}
+      indicators={true}
+      interval={5000}
+      nextIcon={
+        <Glyphicon
+          bsClass="glyphicon"
+          glyph="chevron-right" />
+      }
+      nextLabel="Next"
+      pauseOnHover={true}
+      prevIcon={
+        <Glyphicon
+          bsClass="glyphicon"
+          glyph="chevron-left" />
+      }
+      prevLabel="Previous"
+      slide={true}
+      wrap={true}>
+      <CarouselItem
+        active={false}
+        animateIn={false}
+        animateOut={false}>
+        <img
+          alt="Design 1"
+          src="Noah-Fagan-portfolio-oct-14-4.jpg" />
+      </CarouselItem>
+      <CarouselItem
+        active={false}
+        animateIn={false}
+        animateOut={false}>
+        <img
+          alt="Design 2"
+          src="Noah-Fagan-portfolio-oct-14-5.jpg" />
+      </CarouselItem>
+      <CarouselItem
+        active={false}
+        animateIn={false}
+        animateOut={false}>
+        <img
+          alt="Design 3"
+          src="Noah-Fagan-portfolio-oct-14-6.jpg" />
+      </CarouselItem>
+      <CarouselItem
+        active={false}
+        animateIn={false}
+        animateOut={false}>
+        <img
+          alt="Design 4"
+          src="Noah-Fagan-portfolio-oct-14-7.jpg" />
+      </CarouselItem>
+    </Carousel>
+  </Grid>
 </Well>
 `;

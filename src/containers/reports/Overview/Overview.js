@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Col, Row, Well } from 'react-bootstrap'
+import { Col, Grid, Row, Well } from 'react-bootstrap'
 
 import design from '../../../selectors/design'
 import housingType from '../../../selectors/housing-type'
@@ -13,34 +13,36 @@ class Overview extends React.Component {
   render () {
     return (
       <Well>
-        <h2>Overview</h2>
-        <Row>
-          <Col md={6}>
-            <p>
-              Price: <PriceRangeWithSuburbs />
-            </p>
-            <p>
-              House Type: <strong>{this.props.houseType}</strong>
-            </p>
-            <p>
-              Bedrooms: <strong>{this.props.bedrooms}</strong>
-            </p>
-          </Col>
-          <Col md={6}>
-            <p>
-              Savings verse average house:
-              <strong> <SavingsVsAverageHouse /></strong>
-            </p>
-            <p>
-              Title: <strong>Freehold Unit Title</strong>
-            </p>
-            <p>
-              Bathrooms: <strong>{this.props.bathrooms}</strong>
-            </p>
-          </Col>
-        </ Row>
-        <TotalCostChart />
-        <YearlyCostChart />
+        <Grid>
+          <Row>
+            <Col md={6}>
+              <h3>Overview</h3>
+              <p>
+                Price: <PriceRangeWithSuburbs />
+              </p>
+              <p>
+                Savings verse average house:
+                <strong> <SavingsVsAverageHouse /></strong>
+              </p>
+              <p>
+                House Type: <strong>{this.props.houseType}</strong>
+              </p>
+              <p>
+                Title: <strong>Freehold Unit Title</strong>
+              </p>
+              <p>
+                Bedrooms: <strong>{this.props.bedrooms}</strong>
+              </p>
+              <p>
+                Bathrooms: <strong>{this.props.bathrooms}</strong>
+              </p>
+            </Col>
+            <Col md={6}>
+              <TotalCostChart />
+            </Col>
+          </ Row>
+          <YearlyCostChart />
+        </Grid>
       </Well>
     )
   }

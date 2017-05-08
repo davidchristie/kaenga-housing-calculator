@@ -14,7 +14,7 @@ class Page extends Component {
   render () {
     return (
       <div className='Page'>
-        <Navbar>
+        <Navbar style={{margin: 0}}>
           <Navbar.Header>
             <Link to='/'>
               <Navbar.Brand>
@@ -27,7 +27,7 @@ class Page extends Component {
             </Link>
           </Navbar.Header>
         </Navbar>
-        <div style={{marginBottom: '80px'}}>
+        <div style={{marginBottom: '100px'}}>
           {this.props.children}
         </div>
         <Footer />

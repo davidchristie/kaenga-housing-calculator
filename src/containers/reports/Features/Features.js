@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ListGroup, Well } from 'react-bootstrap'
+import { Grid, ListGroup, Well } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import features from '../../../selectors/features'
@@ -10,12 +10,14 @@ class Features extends Component {
     const { selected } = this.props
     return (
       <Well>
-        <h2>Shared Features</h2>
-        <ListGroup>
-          {selected.map((feature, index) => {
-            return <Feature key={index} {...feature} />
-          })}
-        </ListGroup>
+        <Grid>
+          <h2>Shared Features</h2>
+          <ListGroup>
+            {selected.map((feature, index) => {
+              return <Feature key={index} {...feature} />
+            })}
+          </ListGroup>
+        </Grid>
       </Well>
     )
   }
