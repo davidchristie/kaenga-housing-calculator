@@ -5,7 +5,7 @@ import { Field, reduxForm } from 'redux-form'
 
 import Select from '../components/controls/Select'
 import Anchor from '../components/layout/Anchor'
-import Info from '../components/misc/Info'
+import Info from '../components/Info'
 import Tip from '../components/misc/Tip'
 import SelectOne from '../components/SelectOne'
 import location from '../selectors/location'

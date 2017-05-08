@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Bar } from 'react-chartjs-2'
 import { connect } from 'react-redux'
 
-import Info from '../../components/misc/Info'
+import Info from '../../components/Info'
 import yearlyInterestCost from '../../models/yearly-interest-cost'
 import yearlyMaintenanceCost from '../../models/yearly-maintenance-cost'
 import yearlyPowerCost from '../../models/yearly-power-cost'
