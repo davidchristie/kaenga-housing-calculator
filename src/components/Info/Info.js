@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {
-  Button,
   Glyphicon,
   Modal
 } from 'react-bootstrap'
@@ -34,7 +33,9 @@ export default class Info extends Component {
           onHide={this.close}
           show={this.state.showModal}
         >
-          <Modal.Header closeButton />
+          <Modal.Header closeButton>
+            <h3>Info</h3>
+          </Modal.Header>
           <Modal.Body style={{fontSize: '1.4em'}}>
             {this.props.children}
           </Modal.Body>
