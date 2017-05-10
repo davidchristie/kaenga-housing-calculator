@@ -3,9 +3,9 @@ import { connect } from 'react-redux'
 import { Col, Grid, Row, Well } from 'react-bootstrap'
 
 import design from '../../../selectors/design'
-import housingType from '../../../selectors/housing-type'
 import YearlyCostChart from '../../YearlyCostChart'
 import TotalCostChart from '../../TotalCostChart'
+import HousingType from './HousingType'
 import MinimumDeposit from './MinimumDeposit'
 
 class Overview extends React.Component {
@@ -19,12 +19,12 @@ class Overview extends React.Component {
             <Col md={4} sm={6}>
               <MinimumDeposit />
             </Col>
+            <Col md={4} sm={6}>
+              <HousingType />
+            </Col>
           </Row>
           <Row>
             <Col md={6}>
-              <p>
-                House Type: <strong>{this.props.houseType}</strong>
-              </p>
               <p>
                 Title: <strong>Freehold Unit Title</strong>
               </p>
@@ -50,8 +50,7 @@ export default connect(
   state => {
     return {
       bathrooms: design(state).bathrooms || 0,
-      bedrooms: design(state).bedrooms || 0,
-      houseType: housingType(state).type || ''
+      bedrooms: design(state).bedrooms || 0
     }
   }
 )(Overview)
