@@ -29,7 +29,7 @@ class TotalCostChart extends Component {
           hoverBorderColor: 'rgba(130,50,50,1)'
         },
         {
-          label: 'Average',
+          label: 'Average existing 3 bedroom house',
           backgroundColor: 'rgba(50,130,50,0.2)',
           borderColor: 'rgba(50,130,50,1)',
           borderWidth: 1,

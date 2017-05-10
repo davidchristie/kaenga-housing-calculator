@@ -11,7 +11,7 @@ class Maintenance extends Component {
     const data = {
       labels: [
         'Our project',
-        'Average'
+        'Average existing 3 bedroom house'
       ],
       datasets: [
         {
