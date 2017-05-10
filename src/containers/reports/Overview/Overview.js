@@ -7,6 +7,7 @@ import YearlyCostChart from '../../YearlyCostChart'
 import TotalCostChart from '../../TotalCostChart'
 import HousingType from './HousingType'
 import MinimumDeposit from './MinimumDeposit'
+import Title from './Title'
 
 class Overview extends React.Component {
   render () {
@@ -22,12 +23,12 @@ class Overview extends React.Component {
             <Col md={4} sm={6}>
               <HousingType />
             </Col>
+            <Col md={4} sm={6}>
+              <Title />
+            </Col>
           </Row>
           <Row>
             <Col md={6}>
-              <p>
-                Title: <strong>Freehold Unit Title</strong>
-              </p>
               <p>
                 Bedrooms: <strong>{this.props.bedrooms}</strong>
               </p>
