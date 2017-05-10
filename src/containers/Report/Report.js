@@ -11,7 +11,7 @@ class Report extends Component {
     const { showResults } = this.props
     if (showResults) {
       return (
-        <div>
+        <div id='results'>
           <Jumbotron className='Report-header' style={{textAlign: 'center'}}>
             <h1>Results</h1>
           </Jumbotron>
@@ -21,7 +21,7 @@ class Report extends Component {
         </div>
       )
     } else {
-      return <span />
+      return <span id='results' />
     }
   }
 }

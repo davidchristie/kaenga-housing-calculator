@@ -9,6 +9,7 @@ import register from '../selectors/register'
 import { getSelectedSuburbs } from '../selectors/suburbs'
 import sustainability from '../selectors/sustainability'
 import transport from '../selectors/transport'
+import { scrollToElementId } from './scroll'
 
 export const editRegistration = () => {
   return {
@@ -95,6 +96,9 @@ export const postRegistration = () => {
           data: state.form,
           type: 'REGISTER_SUCCESS'
         })
+      })
+      .then(() => {
+        dispatch(scrollToElementId('results'))
       })
       .catch(error => {
         dispatch({
