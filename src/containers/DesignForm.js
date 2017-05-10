@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { Panel } from 'react-bootstrap'
 
 import Checkbox from '../components/controls/Checkbox'
-import NumberInput from '../components/controls/NumberInput'
+import IntegerInput from '../components/controls/IntegerInput'
 import Anchor from '../components/layout/Anchor'
 import Tip from '../components/Tip'
 
@@ -17,17 +17,23 @@ class DesignForm extends Component {
           <Anchor id='design' />
           <h3>Home Design</h3>
           <Field
-            component={NumberInput}
+            component={IntegerInput}
             label='Number of occupants'
+            max={8}
+            min={1}
             name='occupants'
           />
           <Field
-            component={NumberInput}
+            component={IntegerInput}
             label='Number of bedrooms'
+            max={5}
+            min={1}
             name='bedrooms'
           />
           <Field
-            component={NumberInput}
+            component={IntegerInput}
+            max={3}
+            min={1}
             label='Bathrooms'
             name='bathrooms'
           />
@@ -70,5 +76,10 @@ const validate = values => {
 export default reduxForm({
   destroyOnUnmount: false,
   form: 'design',
+  initialValues: {
+    bathrooms: 1,
+    bedrooms: 1,
+    occupants: 1
+  },
   validate
 })(DesignForm)

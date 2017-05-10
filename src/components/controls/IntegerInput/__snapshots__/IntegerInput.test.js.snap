@@ -1,0 +1,41 @@
+exports[`test matches snapshot 1`] = `
+<FormGroup
+  bsClass="form-group">
+  <ControlLabel
+    bsClass="control-label"
+    srOnly={false} />
+  <div>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={false}
+      onClick={[Function]}>
+      <Glyphicon
+        bsClass="glyphicon"
+        glyph="minus" />
+    </Button>
+    <span
+      style={
+        Object {
+          "fontSize": "1.6em",
+          "margin": "10px",
+        }
+      }>
+      <strong />
+    </span>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={false}
+      onClick={[Function]}>
+      <Glyphicon
+        bsClass="glyphicon"
+        glyph="plus" />
+    </Button>
+  </div>
+</FormGroup>
+`;
