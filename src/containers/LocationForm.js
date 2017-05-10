@@ -40,7 +40,7 @@ class LocationForm extends Component {
               <h4>
                 Commute{' '}
                 <Info>
-                  The time it takes to travel to the city in moderate traffic
+                  The time it would take to travel into the city by car in moderate traffic.
                 </Info>
               </h4>
               <Field
