@@ -1,22 +1,48 @@
 exports[`test matches snapshot 1`] = `
-<OverlayTrigger
-  defaultOverlayShown={false}
-  overlay={
-    <Popover
-      bsClass="popover"
-      id="Info-"
-      placement="right" />
-  }
-  placement="bottom"
-  rootClose={true}
-  trigger="click">
+<span>
   <Glyphicon
     bsClass="glyphicon"
     glyph="question-sign"
+    onClick={[Function]}
     style={
       Object {
         "opacity": 0.3,
       }
     } />
-</OverlayTrigger>
+  <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    bsClass="modal"
+    bsSize="small"
+    dialogComponentClass={[Function]}
+    enforceFocus={true}
+    keyboard={true}
+    manager={
+      ModalManager {
+        "containers": Array [],
+        "data": Array [],
+        "handleContainerOverflow": true,
+        "hideSiblingNodes": true,
+        "modals": Array [],
+      }
+    }
+    onHide={[Function]}
+    renderBackdrop={[Function]}
+    restoreFocus={true}
+    show={false}>
+    <ModalHeader
+      aria-label="Close"
+      bsClass="modal-header"
+      closeButton={true} />
+    <ModalBody
+      bsClass="modal-body"
+      componentClass="div"
+      style={
+        Object {
+          "fontSize": "1.4em",
+        }
+      } />
+  </Modal>
+</span>
 `;

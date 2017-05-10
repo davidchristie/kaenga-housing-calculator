@@ -1,37 +1,45 @@
-import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import {
+  Button,
   Glyphicon,
-  OverlayTrigger,
-  Popover
+  Modal
 } from 'react-bootstrap'
 
-class Info extends Component {
+export default class Info extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {showModal: false}
+    this.close = this.close.bind(this)
+    this.open = this.open.bind(this)
+  }
+
+  close () {
+    this.setState({showModal: false})
+  }
+
+  open () {
+    this.setState({showModal: true})
+  }
+
   render () {
-    const popover = (
-      <Popover id={'Info-' + this.props.name}>
-        {this.props.children}
-      </Popover>
-    )
     return (
-      <OverlayTrigger
-        trigger='click'
-        overlay={popover}
-        placement='bottom'
-        rootClose
-      >
-        <Glyphicon glyph='question-sign' style={{opacity: 0.3}} />
-      </OverlayTrigger>
+      <span>
+        <Glyphicon
+          glyph='question-sign'
+          onClick={this.open}
+          style={{opacity: 0.3}}
+        />
+        <Modal
+          bsSize='small'
+          onHide={this.close}
+          show={this.state.showModal}
+        >
+          <Modal.Header closeButton />
+          <Modal.Body style={{fontSize: '1.4em'}}>
+            {this.props.children}
+          </Modal.Body>
+        </Modal>
+      </span>
     )
   }
 }
-
-Info.defaultProps = {
-  name: ''
-}
-
-Info.propTypes = {
-  name: PropTypes.string.isRequired
-}
-
-export default Info
