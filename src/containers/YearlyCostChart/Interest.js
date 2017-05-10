@@ -65,6 +65,18 @@ class Interest extends Component {
                   }
                 }
               }]
+            },
+            tooltips: {
+              callbacks: {
+                label: (tooltipItems, data) => {
+                  return '$' + tooltipItems.yLabel
+                    .toString()
+                    .split(/(?=(?:...)*$)/)
+                    .join(',')
+                }
+              },
+              enabled: true,
+              mode: 'single'
             }
           }}
         />
