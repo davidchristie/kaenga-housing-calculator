@@ -4,8 +4,6 @@ import { Col, Grid, Row, Well } from 'react-bootstrap'
 
 import design from '../../../selectors/design'
 import housingType from '../../../selectors/housing-type'
-import PriceRangeWithSuburbs from '../../PriceRangeWithSuburbs'
-import SavingsVsAverageHouse from '../../SavingsVsAverageHouse'
 import YearlyCostChart from '../../YearlyCostChart'
 import TotalCostChart from '../../TotalCostChart'
 import MinimumDeposit from './MinimumDeposit'
@@ -24,13 +22,6 @@ class Overview extends React.Component {
           </Row>
           <Row>
             <Col md={6}>
-              <p>
-                Price: <PriceRangeWithSuburbs />
-              </p>
-              <p>
-                Savings verse average house:
-                <strong> <SavingsVsAverageHouse /></strong>
-              </p>
               <p>
                 House Type: <strong>{this.props.houseType}</strong>
               </p>
