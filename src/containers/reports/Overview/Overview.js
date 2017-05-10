@@ -8,15 +8,22 @@ import PriceRangeWithSuburbs from '../../PriceRangeWithSuburbs'
 import SavingsVsAverageHouse from '../../SavingsVsAverageHouse'
 import YearlyCostChart from '../../YearlyCostChart'
 import TotalCostChart from '../../TotalCostChart'
+import MinimumDeposit from './MinimumDeposit'
 
 class Overview extends React.Component {
   render () {
     return (
       <Well>
+        <h2 style={{textAlign: 'center'}}>Overview</h2>
+        <hr />
         <Grid>
           <Row>
+            <Col md={4} sm={6}>
+              <MinimumDeposit />
+            </Col>
+          </Row>
+          <Row>
             <Col md={6}>
-              <h3>Overview</h3>
               <p>
                 Price: <PriceRangeWithSuburbs />
               </p>
