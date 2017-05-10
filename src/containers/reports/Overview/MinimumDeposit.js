@@ -9,13 +9,12 @@ class MinimumDeposit extends Component {
   render () {
     return (
       <Panel
-        header='Minimum Deposit'
-        bsStyle='primary'
         style={{
           fontSize: '1.6em',
           textAlign: 'center'
         }}
       >
+        <h4>Minimum Deposit</h4>
         <strong>
           <Currency value={this.props.value} />
         </strong>
