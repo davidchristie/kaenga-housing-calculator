@@ -59,7 +59,7 @@ class LifestyleForm extends Component {
                 />
                 <Field
                   component={Checkbox}
-                  label='Playing board/computer games'
+                  label='Computer games or movies'
                   name='games'
                 />
                 <Field
