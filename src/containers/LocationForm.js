@@ -21,7 +21,7 @@ class LocationForm extends Component {
           <h3>
             Location{' '}
             <Tip name='more-locations'>
-              The more locations you are willing to live, the easier it will be to find you a home.
+              The more locations you select, the easier it will be to find a home.
             </Tip>
           </h3>
           <h4>City</h4>
@@ -40,7 +40,7 @@ class LocationForm extends Component {
               <h4>
                 Commute{' '}
                 <Info>
-                  The time it would take to travel into the city by car in moderate traffic.
+                  The time it takes to travel to the CBD by car in moderate traffic.
                 </Info>
               </h4>
               <Field

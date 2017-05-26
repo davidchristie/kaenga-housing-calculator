@@ -33,9 +33,7 @@ export default class Info extends Component {
           onHide={this.close}
           show={this.state.showModal}
         >
-          <Modal.Header closeButton>
-            <h3>Tip</h3>
-          </Modal.Header>
+          <Modal.Header closeButton />
           <Modal.Body style={{fontSize: '1.4em'}}>
             {this.props.children}
           </Modal.Body>

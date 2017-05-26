@@ -4,7 +4,6 @@ import { Field, reduxForm } from 'redux-form'
 
 import Select from '../components/controls/Select'
 import Anchor from '../components/layout/Anchor'
-import Tip from '../components/Tip'
 
 class SustainabilityForm extends Component {
   render () {
@@ -14,10 +13,7 @@ class SustainabilityForm extends Component {
         <Panel>
           <Anchor id='sustainability' />
           <h3>
-            Sustainability{' '}
-            <Tip name='sustainability'>
-              Our buildings already provide technology
-            </Tip>
+            Sustainability
           </h3>
           <FormGroup>
             <Field component={Select} name='level'>

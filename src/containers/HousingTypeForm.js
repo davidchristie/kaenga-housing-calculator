@@ -4,7 +4,6 @@ import { Field, reduxForm } from 'redux-form'
 
 import Select from '../components/controls/Select'
 import Anchor from '../components/layout/Anchor'
-import Tip from '../components/Tip'
 
 class HousingTypeForm extends Component {
   render () {
@@ -14,10 +13,7 @@ class HousingTypeForm extends Component {
         <Panel>
           <Anchor id='housing-type' />
           <h3>
-            Type of Home{' '}
-            <Tip name='housing-types'>
-              We only build terraced housing and low rise apartments because they offer best value for money
-            </Tip>
+            Type of Home
           </h3>
           <FormGroup>
             <Field component={Select} name='type'>
