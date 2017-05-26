@@ -10,15 +10,22 @@ import Bedrooms from './Bedrooms'
 import HousingType from './HousingType'
 import MinimumDeposit from './MinimumDeposit'
 import Title from './Title'
+import WelcomeHomeLoanTip from './WelcomeHomeLoanTip'
 
 class Overview extends React.Component {
   render () {
     return (
       <Grid>
         <Row>
-          <Col md={4} sm={6}>
+          <Col md={6} sm={6}>
             <MinimumDeposit />
           </Col>
+          <Col md={6} sm={6}>
+            <WelcomeHomeLoanTip />
+          </Col>
+        </Row>
+        <hr />
+        <Row>
           <Col md={4} sm={6}>
             <HousingType />
           </Col>
