@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 import Features from '../reports/Features'
 import Overview from '../reports/Overview'
+import NextSteps from './NextSteps'
 import OurDesigns from './OurDesigns'
 
 class Report extends Component {
@@ -11,12 +12,13 @@ class Report extends Component {
     const { showResults } = this.props
     if (showResults) {
       return (
-        <div id='results'>
-          <Jumbotron className='Report-header' style={{textAlign: 'center'}}>
+        <div id='results' style={{textAlign: 'center'}}>
+          <Jumbotron className='Report-header'>
             <h1>Results</h1>
           </Jumbotron>
           <Overview />
           <Features />
+          <NextSteps />
           <OurDesigns />
         </div>
       )
