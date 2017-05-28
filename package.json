@@ -36,9 +36,9 @@
     "test": "react-scripts test --env=jsdom"
   },
   "standard": {
-    "env": {
-      "jest": true
-    }
+    "env": [
+      "jest"
+    ]
   },
   "version": "0.1.0"
 }
