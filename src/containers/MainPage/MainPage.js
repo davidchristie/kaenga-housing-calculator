@@ -15,6 +15,7 @@ import RegisterSection from '../RegisterSection'
 import Report from '../Report'
 import SustainabilityForm from '../SustainabilityForm'
 import TransportForm from '../TransportForm'
+import ValuesForm from '../ValuesForm'
 import AboutSection from './AboutSection'
 
 class MainPage extends Component {
@@ -42,6 +43,7 @@ class MainPage extends Component {
           <SustainabilityForm />
           <TransportForm />
           <LifestyleForm />
+          <ValuesForm />
           <CommentsForm />
           <RegisterSection />
         </Grid>

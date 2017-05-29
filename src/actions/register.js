@@ -9,6 +9,7 @@ import register from '../selectors/register'
 import { getSelectedSuburbs } from '../selectors/suburbs'
 import sustainability from '../selectors/sustainability'
 import transport from '../selectors/transport'
+import valuesInputs from '../selectors/values'
 import { scrollToElementId } from './scroll'
 
 export const editRegistration = () => {
@@ -30,6 +31,7 @@ export const postRegistration = () => {
     const registerValues = register(state)
     const sustainabilityValues = sustainability(state)
     const transportValues = transport(state)
+    const valuesValues = valuesInputs(state)
 
     const values = {}
 
@@ -64,6 +66,15 @@ export const postRegistration = () => {
       {
         'Getting to work': transportValues.commute,
         'Need a car': transportValues.needCar
+      },
+      {
+        'Values: Diversity': valuesValues.diversity,
+        'Values: Lifestage': valuesValues.lifestage,
+        'Values: Most important values': valuesValues.mostImportantValues,
+        'Values: Multigenerational': valuesValues.multigenerational,
+        'Values: Outdoors': valuesValues.outdoors,
+        'Values: Shared space': valuesValues.sharedSpace,
+        'Values: Time at home': valuesValues.timeAtHome
       },
       {
         'Sports': lifestyleValues.sports,
