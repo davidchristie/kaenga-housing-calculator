@@ -58,7 +58,10 @@ export const postRegistration = () => {
           .join(', ')
       },
       {
-        'Housing type': housingValues.type
+        'Housing type: High rise': housingValues.highRise,
+        'Housing type: Large scale apartment': housingValues.largeScaleApartment,
+        'Housing type: Mid scale apartment': housingValues.midScaleApartment,
+        'Housing type: Terraced housing': housingValues.terracedHousing
       },
       {
         'Sustainability': sustainabilityValues.level
