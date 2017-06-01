@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { ControlLabel, FormGroup, HelpBlock } from 'react-bootstrap'
-import StarRatingComponent from 'react-star-rating-component'
+
+import blackStar from './black-star.svg'
+import goldStar from './gold-star.svg'
+
+const NUMBER_OF_STARS = 5
 
 class StarRating extends Component {
   render () {
     const {
       input: {
-        name,
         onChange,
         value
       },
@@ -16,18 +19,23 @@ class StarRating extends Component {
         error
       }
     } = this.props
+    const stars = []
+    for (let i = 1; i <= NUMBER_OF_STARS; i++) {
+      stars.push(
+        <img
+          key={i}
+          onClick={() => onChange(i)}
+          src={i <= value ? goldStar : blackStar}
+          width={30}
+        />
+      )
+    }
     return (
       <FormGroup>
         <ControlLabel>
           {label}
         </ControlLabel>
-        <StarRatingComponent
-          name={name}
-          onStarClick={onChange}
-          renderStarIcon={() => <i style={{fontSize: '2em'}}>&#9733;</i>}
-          starCount={5}
-          value={value}
-        />
+        {stars}
         {error && <HelpBlock>{error}</HelpBlock>}
       </FormGroup>
     )
