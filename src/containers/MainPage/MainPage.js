@@ -9,6 +9,7 @@ import { connect } from 'react-redux'
 import CommentsForm from '../CommentsForm'
 import DesignForm from '../DesignForm'
 import HousingTypeForm from '../HousingTypeForm'
+import InteriorForm from '../InteriorForm'
 import LifestyleForm from '../LifestyleForm'
 import LocationForm from '../LocationForm'
 import RegisterSection from '../RegisterSection'
@@ -40,6 +41,7 @@ class MainPage extends Component {
           <DesignForm />
           <LocationForm />
           <HousingTypeForm />
+          <InteriorForm />
           <SustainabilityForm />
           <TransportForm />
           <LifestyleForm />
