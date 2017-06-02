@@ -6,6 +6,7 @@ import { Field, reduxForm } from 'redux-form'
 import Select from '../components/controls/Select'
 import TextArea from '../components/controls/TextArea'
 import Anchor from '../components/layout/Anchor'
+import SliderInput from '../components/SliderInput'
 import values from '../selectors/values'
 
 class ValuesForm extends Component {
@@ -20,38 +21,28 @@ class ValuesForm extends Component {
           </h3>
           <FormGroup>
             <Field
-              component={Select}
+              component={SliderInput}
               label='What balance would you like between private and shared space'
-              name='sharedSpace'>
-              <option disabled hidden value=''>Please select...</option>
-              <option value='1'>
-                We want as much private space as possible
-              </option>
-              <option value='2'>
-                We am happy to share some space we still want plenty of private living space
-              </option>
-              <option value='3'>
-                We want my home to be for eating and sleeping and I’m happy to have
-              </option>
-            </Field>
+              name='sharedSpace'
+              options={[
+                'We want as much private space as possible',
+                'We am happy to share some space we still want plenty of private living space',
+                'We want my home to be for eating and sleeping and I’m happy to have'
+              ]}
+            />
           </FormGroup>
           <hr />
           <FormGroup>
             <Field
-              component={Select}
+              component={SliderInput}
               label='Would you like to live with others who share your values or in a diverse and vibrant neighbourhood?'
-              name='diversity'>
-              <option disabled hidden value=''>Please select...</option>
-              <option value='1'>
-                We want to live with others who have the same ethical values as us
-              </option>
-              <option value='2'>
-                We’re happy either way
-              </option>
-              <option value='3'>
-                We want to live in a diverse, vibrant neighbourhood
-              </option>
-            </Field>
+              name='diversity'
+              options={[
+                'We want to live with others who have the same ethical values as us',
+                'We’re happy either way',
+                'We want to live in a diverse, vibrant neighbourhood'
+              ]}
+            />
           </FormGroup>
           {
             this.props.values.diversity === '1'
@@ -69,20 +60,15 @@ class ValuesForm extends Component {
           <hr />
           <FormGroup>
             <Field
-              component={Select}
+              component={SliderInput}
               label='Shared lifestage or multigenerational'
-              name='multigenerational'>
-              <option disabled hidden value=''>Please select...</option>
-              <option value='1'>
-                We want to live with others who are in the same lifestage as us
-              </option>
-              <option value='2'>
-                We’re happy either way
-              </option>
-              <option value='3'>
-                We want to live in a multigenerational community
-              </option>
-            </Field>
+              name='multigenerational'
+              options={[
+                'We want to live with others who are in the same lifestage as us',
+                'We’re happy either way',
+                'We want to live in a multigenerational community'
+              ]}
+            />
           </FormGroup>
           {
             this.props.values.multigenerational === '1'
@@ -121,38 +107,28 @@ class ValuesForm extends Component {
           <hr />
           <FormGroup>
             <Field
-              component={Select}
+              component={SliderInput}
               label='Do you prefer to spend your time indoors or outdoors'
-              name='outdoors'>
-              <option disabled hidden value=''>Please select...</option>
-              <option value='1'>
-                We prefer to spend our time on the deck or in the garden
-              </option>
-              <option value='2'>
-                We like to do both
-              </option>
-              <option value='3'>
-                We prefer to stay indoors most of the time
-              </option>
-            </Field>
+              name='outdoors'
+              options={[
+                'We prefer to spend our time on the deck or in the garden',
+                'We like to do both',
+                'We prefer to stay indoors most of the time'
+              ]}
+            />
           </FormGroup>
           <hr />
           <FormGroup>
             <Field
-              component={Select}
+              component={SliderInput}
               label='How much of the time will you be at home'
-              name='timeAtHome'>
-              <option disabled hidden value=''>Please select...</option>
-              <option value='1'>
-                Most of the time
-              </option>
-              <option value='2'>
-                Some of the time
-              </option>
-              <option value='3'>
-                Only at night and on weekends
-              </option>
-            </Field>
+              name='timeAtHome'
+              options={[
+                'Most of the time',
+                'Some of the time',
+                'Only at night and on weekends'
+              ]}
+            />
           </FormGroup>
         </Panel>
       </form>
@@ -176,11 +152,11 @@ export default reduxForm({
   destroyOnUnmount: false,
   form: 'values',
   initialValues: {
-    diversity: '2',
-    multigenerational: '2',
-    outdoors: '2',
-    sharedSpace: '2',
-    timeAtHome: '2'
+    diversity: 2,
+    multigenerational: 2,
+    outdoors: 2,
+    sharedSpace: 2,
+    timeAtHome: 2
   },
   validate
 })(withState(ValuesForm))
