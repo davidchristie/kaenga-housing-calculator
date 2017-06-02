@@ -21,11 +21,13 @@ class StarRating extends Component {
     } = this.props
     const stars = []
     for (let i = 1; i <= NUMBER_OF_STARS; i++) {
+      const isGold = i <= value
       stars.push(
         <img
+          alt={isGold ? 'Gold star' : 'Black star'}
           key={i}
           onClick={() => onChange(i)}
-          src={i <= value ? goldStar : blackStar}
+          src={isGold ? goldStar : blackStar}
           width={30}
         />
       )

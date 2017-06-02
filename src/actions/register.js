@@ -2,6 +2,7 @@ import axios from 'axios'
 
 import comments from '../selectors/comments'
 import design from '../selectors/design'
+import exterior from '../selectors/exterior'
 import housing from '../selectors/housing-type'
 import interior from '../selectors/interior'
 import lifestyle from '../selectors/lifestyle'
@@ -26,6 +27,7 @@ export const postRegistration = () => {
     const state = getState()
 
     const designValues = design(state)
+    const exteriorValues = exterior(state)
     const housingValues = housing(state)
     const interiorValues = interior(state)
     const lifestyleValues = lifestyle(state)
@@ -66,6 +68,22 @@ export const postRegistration = () => {
         'Housing type: Terraced housing': housingValues.terracedHousing
       },
       {
+        'Interior: Cosy': interiorValues.cosy,
+        'Interior: Indoor outdoor flow': interiorValues.flow,
+        'Interior: Homely': interiorValues.homely,
+        'Interior: Industrial': interiorValues.industrial,
+        'Interior: Posh': interiorValues.posh,
+        'Interior: Quirky': interiorValues.quirky,
+        'Interior: Scandi': interiorValues.scandi
+      },
+      {
+        'Exterior: Angular': exteriorValues.angular,
+        'Exterior: Green': exteriorValues.green,
+        'Exterior: Post modern': exteriorValues.postModern,
+        'Exterior: Slick': exteriorValues.slick,
+        'Exterior: Social': exteriorValues.social
+      },
+      {
         'Sustainability': sustainabilityValues.level
       },
       {
@@ -80,15 +98,6 @@ export const postRegistration = () => {
         'Values: Outdoors': valuesValues.outdoors,
         'Values: Shared space': valuesValues.sharedSpace,
         'Values: Time at home': valuesValues.timeAtHome
-      },
-      {
-        'Interior: Cosy': interiorValues.cosy,
-        'Interior: Indoor outdoor flow': interiorValues.flow,
-        'Interior: Homely': interiorValues.homely,
-        'Interior: Industrial': interiorValues.industrial,
-        'Interior: Posh': interiorValues.posh,
-        'Interior: Quirky': interiorValues.quirky,
-        'Interior: Scandi': interiorValues.scandi
       },
       {
         'Sports': lifestyleValues.sports,

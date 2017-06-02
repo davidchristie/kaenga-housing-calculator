@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Carousel, Grid, Well } from 'react-bootstrap'
+import { Carousel, Well } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import features from '../../../selectors/features'
