@@ -16,7 +16,7 @@ class ExteriorForm extends Component {
       <form onSubmit={handleSubmit}>
         <Panel>
           <h3>
-            Interior Aesthetic
+            Exterior Aesthetic
           </h3>
           <p>
             Which of these pictures best describes the type of home you would like to live in? Rate them from 1 to 5.
