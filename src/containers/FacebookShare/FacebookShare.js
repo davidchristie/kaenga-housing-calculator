@@ -16,7 +16,6 @@ export class FacebookShare extends Component {
     const min = roundCurrency(price.min)
     const max = roundCurrency(price.max)
     const priceRange = `$${min}-${max}`
-    console.log(priceRange)
     window.FB.ui(
       {
         href: 'https://calculator.kaenga.com',
