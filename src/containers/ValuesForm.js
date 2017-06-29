@@ -61,12 +61,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='Shared lifestage or multigenerational'
+              label='Do you want to live with others who are at the same life stage as you or in a with others who are at different life stages?'
               name='multigenerational'
               options={[
-                'We want to live with others who are in the same lifestage as us',
-                'We’re happy either way',
-                'We want to live in a multigenerational community'
+                'I want to live with others at the same life stage',
+                'I don’t mind',
+                'I want to live with people at a range of different life stages'
               ]}
             />
           </FormGroup>
