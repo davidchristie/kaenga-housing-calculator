@@ -108,7 +108,7 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='How much do you prefer staying indoors or outdoors'
+              label='How much do you prefer staying indoors or outdoors?'
               name='outdoors'
               options={[
                 'I want plenty of outdoor space (e.g. a balcony)',
@@ -121,12 +121,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='How much of the time will you be at home'
+              label='How much time will you spend at home?'
               name='timeAtHome'
               options={[
-                'Most of the time',
-                'Some of the time',
-                'Only at night and on weekends'
+                'Someone in the family will be at home at most times',
+                'We’ll be at home most of the time outside of business hours',
+                'We’ll mainly be using our home as a place to sleep'
               ]}
             />
           </FormGroup>
