@@ -1,14 +1,9 @@
-import { Facebook } from 'fb'
 import React, { Component } from 'react'
 import { Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import { getPriceRange } from '../../selectors/report'
 import picture from './Noah-Fagan-portfolio-oct-14-7.jpg'
-
-const facebook = new Facebook({
-  appId: '100113110628552'
-})
 
 export class FacebookShare extends Component {
   constructor (props) {
@@ -26,7 +21,8 @@ export class FacebookShare extends Component {
       {
         href: 'https://developers.facebook.com/docs/',
         method: 'share',
-        message: `My ideal home would cost $${price.min}. What would yours?`
+        message: `My ideal home would cost $${price.min}. What would yours?`,
+        picture
       },
       response => {}
     )
