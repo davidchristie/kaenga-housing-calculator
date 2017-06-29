@@ -21,7 +21,7 @@ class InteriorForm extends Component {
             Interior Aesthetic
           </h3>
           <p>
-            Which of these pictures best describes the type of home you would like to live in? Rate them from 1 to 5.
+            To help us understand the type of home you’d like to live in, please rate these pictures.
           </p>
           <Row>
             <Col md={6} xs={12}>
