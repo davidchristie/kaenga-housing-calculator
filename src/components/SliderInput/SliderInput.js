@@ -9,6 +9,8 @@ import {
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css'
 
+import './SliderInput.css'
+
 const selectedOption = props => {
   const { input: { value }, options } = props
   return options[value - 1]
@@ -40,6 +42,7 @@ class SliderInput extends Component {
           max={options.length}
           min={options.length === 0 ? 0 : 1}
           onChange={onChange}
+          tooltip={false}
           value={value}
         />
         <Well style={{fontSize: '1.4em', textAlign: 'center'}}>

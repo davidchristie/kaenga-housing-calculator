@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 
 import { getSelectedSuburbs } from '../../selectors/suburbs'
 import PriceRange from '../reports/PriceRange'
+import CalculatedPriceModal from './CalculatedPriceModal'
 import './Footer.css'
 import SubmitButton from './SubmitButton'
 
@@ -19,6 +20,7 @@ class Footer extends Component {
           <Nav pullRight>
             <SubmitButton />
           </Nav>
+          <CalculatedPriceModal />
         </Navbar>
       )
     } else {

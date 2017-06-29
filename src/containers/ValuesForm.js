@@ -22,12 +22,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='What balance would you like between private and shared space'
+              label='How open are you to sharing space and facilities with your neighbours?'
               name='sharedSpace'
               options={[
-                'We want as much private space as possible',
-                'We am happy to share some space we still want plenty of private living space',
-                'We want my home to be for eating and sleeping and I’m happy to have'
+                'I’m willing to pay more to have my own private space and facilities',
+                'I’m willing to share some space and facilities to save money but I still want plenty of private space',
+                'I’m happy to exchange a lot of private space for communal space to save money'
               ]}
             />
           </FormGroup>
@@ -35,12 +35,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='Would you like to live with others who share your values or in a diverse and vibrant neighbourhood?'
+              label='Do you want to live in a community where people share the same values or one that welcomes people with different values?'
               name='diversity'
               options={[
-                'We want to live with others who have the same ethical values as us',
-                'We’re happy either way',
-                'We want to live in a diverse, vibrant neighbourhood'
+                'I want to live with others who have the same ethical values',
+                'I don’t mind',
+                'I want to live with people who welcome others with different values'
               ]}
             />
           </FormGroup>
@@ -61,12 +61,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='Shared lifestage or multigenerational'
+              label='Do you want to live with others who are at the same life stage as you or in a with others who are at different life stages?'
               name='multigenerational'
               options={[
-                'We want to live with others who are in the same lifestage as us',
-                'We’re happy either way',
-                'We want to live in a multigenerational community'
+                'I want to live with others at the same life stage',
+                'I don’t mind',
+                'I want to live with people at a range of different life stages'
               ]}
             />
           </FormGroup>
@@ -108,12 +108,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='Do you prefer to spend your time indoors or outdoors'
+              label='How much do you prefer staying indoors or outdoors?'
               name='outdoors'
               options={[
-                'We prefer to spend our time on the deck or in the garden',
-                'We like to do both',
-                'We prefer to stay indoors most of the time'
+                'I want plenty of outdoor space (e.g. a balcony)',
+                'I want a balance of indoor and outdoor space',
+                'I mainly want indoor space'
               ]}
             />
           </FormGroup>
@@ -121,12 +121,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='How much of the time will you be at home'
+              label='How much time will you spend at home?'
               name='timeAtHome'
               options={[
-                'Most of the time',
-                'Some of the time',
-                'Only at night and on weekends'
+                'Someone in the family will be at home at most times',
+                'We’ll be at home most of the time outside of business hours',
+                'We’ll mainly be using our home as a place to sleep'
               ]}
             />
           </FormGroup>
