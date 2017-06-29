@@ -22,12 +22,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='What balance would you like between private and shared space'
+              label='How open are you to sharing space and facilities with your neighbours?'
               name='sharedSpace'
               options={[
-                'We want as much private space as possible',
-                'We am happy to share some space we still want plenty of private living space',
-                'We want my home to be for eating and sleeping and I’m happy to have'
+                'I’m willing to pay more to have my own private space and facilities',
+                'I’m willing to share some space and facilities to save money but I still want plenty of private space',
+                'I’m happy to exchange a lot of private space for communal space to save money'
               ]}
             />
           </FormGroup>

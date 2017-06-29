@@ -40,6 +40,7 @@ class SliderInput extends Component {
           max={options.length}
           min={options.length === 0 ? 0 : 1}
           onChange={onChange}
+          tooltip={false}
           value={value}
         />
         <Well style={{fontSize: '1.4em', textAlign: 'center'}}>
