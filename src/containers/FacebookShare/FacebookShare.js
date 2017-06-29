@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
+import roundCurrency from '../../models/roundCurrency'
 import { getPriceRange } from '../../selectors/report'
 
 export class FacebookShare extends Component {
@@ -12,11 +13,15 @@ export class FacebookShare extends Component {
 
   handleClick () {
     const { price } = this.props
+    const min = roundCurrency(price.min)
+    const max = roundCurrency(price.max)
+    const priceRange = `$${min}-${max}`
+    console.log(priceRange)
     window.FB.ui(
       {
         href: 'https://calculator.kaenga.com',
         method: 'share',
-        quote: `My ideal home would cost $${price.min}. What would yours?`,
+        quote: `My ideal home would cost ${priceRange}. What would yours?`
       },
       response => {}
     )
