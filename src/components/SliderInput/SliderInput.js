@@ -9,6 +9,8 @@ import {
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css'
 
+import './SliderInput.css'
+
 const selectedOption = props => {
   const { input: { value }, options } = props
   return options[value - 1]
