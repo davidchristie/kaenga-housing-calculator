@@ -35,12 +35,12 @@ class ValuesForm extends Component {
           <FormGroup>
             <Field
               component={SliderInput}
-              label='Would you like to live with others who share your values or in a diverse and vibrant neighbourhood?'
+              label='Do you want to live in a community where people share the same values or one that welcomes people with different values?'
               name='diversity'
               options={[
-                'We want to live with others who have the same ethical values as us',
-                'We’re happy either way',
-                'We want to live in a diverse, vibrant neighbourhood'
+                'I want to live with others who have the same ethical values',
+                'I don’t mind',
+                'I want to live with people who welcome others with different values'
               ]}
             />
           </FormGroup>
