@@ -16,7 +16,7 @@ class ExteriorForm extends Component {
       <form onSubmit={handleSubmit}>
         <Panel>
           <h3>
-            Exterior Aesthetic
+            Exterior Appearance
           </h3>
           <p>
             To help us understand the type of home you’d like to live in, please rate these pictures.

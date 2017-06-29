@@ -18,7 +18,7 @@ class InteriorForm extends Component {
       <form onSubmit={handleSubmit}>
         <Panel>
           <h3>
-            Interior Aesthetic
+            Interior Design
           </h3>
           <p>
             To help us understand the type of home you’d like to live in, please rate these pictures.
