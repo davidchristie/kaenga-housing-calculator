@@ -3,7 +3,6 @@ import { Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import { getPriceRange } from '../../selectors/report'
-import picture from './Noah-Fagan-portfolio-oct-14-7.jpg'
 
 export class FacebookShare extends Component {
   constructor (props) {
@@ -12,17 +11,12 @@ export class FacebookShare extends Component {
   }
 
   handleClick () {
-        // description={`My ideal home would cost $${price.min}. What would yours?`}
-    // picture={picture}
-    // title='Kaenga Housing Calculator'
-    // url='https://calculator.kaenga.com'
     const { price } = this.props
     window.FB.ui(
       {
-        href: 'https://developers.facebook.com/docs/',
+        href: 'https://calculator.kaenga.com',
         method: 'share',
-        message: `My ideal home would cost $${price.min}. What would yours?`,
-        picture
+        quote: `My ideal home would cost $${price.min}. What would yours?`,
       },
       response => {}
     )
