@@ -5,6 +5,7 @@ import * as landCost from '../selectors/land-cost'
 import sustainability from '../selectors/sustainability'
 
 import artistStudioImage from './feature-images/Artist studio.jpeg'
+import guestStudio from './feature-images/Guest studio.jpg'
 import gymImage from './feature-images/Gym and yoga studio.jpg'
 import gardenImage from './feature-images/Rooftop veggie garden.jpg'
 import avRoomImage from './feature-images/AV room for games and movies.jpg'
@@ -41,6 +42,7 @@ export default [
           landCost.getPerSqmRange(state).min)
       }
     },
+    image: guestStudio,
     text: 'Shared guest studios'
   },
   {
