@@ -130,6 +130,18 @@ class ValuesForm extends Component {
               ]}
             />
           </FormGroup>
+          <FormGroup>
+            <Field
+              component={SliderInput}
+              label='How much would you like to invest in sustainability?'
+              name='sustainability'
+              options={[
+                'I need to minimize the upfront cost of housing',
+                'I want to invest a little upfront to save money in the long run',
+                'I want my home to be built to the highest environmental standard'
+              ]}
+            />
+          </FormGroup>
         </Panel>
       </form>
     )
@@ -156,6 +168,7 @@ export default reduxForm({
     multigenerational: 2,
     outdoors: 2,
     sharedSpace: 2,
+    sustainability: 2,
     timeAtHome: 2
   },
   validate

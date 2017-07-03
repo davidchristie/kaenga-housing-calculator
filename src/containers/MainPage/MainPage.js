@@ -15,7 +15,6 @@ import LifestyleForm from '../LifestyleForm'
 import LocationForm from '../LocationForm'
 import RegisterSection from '../RegisterSection'
 import Report from '../Report'
-import SustainabilityForm from '../SustainabilityForm'
 import TransportForm from '../TransportForm'
 import ValuesForm from '../ValuesForm'
 import AboutSection from './AboutSection'
@@ -44,7 +43,6 @@ class MainPage extends Component {
           <HousingTypeForm />
           <ExteriorForm />
           <InteriorForm />
-          <SustainabilityForm />
           <TransportForm />
           <LifestyleForm />
           <ValuesForm />
