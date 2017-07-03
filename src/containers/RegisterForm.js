@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Panel } from 'react-bootstrap'
 import { connect } from 'react-redux'
+import { Link } from 'react-router'
 import { Field, reduxForm } from 'redux-form'
 
 import { postRegistration } from '../actions/register'
@@ -40,6 +41,9 @@ class RegisterForm extends Component {
           </p>
           <p>
             Even better, we’ll take into account your preferences when designing future projects and give you the opportunity to buy before releasing the project to the public.
+          </p>
+          <p>
+            <Link to='/privacy'>View our privacy statement.</Link>
           </p>
         </Panel>
       </form>
