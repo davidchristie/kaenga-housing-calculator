@@ -1,18 +1,13 @@
 import React, { Component } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import { connect } from 'react-redux'
 
-export default class CalculatedPriceModal extends Component {
-  constructor (props) {
-    super(props)
-    this.toggle = this.toggle.bind(this)
-    this.state = {
-      show: true
-    }
-  }
+import hideCalculatedPriceModal from '../../actions/hideCalculatedPriceModal'
 
+class CalculatedPriceModal extends Component {
   render () {
     return (
-      <Modal show={this.state.show} onHide={this.toggle}>
+      <Modal show={this.props.show} onHide={this.props.toggle}>
         <Modal.Header closeButton />
         <Modal.Body>
           <p>
@@ -22,7 +17,7 @@ export default class CalculatedPriceModal extends Component {
         <Modal.Footer>
           <Button
             bsStyle='primary'
-            onClick={this.toggle}
+            onClick={this.props.hide}
           >
             Close
           </Button>
@@ -30,10 +25,15 @@ export default class CalculatedPriceModal extends Component {
       </Modal>
     )
   }
-
-  toggle () {
-    this.setState({
-      show: !this.state.show
-    })
-  }
 }
+
+const withState = connect(
+  state => ({
+    show: state.showCalculatedPriceModal
+  }),
+  dispatch => ({
+    hide: () => dispatch(hideCalculatedPriceModal())
+  })
+)
+
+export default withState(CalculatedPriceModal)
