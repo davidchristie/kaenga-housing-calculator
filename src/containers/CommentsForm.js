@@ -19,6 +19,14 @@ class CommentsForm extends Component {
             rows={4}
             style={{resize: 'none'}}
           />
+          <Field
+            component={TextArea}
+            label='Do you already know which project you are interested in? If so, tell us which one.'
+            name='interestedInProject'
+            placeholder='Type here'
+            rows={4}
+            style={{resize: 'none'}}
+          />
         </Panel>
       </form>
     )

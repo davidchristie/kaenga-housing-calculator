@@ -112,7 +112,8 @@ export const postRegistration = () => {
         'Other lifestyle': lifestyleValues.other
       },
       {
-        'Comments/Questions': comments(state).text
+        'Comments/Questions': comments(state).text,
+        'Interested in project': comments(state).interestedInProject
       }
     )
 
