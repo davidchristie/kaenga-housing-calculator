@@ -7,7 +7,6 @@ import YearlyCostChart from '../../YearlyCostChart'
 import TotalCostChart from '../../TotalCostChart'
 import Bathrooms from './Bathrooms'
 import Bedrooms from './Bedrooms'
-import HousingType from './HousingType'
 import MinimumDeposit from './MinimumDeposit'
 import Title from './Title'
 import WelcomeHomeLoanTip from './WelcomeHomeLoanTip'
@@ -26,9 +25,6 @@ class Overview extends React.Component {
         </Row>
         <hr />
         <Row>
-          <Col md={4} sm={6}>
-            <HousingType />
-          </Col>
           <Col md={4} sm={6}>
             <Bedrooms />
           </Col>
