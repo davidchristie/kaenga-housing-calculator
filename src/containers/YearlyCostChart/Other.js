@@ -59,6 +59,9 @@ class Maintenance extends Component {
           data={data}
           options={{
             scales: {
+              xAxes: [{
+                stacked: true
+              }],
               yAxes: [{
                 stacked: true,
                 ticks: {

@@ -3,7 +3,6 @@ import axios from 'axios'
 import comments from '../selectors/comments'
 import design from '../selectors/design'
 import exterior from '../selectors/exterior'
-import housing from '../selectors/housing-type'
 import interior from '../selectors/interior'
 import lifestyle from '../selectors/lifestyle'
 import location from '../selectors/location'
@@ -28,7 +27,6 @@ export const postRegistration = () => {
 
     const designValues = design(state)
     const exteriorValues = exterior(state)
-    const housingValues = housing(state)
     const interiorValues = interior(state)
     const lifestyleValues = lifestyle(state)
     const locationValues = location(state)
@@ -60,12 +58,6 @@ export const postRegistration = () => {
         'Suburbs': getSelectedSuburbs(state)
           .map(suburb => suburb.name)
           .join(', ')
-      },
-      {
-        'Housing type: High rise': housingValues.highRise,
-        'Housing type: Large scale apartment': housingValues.largeScaleApartment,
-        'Housing type: Mid scale apartment': housingValues.midScaleApartment,
-        'Housing type: Terraced housing': housingValues.terracedHousing
       },
       {
         'Interior: Cosy': interiorValues.cosy,

@@ -10,6 +10,9 @@ function level (state) {
 
     case 3:
       return 'high'
+
+    default:
+      return 'medium'
   }
 }
 

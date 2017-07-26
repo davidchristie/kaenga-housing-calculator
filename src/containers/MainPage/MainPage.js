@@ -9,7 +9,6 @@ import { connect } from 'react-redux'
 import CommentsForm from '../CommentsForm'
 import DesignForm from '../DesignForm'
 import ExteriorForm from '../ExteriorForm'
-import HousingTypeForm from '../HousingTypeForm'
 import InteriorForm from '../InteriorForm'
 import LifestyleForm from '../LifestyleForm'
 import LocationForm from '../LocationForm'
@@ -40,7 +39,6 @@ class MainPage extends Component {
         <Grid>
           <DesignForm />
           <LocationForm />
-          <HousingTypeForm />
           <ExteriorForm />
           <InteriorForm />
           <TransportForm />
